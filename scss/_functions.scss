@@ -1,0 +1,54 @@
+$site_url: '/';
+$colors: (
+    primary: slateblue,
+    check: #84d400,
+    clock: #f78d00,
+    lock: #7c0e0e
+);
+@mixin fontface($name, $src, $weight){
+  @font-face{
+      font-family: $name;
+      src: url($site_url + $src);
+      font-weight: $weight;
+  }
+}
+
+
+@include fontface("todayshop", 'assets/fonts/todayshop-medium.otf', normal);
+@include fontface("todayshop", 'assets/fonts/todayshop-bold.otf', bold);
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+@mixin gradient($color1, $color2){
+    background: $color1; /* Old browsers */
+    background: -moz-linear-gradient(top, $color1 0%, $color2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $color1 0%,$color2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $color1 0%,$color2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+}
+@mixin prefix($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+  }
+@mixin medio($top, $left, $transx, $transy){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate($transx, $transy);
+}
+$padding: 15px;
+
+$xl: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 576px;
+
+@mixin lamedia($size){
+    @media (min-width: $size){
+        @content;
+    }
+}

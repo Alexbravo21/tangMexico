@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "todayshop";
+  src: url("/assets/fonts/todayshop-medium.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "todayshop";
+  src: url("/assets/fonts/todayshop-bold.otf");
+  font-weight: bold;
+}
+
+.logo {
+  width: 150px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
