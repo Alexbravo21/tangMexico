@@ -1,5 +1,7 @@
 @import '_functions.scss';
 
 .logo{
-    width: 150px;
+    width: 100px;
+    max-width: 40%;
+    @include medio(20px, 100%, -120%, 0);
 }

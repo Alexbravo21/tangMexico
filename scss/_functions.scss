@@ -52,3 +52,10 @@ $small: 576px;
         @content;
     }
 }
+
+@mixin bg-image($url) {
+    background-image: url($url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

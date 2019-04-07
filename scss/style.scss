@@ -1,9 +1,15 @@
+@import '_functions.scss';
 @import '_home.scss';
 html{
     width: 100%;
     height: 100%;
 }
 body{
+    width: 100%;
+    height: 100%;
+}
+.fondo_madera{
+    @include bg-image('../img/back_madera.jpg');
     width: 100%;
     height: 100%;
 }
