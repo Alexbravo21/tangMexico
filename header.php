@@ -9,4 +9,11 @@
     <title>Tang México</title>
 </head>
 <body>
+    <div class="hamburger_cont">
+        <div class="hamburger hamburger--spin js-hamburger">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </div>
+    </div>
     <img src="img/logo.png" alt="" class="logo">
