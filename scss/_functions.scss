@@ -1,9 +1,7 @@
 $site_url: '/';
 $colors: (
     primary: slateblue,
-    check: #84d400,
-    clock: #f78d00,
-    lock: #7c0e0e
+    naranja-mango: #e7a531
 );
 @mixin fontface($name, $src, $weight){
   @font-face{
@@ -34,12 +32,16 @@ $colors: (
     }
     #{$property}: $value;
   }
-@mixin medio($top, $left, $transx, $transy){
-    position: absolute;
+@mixin medio($pos, $top, $left, $transx, $transy){
+    position: $pos;
     top: $top;
     left: $left;
     transform: translate($transx, $transy);
 }
+@mixin multi-transforms($transforms){
+    @include prefix(transform, $transforms, webkit moz ms)
+}
+
 $padding: 15px;
 
 $xl: 1200px;
@@ -47,7 +49,7 @@ $large: 992px;
 $medium: 768px;
 $small: 576px;
 
-@mixin lamedia($size){
+@mixin med-query($size){
     @media (min-width: $size){
         @content;
     }
@@ -59,3 +61,11 @@ $small: 576px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+@mixin responsive-box($height){
+    position: relative;
+    &:before{
+      content: '';
+      display: block;
+      padding-top: $height;
+    }
+  }

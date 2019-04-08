@@ -1,2 +1,69 @@
 @import '_functions.scss';
 
+
+.izquierdo{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    height: 40%;
+    position: relative;
+    @include med-query($medium){
+        width: 45%;
+        height: 100%;
+    }
+    .sobre{
+        @include medio(absolute, 0, 50%, -50%, 0);
+        width: auto;
+        max-height: 80%;
+        @include multi-transforms(translate(-50%, 0%) rotate(-5deg));
+        @include prefix(box-shadow, 6px 8px 13px 2px rgba(0,0,0,0.75), webkit moz);
+        @include med-query($medium){
+            @include medio(absolute, 50%, 50%, -50%, -50%);
+            @include multi-transforms(translate(-50%, -50%) rotate(-5deg));
+            width: 250px;
+        }
+    }
+}
+.derecho{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    height: 60%;
+    position: relative;
+    @include med-query($medium){
+        width: 55%;
+        height: 100%;
+    }
+    .plasta_circular{
+        width: 300%;
+        @include medio(relative, 0, 50%, -50%, 0);
+        background-color: color(naranja-mango);
+        border-radius: 100%;
+        @include responsive-box(100%);
+        @include prefix(box-shadow, 0px 0px 24px -9px rgba(0,0,0,0.75), webkit moz);
+        @include med-query($medium){
+            width: 200%;
+            @include medio(relative, 50%, 100%, -50%, -50%);
+            @include prefix(box-shadow, 0px 0px 32px -4px rgba(0,0,0,0.75), webkit moz);
+        }
+        .receta_home_cont{
+            @include medio(absolute, 50%, 5%, 0, -50%);
+            width: 40%;
+            .receta_home{
+                position: relative;
+                .receta_home_nombre{
+                    @include medio(absolute, 0, 0, -50%, -50%);
+                }
+                .receta_home_img{
+                    max-width: 90%;
+                    max-height: 90%;
+                    display: block;
+                    margin: 0 auto;
+                    @include med-query($medium){
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

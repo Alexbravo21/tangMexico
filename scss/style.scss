@@ -4,15 +4,21 @@
 html{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .fondo_madera{
     @include bg-image('../img/back_madera.jpg');
     width: 100%;
     height: 100%;
+    padding-top: 90px;
+    @include med-query($medium){
+        padding-top: 0;
+    }
 }
 .hamburger_cont{
     position: fixed;
@@ -22,9 +28,23 @@ body{
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    z-index: 100;
+    @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
 }
 .logo{
-    width: 100px;
+    width: 70px;
     max-width: 40%;
-    @include medio(20px, 100%, -120%, 0);
+    @include medio(absolute, 20px, 100%, -120%, 0);
+    z-index: 100;
+    @include med-query($medium){
+        width: 100px;
+    }
+}
+.promo{
+    @include medio(fixed, 100%, 50%, -50%, -100%);
+    width: 400px;
+    max-width: 80%;
+    @include med-query($medium){
+        @include medio(fixed, 100%, 100%, -100%, -100%);
+    }
 }

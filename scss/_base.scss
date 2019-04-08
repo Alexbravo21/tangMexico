@@ -2,7 +2,7 @@
 // Hamburger
 // =================================================
 .hamburger {
-  @include medio(50%, 50%, -50%, -50%);
+  @include medio(absolute, 50%, 50%, -50%, -50%);
   display: inline-block;
   cursor: pointer;
 
