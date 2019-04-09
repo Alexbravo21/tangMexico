@@ -1,7 +1,10 @@
-$site_url: '/';
+$site_url: '/tang';
 $colors: (
     primary: slateblue,
-    naranja-mango: #e7a531
+    naranja-mango: #f5a10f,
+    naranjada-texto: #d87013,
+    blanco: #fff,
+    negro: #000000
 );
 @mixin fontface($name, $src, $weight){
   @font-face{
@@ -10,10 +13,6 @@ $colors: (
       font-weight: $weight;
   }
 }
-
-
-@include fontface("todayshop", 'assets/fonts/todayshop-medium.otf', normal);
-@include fontface("todayshop", 'assets/fonts/todayshop-bold.otf', bold);
 
 @function color($color-name){
     @return map-get($colors, $color-name);

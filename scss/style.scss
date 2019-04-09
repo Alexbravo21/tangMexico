@@ -1,6 +1,13 @@
 @import '_functions.scss';
 @import '_home.scss';
 @import '_hamburgers.scss';
+
+
+@include fontface("muli", '/css/fonts/Muli-Regular.ttf', normal);
+@include fontface("muli", '/css/fonts/Muli-Bold.ttf', bold);
+@include fontface("muli_bolditalic", '/css/fonts/Muli-BoldItalic.ttf', normal);
+
+
 html{
     width: 100%;
     height: 100%;

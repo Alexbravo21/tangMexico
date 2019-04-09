@@ -52,7 +52,20 @@
             .receta_home{
                 position: relative;
                 .receta_home_nombre{
-                    @include medio(absolute, 0, 0, -50%, -50%);
+                    @include medio(absolute, 0, 0, 0%, 0%);
+                    font-family: 'muli';
+                    color: color(naranjada-texto);
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 1.8rem;
+                    text-align: right;
+                    text-transform: uppercase;
+                    span{
+                        font-family: 'muli_bolditalic';
+                        color: color(blanco);
+                        font-size: 2rem;
+                        padding-right: 5px;
+                    }
                 }
                 .receta_home_img{
                     max-width: 90%;
