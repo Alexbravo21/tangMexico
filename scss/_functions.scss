@@ -1,10 +1,13 @@
-$site_url: '/tang';
+$site_url: '/tang/';
 $colors: (
     primary: slateblue,
     naranja-mango: #f5a10f,
     naranjada-texto: #d87013,
     blanco: #fff,
-    negro: #000000
+    negro: #000000,
+    verde-tang: #008445,
+    fondo-gris: #dddcdc,
+    form-input: #969696
 );
 @mixin fontface($name, $src, $weight){
   @font-face{
@@ -18,14 +21,20 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
-@mixin fondos($url){
-    @include bg-image($url);
+@mixin fondos($url, $size){
+    @include bg-image($url, $size);
     width: 100%;
     height: 100%;
     padding-top: 90px;
     @include med-query($medium){
         padding-top: 0;
     }
+}
+@mixin bg-image($url, $size) {
+    background-image: url($site_url + $url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $size;
 }
 
 
@@ -65,17 +74,28 @@ $small: 576px;
     }
 }
 
-@mixin bg-image($url) {
-    background-image: url($url);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 @mixin responsive-box($height){
     position: relative;
     &:before{
-      content: '';
-      display: block;
-      padding-top: $height;
+        content: '';
+        display: block;
+        padding-top: $height;
     }
-  }
+}
+@mixin placeholder-style($color, $font){
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $color;
+        opacity: 1; /* Firefox */
+        font-family: $font;
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $color;
+        font-family: $font;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $color;
+        font-family: $font;
+    }
+}

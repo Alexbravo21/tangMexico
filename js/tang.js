@@ -5,6 +5,7 @@ $(document).ready(function () {
 var app = {
     init: function(){
         this.menu();
+        this.pruebas();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -13,5 +14,8 @@ var app = {
             console.log(hamburger);
             $(hamburger).toggleClass("is-active");
         });
+    },
+    pruebas: function(){
+        //alert($(window).height());
     }
 }

@@ -1,3 +1,9 @@
+<?php 
+    $seccion = $_SERVER['REQUEST_URI'];
+    $contacto = strpos($seccion, 'contacto') !== false ? 'logo_2' : 'logo' ;
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,4 +22,4 @@
             </div>
         </div>
     </div>
-    <img src="img/logo.png" alt="" class="logo">
+    <img src="img/logo.png" alt="" class="<?=$contacto ?>">

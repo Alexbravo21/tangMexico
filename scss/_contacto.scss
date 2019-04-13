@@ -1,0 +1,41 @@
+.contacto_texto{
+    color: color(verde-tang);
+    font-size: 1rem;
+    text-align: center;
+    width: 600px;
+    max-width: 90%;
+    margin: 0 auto 15px;
+    @include med-query($medium){
+        font-size: 1.2rem;
+    }
+}
+#form_contacto{
+    @include placeholder-style(color(form-input), 'muli');
+    width: 400px;
+    max-width: 85%;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+    @include med-query($medium){
+        padding-top: 25px;
+    }
+    .form-control{
+        padding: 15px 10px;
+        color: color(form-input);
+        text-align: center;
+        border: none;
+        border-radius: 0;
+    }
+    .enviar_contacto{
+        @include bg-image('img/boton_textura.png', cover);
+        width: 220px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: color(blanco);
+        border: none;
+        border-radius: 100px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+}

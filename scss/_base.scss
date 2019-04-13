@@ -47,10 +47,13 @@
 }
 
 .hamburger-box {
-  width: $hamburger-layer-width;
+  width: $hamburger-layer-width-small;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
   position: relative;
+  @include med-query($small){
+    width: $hamburger-layer-width;
+  }
 }
 
 .hamburger-inner {
@@ -61,7 +64,10 @@
   &,
   &::before,
   &::after {
-    width: $hamburger-layer-width;
+    width: $hamburger-layer-width-small;
+    @include med-query($small){
+      width: $hamburger-layer-width;
+    }
     height: $hamburger-layer-height;
     background-color: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;

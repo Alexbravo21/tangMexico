@@ -13,17 +13,25 @@ html{
     width: 100%;
     height: 100%;
     overflow: hidden;
-}
-body{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: 'muli';
+    }
 }
 .fondo_madera{
-    @include fondos('../img/back_madera.jpg'); 
+    @include fondos('img/back_madera.jpg', cover); 
 }
 .fondo_claro{
-    @include fondos('../img/back_claro.jpg'); 
+    background-color: #dddcdc;
+}
+.fondo_claro_int{
+    @include fondos('img/back_claro.png', 200% 100%); 
+    padding-top: 30px;
+    @include med-query($medium){
+        @include fondos('img/back_claro.png', 100% 100%); 
+    }
 }
 .hamburger_cont{
     position: fixed;
@@ -31,10 +39,14 @@ body{
     left: 20px;
     background-color: #fff;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     z-index: 100;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+    @include med-query($small){
+        width: 50px;
+        height: 50px;
+    }
 }
 .logo{
     width: 70px;
@@ -45,11 +57,26 @@ body{
         width: 100px;
     }
 }
+.logo_2{
+    width: 70px;
+    max-width: 40%;
+    @include medio(absolute, 20px, 50%, -50%, 0);
+    z-index: 100;
+    @include med-query($medium){
+        width: 100px;
+    }
+}
 .promo{
-    @include medio(fixed, 100%, 50%, -50%, -100%);
+    @include medio(relative, 100%, 50%, -50%, -100%);
     width: 400px;
     max-width: 80%;
     @include med-query($medium){
         @include medio(fixed, 100%, 100%, -100%, -100%);
+    }
+}
+.secion_logo_medio{
+    padding-top: 90px;
+    @include med-query($medium){
+        padding-top: 120px;
     }
 }

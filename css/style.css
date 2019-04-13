@@ -135,6 +135,103 @@
   }
 }
 
+.contacto_texto {
+  color: #008445;
+  font-size: 1rem;
+  text-align: center;
+  width: 600px;
+  max-width: 90%;
+  margin: 0 auto 15px;
+}
+
+@media (min-width: 768px) {
+  .contacto_texto {
+    font-size: 1.2rem;
+  }
+}
+
+#form_contacto {
+  width: 400px;
+  max-width: 85%;
+  padding-top: 5px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#form_contacto ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #969696;
+  opacity: 1;
+  /* Firefox */
+  font-family: "muli";
+}
+
+#form_contacto :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #969696;
+  opacity: 1;
+  /* Firefox */
+  font-family: "muli";
+}
+
+#form_contacto ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #969696;
+  opacity: 1;
+  /* Firefox */
+  font-family: "muli";
+}
+
+#form_contacto ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #969696;
+  opacity: 1;
+  /* Firefox */
+  font-family: "muli";
+}
+
+#form_contacto :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #969696;
+  font-family: "muli";
+}
+
+#form_contacto ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #969696;
+  font-family: "muli";
+}
+
+@media (min-width: 768px) {
+  #form_contacto {
+    padding-top: 25px;
+  }
+}
+
+#form_contacto .form-control {
+  padding: 15px 10px;
+  color: #969696;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+}
+
+#form_contacto .enviar_contacto {
+  background-image: url("/tang/img/boton_textura.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 220px;
+  height: 50px;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -182,10 +279,16 @@
 }
 
 .hamburger-box {
-  width: 30px;
+  width: 20px;
   height: 21px;
   display: inline-block;
   position: relative;
+}
+
+@media (min-width: 576px) {
+  .hamburger-box {
+    width: 30px;
+  }
 }
 
 .hamburger-inner {
@@ -195,7 +298,7 @@
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 30px;
+  width: 20px;
   height: 3px;
   background-color: #000;
   border-radius: 4px;
@@ -208,6 +311,12 @@
           transition-duration: 0.15s;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
+}
+
+@media (min-width: 576px) {
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 30px;
+  }
 }
 
 .hamburger-inner::before, .hamburger-inner::after {
@@ -321,19 +430,19 @@
 
 @font-face {
   font-family: "muli";
-  src: url("/tang/css/fonts/Muli-Regular.ttf");
+  src: url("/tang//css/fonts/Muli-Regular.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tang/css/fonts/Muli-Bold.ttf");
+  src: url("/tang//css/fonts/Muli-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "muli_bolditalic";
-  src: url("/tang/css/fonts/Muli-BoldItalic.ttf");
+  src: url("/tang//css/fonts/Muli-BoldItalic.ttf");
   font-weight: normal;
 }
 
@@ -343,14 +452,15 @@ html {
   overflow: hidden;
 }
 
-body {
+html body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  font-family: 'muli';
 }
 
 .fondo_madera {
-  background-image: url("../img/back_madera.jpg");
+  background-image: url("/tang/img/back_madera.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -366,17 +476,40 @@ body {
 }
 
 .fondo_claro {
-  background-image: url("../img/back_claro.jpg");
+  background-color: #dddcdc;
+}
+
+.fondo_claro_int {
+  background-image: url("/tang/img/back_claro.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 200% 100%;
   width: 100%;
   height: 100%;
   padding-top: 90px;
+  padding-top: 30px;
 }
 
 @media (min-width: 768px) {
-  .fondo_claro {
+  .fondo_claro_int {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .fondo_claro_int {
+    background-image: url("/tang/img/back_claro.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .fondo_claro_int {
     padding-top: 0;
   }
 }
@@ -387,11 +520,18 @@ body {
   left: 20px;
   background-color: #fff;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   z-index: 100;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 576px) {
+  .hamburger_cont {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .logo {
@@ -411,8 +551,25 @@ body {
   }
 }
 
+.logo_2 {
+  width: 70px;
+  max-width: 40%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .logo_2 {
+    width: 100px;
+  }
+}
+
 .promo {
-  position: fixed;
+  position: relative;
   top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -100%);
@@ -428,6 +585,16 @@ body {
     left: 100%;
     -webkit-transform: translate(-100%, -100%);
             transform: translate(-100%, -100%);
+  }
+}
+
+.secion_logo_medio {
+  padding-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .secion_logo_medio {
+    padding-top: 120px;
   }
 }
 /*# sourceMappingURL=style.css.map */
