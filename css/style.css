@@ -365,6 +365,22 @@ body {
   }
 }
 
+.fondo_claro {
+  background-image: url("../img/back_claro.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+}
+
+@media (min-width: 768px) {
+  .fondo_claro {
+    padding-top: 0;
+  }
+}
+
 .hamburger_cont {
   position: fixed;
   top: 20px;

@@ -2,7 +2,7 @@
 
 <div class="fondo_madera">
     <div class="izquierdo">
-        <img src="img/sobres/naranjadamix.png" alt="Naranjada Mix" class="sobre">
+        <img src="img/sobres/naranjadamix.jpg" alt="Naranjada Mix" class="sobre">
     </div><!--
     --><div class="derecho">
         <div class="plasta_circular">

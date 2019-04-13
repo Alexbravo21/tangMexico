@@ -1,5 +1,6 @@
 @import '_functions.scss';
 @import '_home.scss';
+@import '_contacto.scss';
 @import '_hamburgers.scss';
 
 
@@ -19,13 +20,10 @@ body{
     overflow: hidden;
 }
 .fondo_madera{
-    @include bg-image('../img/back_madera.jpg');
-    width: 100%;
-    height: 100%;
-    padding-top: 90px;
-    @include med-query($medium){
-        padding-top: 0;
-    }
+    @include fondos('../img/back_madera.jpg'); 
+}
+.fondo_claro{
+    @include fondos('../img/back_claro.jpg'); 
 }
 .hamburger_cont{
     position: fixed;
