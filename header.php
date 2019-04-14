@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="<?=$site_url?>css/style.css">
     <title>Tang México</title>
 </head>
-<body>
+<body class="<?=$overflow?>">
     <div class="hamburger_cont">
         <div class="hamburger hamburger--spin js-hamburger">
             <div class="hamburger-box">

@@ -154,7 +154,6 @@
   width: 400px;
   max-width: 85%;
   padding-top: 5px;
-  padding-bottom: 100px;
   margin: 0 auto;
   text-align: center;
 }
@@ -225,7 +224,7 @@
   width: 220px;
   height: 50px;
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 1rem 0 0;
   color: #fff;
   border: none;
   border-radius: 100px;
@@ -449,27 +448,48 @@
 html {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 html.over_hidden {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 html.over_visible {
-  overflow: hidden;
+  overflow-y: visible;
 }
 
 @media (min-width: 576px) {
   html.over_visible {
-    overflow: visible;
+    overflow-y: hidden;
   }
 }
 
 html body {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100%;
   font-family: 'muli';
+  overflow-x: hidden;
+}
+
+html body.over_hidden {
+  overflow-y: hidden;
+  min-height: 0;
+  height: 100%;
+}
+
+html body.over_visible {
+  overflow-y: visible;
+}
+
+@media (min-width: 576px) {
+  html body {
+    min-height: 0;
+    height: 100%;
+  }
+  html body.over_visible {
+    overflow-y: hidden;
+  }
 }
 
 .fondo_madera {
@@ -501,6 +521,7 @@ html body {
   height: 100%;
   padding-top: 90px;
   padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 @media (min-width: 768px) {
@@ -518,6 +539,7 @@ html body {
     width: 100%;
     height: 100%;
     padding-top: 90px;
+    padding-bottom: 0;
   }
 }
 
@@ -528,7 +550,7 @@ html body {
 }
 
 .hamburger_cont {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   background-color: #fff;
@@ -582,7 +604,7 @@ html body {
 }
 
 .promo {
-  position: relative;
+  position: fixed;
   top: 100%;
   left: 50%;
   -webkit-transform: translate(-50%, -100%);
