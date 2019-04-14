@@ -21,11 +21,6 @@ html{
     &.over_visible{
         overflow-y: visible;
     }
-    // @include med-query($small){
-    //     &.over_visible{
-    //         overflow-y: hidden;
-    //     }
-    // }
     body{
         width: 100%;
         min-height: 100%;
@@ -41,11 +36,10 @@ html{
             overflow-y: visible;
         }
         @include med-query($medium){
-            min-height: 0;
-            height: 100%;
-            // &.over_visible{
-            //     overflow-y: hidden;
-            // }
+            &.over_hidden{
+                min-height: 0;
+                height: 100%;
+            }
         }
     }
 }
