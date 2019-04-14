@@ -8,7 +8,7 @@
 
 @media (min-width: 770px) {
   .izquierdo {
-    width: 45%;
+    width: 40%;
     height: 100%;
   }
 }
@@ -40,24 +40,25 @@
 }
 
 .derecho {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  height: 60%;
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
 }
 
 @media (min-width: 770px) {
   .derecho {
-    width: 55%;
+    width: 60%;
     height: 100%;
   }
 }
 
 .derecho .plasta_circular {
-  width: 300%;
+  width: 250%;
   position: relative;
-  top: 0;
+  top: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -76,12 +77,12 @@
 
 @media (min-width: 770px) {
   .derecho .plasta_circular {
-    width: 200%;
+    width: 170%;
     position: relative;
     top: 50%;
-    left: 100%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: 10%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     -webkit-box-shadow: 0px 0px 32px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 32px -4px rgba(0, 0, 0, 0.75);
   }
@@ -601,41 +602,24 @@
 }
 
 html {
-  width: 100%;
   height: 100%;
-  overflow-x: hidden;
-}
-
-html.over_hidden {
-  overflow-y: hidden;
-}
-
-html.over_visible {
-  overflow-y: visible;
-}
-
-html body {
-  width: 100%;
-  min-height: 100%;
-  font-family: 'muli';
-  overflow-x: hidden;
-  background-color: #f0f0f0;
-}
-
-html body.over_hidden {
-  overflow-y: hidden;
-  min-height: 0;
-  height: 100%;
-}
-
-html body.over_visible {
-  overflow-y: visible;
 }
 
 @media (min-width: 770px) {
-  html body.over_hidden {
-    min-height: 0;
-    height: 100%;
+  html {
+    height: 100vh;
+  }
+}
+
+html body {
+  height: 100%;
+  font-family: 'muli';
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 770px) {
+  html body {
+    height: 100vh;
   }
 }
 
@@ -647,11 +631,41 @@ html body.over_visible {
   width: 100%;
   height: 100%;
   padding-top: 90px;
+  height: 100%;
 }
 
 @media (min-width: 770px) {
   .fondo_madera {
     padding-top: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .fondo_madera {
+    height: 100vh;
+  }
+}
+
+.fondo_madera_2 {
+  background-image: url("/tang/img/back_madera_2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 90px;
+  height: 100%;
+}
+
+@media (min-width: 770px) {
+  .fondo_madera_2 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .fondo_madera_2 {
+    height: 100vh;
   }
 }
 
@@ -714,6 +728,14 @@ html body.over_visible {
     top: 30%;
     height: 70%;
   }
+}
+
+.receta_interior_cont {
+  background-size: auto auto;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 .hamburger_cont {

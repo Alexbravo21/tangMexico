@@ -4,7 +4,7 @@
     //Este pequeño script detecta la url para saber si estás en una sección en la que el logo va al centro.
     $logo = strrpos($uri, 'contacto') !== false ? 'logo_2' : 'logo' ;
     //Agregar a este array las secciones que se sumen al sitio web en el futuro
-    $secciones = ['recetas', 'sobres'];
+    $secciones = ['recetas', 'sabores'];
     foreach($secciones as $seccion){
         if(strrpos($uri, $seccion) !== false){
             $pos = strrpos($uri, '/');

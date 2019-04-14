@@ -12,39 +12,55 @@
 
 
 html{
-    width: 100%;
+    // width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    &.over_hidden{
-        overflow-y: hidden;
+    @include med-query($medium){
+            height: 100vh;
     }
-    &.over_visible{
-        overflow-y: visible;
-    }
+    // overflow-x: hidden;
+    // &.over_hidden{
+    //     overflow-y: hidden;
+    // }
+    // &.over_visible{
+    //     overflow-y: visible;
+    // }
     body{
-        width: 100%;
-        min-height: 100%;
+        // width: 100%;
+        // min-height: 100%;
+        height: 100%;
         font-family: 'muli';
-        overflow-x: hidden;
+        //overflow-x: hidden;
         background-color: #f0f0f0;
-        &.over_hidden{
-            overflow-y: hidden;
-            min-height: 0;
-            height: 100%;
-        }
-        &.over_visible{
-            overflow-y: visible;
-        }
+        // &.over_hidden{
+        //     overflow-y: hidden;
+        //     min-height: 0;
+        //     height: 100%;
+        // }
+        // &.over_visible{
+        //     overflow-y: visible;
+        // }
         @include med-query($medium){
-            &.over_hidden{
-                min-height: 0;
-                height: 100%;
-            }
+                height: 100vh;
+        //     &.over_hidden{
+        //         min-height: 0;
+        //         height: 100%;
+        //     }
         }
     }
 }
 .fondo_madera{
     @include fondos('img/back_madera.jpg', cover); 
+    height: 100%;
+    @include med-query($medium){
+        height: 100vh;
+    }
+}
+.fondo_madera_2{
+    @include fondos('img/back_madera_2.jpg', cover); 
+    height: 100%;
+    @include med-query($medium){
+        height: 100vh;
+    }
 }
 .fondo_claro{
     background-color: #dddcdc;
@@ -77,6 +93,13 @@ html{
             height: 70%;
         }
     }
+}
+.receta_interior_cont{
+    background-size: auto auto;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 .hamburger_cont{
     position: absolute;
