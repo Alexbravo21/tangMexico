@@ -12,7 +12,17 @@
 html{
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    &.over_hidden{
+        overflow: hidden;
+    }
+    &.over_visible{
+        overflow: hidden;
+    }
+    @include med-query($small){
+        &.over_visible{
+            overflow: visible;
+        }
+    }
     body{
         width: 100%;
         height: 100%;

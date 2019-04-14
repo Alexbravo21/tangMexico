@@ -449,7 +449,20 @@
 html {
   width: 100%;
   height: 100%;
+}
+
+html.over_hidden {
   overflow: hidden;
+}
+
+html.over_visible {
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  html.over_visible {
+    overflow: visible;
+  }
 }
 
 html body {
