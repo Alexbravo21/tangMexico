@@ -16,6 +16,7 @@
     padding-top: 5px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
     @include med-query($small){
         padding-top: 25px;
     }

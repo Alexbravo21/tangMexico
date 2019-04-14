@@ -6,6 +6,7 @@
             Lorem ipsum dolor sit amet consectetur adipiscing elit nascetur aliquet aenean, nisi interdum placerat eget sociosqu ornare mollis mauris.
         </p>
         <div class="fondo_claro_int">
+            <div class="back_color"></div>
             <form action="" id="form_contacto">
                 <div class="form-group">
                     <input type="text" placeholder="NOMBRE" class="form-control">

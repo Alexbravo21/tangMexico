@@ -1,8 +1,9 @@
-@import '_functions.scss';
-@import '_home.scss';
-@import '_contacto.scss';
-@import '_recetas.scss';
-@import '_hamburgers.scss';
+@import '_functions';
+@import '_home';
+@import '_contacto';
+@import '_recetas';
+@import '_sobres';
+@import '_hamburgers';
 
 
 @include fontface("muli", '/css/fonts/Muli-Regular.ttf', normal);
@@ -20,16 +21,17 @@ html{
     &.over_visible{
         overflow-y: visible;
     }
-    @include med-query($small){
-        &.over_visible{
-            overflow-y: hidden;
-        }
-    }
+    // @include med-query($small){
+    //     &.over_visible{
+    //         overflow-y: hidden;
+    //     }
+    // }
     body{
         width: 100%;
         min-height: 100%;
         font-family: 'muli';
         overflow-x: hidden;
+        background-color: #f0f0f0;
         &.over_hidden{
             overflow-y: hidden;
             min-height: 0;
@@ -38,12 +40,12 @@ html{
         &.over_visible{
             overflow-y: visible;
         }
-        @include med-query($small){
+        @include med-query($medium){
             min-height: 0;
             height: 100%;
-            &.over_visible{
-                overflow-y: hidden;
-            }
+            // &.over_visible{
+            //     overflow-y: hidden;
+            // }
         }
     }
 }
@@ -54,16 +56,32 @@ html{
     background-color: #dddcdc;
 }
 .fondo_claro_int{
-    @include fondos('img/back_claro.png', 200% 100%); 
+    position: relative;
+    @include fondos('img/back_claro.png', 150% auto); 
+    background-position: top center;
     padding-top: 30px;
     padding-bottom: 80px;
     @include med-query($small){
-        padding-top: 100px;
-        padding-bottom: 300px;
+        //padding-top: 100px;
+        //padding-bottom: 300px;
     }
     @include med-query($medium){
         padding-top: 0;
-        @include fondos('img/back_claro.png', 115% 100%); 
+        @include fondos('img/back_claro.png', 130% auto); 
+        background-position: top center;
+    }
+    .back_color{
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 30px);
+        z-index: 0;
+        @include med-query($small){
+            top: 30%;
+            height: 70%;
+        }
     }
 }
 .hamburger_cont{
