@@ -5,7 +5,7 @@
     width: 600px;
     max-width: 90%;
     margin: 0 auto 15px;
-    @include med-query($medium){
+    @include med-query($small){
         font-size: 1.2rem;
     }
 }
@@ -16,7 +16,7 @@
     padding-top: 5px;
     margin: 0 auto;
     text-align: center;
-    @include med-query($medium){
+    @include med-query($small){
         padding-top: 25px;
     }
     .form-control{
@@ -25,6 +25,19 @@
         text-align: center;
         border: none;
         border-radius: 0;
+        &#comentario{
+            height: 80px;
+        }
+        @include med-query($small){
+            &#comentario{
+                height: 300px;
+            }
+        }
+        @include med-query($medium){
+            &#comentario{
+                height: 150px;
+            }
+        }
     }
     .enviar_contacto{
         @include bg-image('img/boton_textura.png', cover);

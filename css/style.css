@@ -206,7 +206,7 @@
   margin: 0 auto 15px;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 576px) {
   .contacto_texto {
     font-size: 1.2rem;
   }
@@ -264,7 +264,7 @@
   font-family: "muli";
 }
 
-@media (min-width: 770px) {
+@media (min-width: 576px) {
   #form_contacto {
     padding-top: 25px;
   }
@@ -276,6 +276,22 @@
   text-align: center;
   border: none;
   border-radius: 0;
+}
+
+#form_contacto .form-control#comentario {
+  height: 80px;
+}
+
+@media (min-width: 576px) {
+  #form_contacto .form-control#comentario {
+    height: 300px;
+  }
+}
+
+@media (min-width: 770px) {
+  #form_contacto .form-control#comentario {
+    height: 150px;
+  }
 }
 
 #form_contacto .enviar_contacto {
@@ -592,16 +608,23 @@ html body.over_visible {
   }
 }
 
+@media (min-width: 576px) {
+  .fondo_claro_int {
+    padding-top: 100px;
+    padding-bottom: 300px;
+  }
+}
+
 @media (min-width: 770px) {
   .fondo_claro_int {
+    padding-top: 0;
     background-image: url("/tang/img/back_claro.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 115% 100%;
     width: 100%;
     height: 100%;
     padding-top: 90px;
-    padding-bottom: 0;
   }
 }
 
