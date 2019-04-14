@@ -1,0 +1,23 @@
+.recetas_cont{
+    width: 700px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    .botones_recetas{
+        margin-bottom: 20px;
+        .enviar_contacto{
+            @include bg-image('img/boton_textura.png', cover);
+            @include boton-madera(180px, 40px, 1.2rem, 1rem 10px 0);
+        }
+    }
+    .recetas_thumbs_cont{
+        .receta_thumb_cont{
+            margin: 15px 0;
+            @include prefix(box-shadow, 2px 4px 10px 0px rgba(0, 0, 0, 0.65), webkit moz);
+            .receta_thumb{
+                width: 100%;
+            }
+        }
+    }
+}

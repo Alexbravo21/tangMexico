@@ -309,6 +309,43 @@
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+.recetas_cont {
+  width: 700px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.recetas_cont .botones_recetas {
+  margin-bottom: 20px;
+}
+
+.recetas_cont .botones_recetas .enviar_contacto {
+  background-image: url("/tang/img/boton_textura.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 180px;
+  height: 40px;
+  font-size: 1.2rem;
+  margin: 1rem 10px 0;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.recetas_cont .recetas_thumbs_cont .receta_thumb_cont {
+  margin: 15px 0;
+  -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
+  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+.recetas_cont .recetas_thumbs_cont .receta_thumb_cont .receta_thumb {
+  width: 100%;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

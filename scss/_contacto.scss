@@ -41,13 +41,6 @@
     }
     .enviar_contacto{
         @include bg-image('img/boton_textura.png', cover);
-        width: 220px;
-        height: 50px;
-        font-size: 1.5rem;
-        margin: 1rem 0 0;
-        color: color(blanco);
-        border: none;
-        border-radius: 100px;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+        @include boton-madera(220px, 50px, 1.5rem, 1rem 0 0);
     }
 }
