@@ -6,7 +6,7 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .izquierdo {
     width: 45%;
     height: 100%;
@@ -27,7 +27,7 @@
   box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .izquierdo .sobre {
     position: absolute;
     top: 50%;
@@ -47,7 +47,7 @@
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .derecho {
     width: 55%;
     height: 100%;
@@ -74,7 +74,7 @@
   padding-top: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .derecho .plasta_circular {
     width: 200%;
     position: relative;
@@ -89,11 +89,55 @@
 
 .derecho .plasta_circular .receta_home_cont {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  width: 40%;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 150px;
+}
+
+@media (min-width: 360px) and (max-width: 576px) and (min-height: 530px) {
+  .derecho .plasta_circular .receta_home_cont {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 180px;
+  }
+}
+
+@media (min-width: 365px) {
+  .derecho .plasta_circular .receta_home_cont {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 250px;
+  }
+}
+
+@media (min-width: 576px) {
+  .derecho .plasta_circular .receta_home_cont {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 380px;
+  }
+}
+
+@media (min-width: 992px) {
+  .derecho .plasta_circular .receta_home_cont {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 40%;
+  }
 }
 
 .derecho .plasta_circular .receta_home_cont .receta_home {
@@ -102,24 +146,42 @@
 
 .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
+  -webkit-transform: translate(-70%, 0%);
+          transform: translate(-70%, 0%);
   font-family: 'muli';
   color: #d87013;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: bold;
-  line-height: 1.8rem;
+  line-height: 1rem;
   text-align: right;
   text-transform: uppercase;
+}
+
+@media (min-width: 770px) {
+  .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
 
 .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre span {
   font-family: 'muli_bolditalic';
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding-right: 5px;
+}
+
+@media (min-width: 770px) {
+  .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre span {
+    font-size: 2rem;
+  }
 }
 
 .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_img {
@@ -129,7 +191,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_img {
     max-height: 400px;
   }
@@ -144,7 +206,7 @@
   margin: 0 auto 15px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .contacto_texto {
     font-size: 1.2rem;
   }
@@ -202,7 +264,7 @@
   font-family: "muli";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   #form_contacto {
     padding-top: 25px;
   }
@@ -502,7 +564,7 @@ html body.over_visible {
   padding-top: 90px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .fondo_madera {
     padding-top: 0;
   }
@@ -524,13 +586,13 @@ html body.over_visible {
   padding-bottom: 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .fondo_claro_int {
     padding-top: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .fondo_claro_int {
     background-image: url("/tang/img/back_claro.png");
     background-position: center center;
@@ -543,7 +605,7 @@ html body.over_visible {
   }
 }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 770px) and (min-width: 770px) {
   .fondo_claro_int {
     padding-top: 0;
   }
@@ -580,7 +642,7 @@ html body.over_visible {
   z-index: 100;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .logo {
     width: 100px;
   }
@@ -597,7 +659,7 @@ html body.over_visible {
   z-index: 100;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .logo_2 {
     width: 100px;
   }
@@ -613,7 +675,7 @@ html body.over_visible {
   max-width: 80%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .promo {
     position: fixed;
     top: 100%;
@@ -627,7 +689,7 @@ html body.over_visible {
   padding-top: 90px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .secion_logo_medio {
     padding-top: 120px;
   }

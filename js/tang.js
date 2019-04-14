@@ -16,6 +16,7 @@ var app = {
         });
     },
     pruebas: function(){
-        //alert($(window).height());
+        //alert("Width: "+$(window).width());
+        //alert("Height: "+$(window).height());
     }
 }

@@ -44,24 +44,48 @@
             @include prefix(box-shadow, 0px 0px 32px -4px rgba(0,0,0,0.75), webkit moz);
         }
         .receta_home_cont{
-            @include medio(absolute, 50%, 5%, 0, -50%);
-            width: 40%;
+            @include medio(absolute, 10px, 50%, -50%, 0);
+            width: 150px;
+            @include med-query-height(){
+                @include medio(absolute, 20px, 50%, -50%, 0);
+                width: 180px;
+            }
+            @include med-query($petit){
+                @include medio(absolute, 30px, 50%, -50%, 0);
+                width: 250px;
+            }
+            @include med-query($small){
+                @include medio(absolute, 30px, 50%, -50%, 0);
+                width: 380px;
+            }
+            @include med-query($large){
+                @include medio(absolute, 50%, 5%, 0, -50%);
+                width: 40%;
+            }
             .receta_home{
                 position: relative;
                 .receta_home_nombre{
-                    @include medio(absolute, 0, 0, 0%, 0%);
+                    @include medio(absolute, 20px, 0, -70%, 0%);
                     font-family: 'muli';
                     color: color(naranjada-texto);
-                    font-size: 1.8rem;
+                    font-size: 1rem;
                     font-weight: bold;
-                    line-height: 1.8rem;
+                    line-height: 1rem;
                     text-align: right;
                     text-transform: uppercase;
+                    @include med-query($medium){
+                        @include medio(absolute, 0, 0, 0%, 0%);
+                        font-size: 1.8rem;
+                        line-height: 1.8rem;
+                    }
                     span{
                         font-family: 'muli_bolditalic';
                         color: color(blanco);
-                        font-size: 2rem;
+                        font-size: 1.2rem;
                         padding-right: 5px;
+                        @include med-query($medium){
+                            font-size: 2rem;
+                        }
                     }
                 }
                 .receta_home_img{

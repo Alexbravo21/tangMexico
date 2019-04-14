@@ -65,11 +65,18 @@ $padding: 15px;
 
 $xl: 1200px;
 $large: 992px;
-$medium: 768px;
+$medium: 770px;
 $small: 576px;
+$petit: 365px;
 
-@mixin med-query($size){
-    @media (min-width: $size){
+
+@mixin med-query($width){
+    @media (min-width: $width){
+        @content;
+    }
+}
+@mixin med-query-height(){
+    @media (min-width: '360px') and (max-width: $small) and (min-height: '530px'){
         @content;
     }
 }
