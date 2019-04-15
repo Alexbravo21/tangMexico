@@ -26,9 +26,12 @@
     @include medio(absolute, 30px, 50%, -50%, 0);
     z-index: 10;
     width: 90%;
-    height: 80%;
+    height: 65%;
     overflow: auto;
     margin-top: 20px;
+    @include med-query($petit){
+        height: 80%;
+    }
     @include med-query($medium){
         width: 350px;
         @include medio(absolute, 30px, 80%, -100%, 0);
