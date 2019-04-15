@@ -9,11 +9,12 @@ $colors: (
     fondo-gris: #dddcdc,
     form-input: #969696
 );
-@mixin fontface($name, $src, $weight){
+@mixin fontface($name, $src, $weight, $style){
   @font-face{
       font-family: $name;
       src: url($site_url + $src);
       font-weight: $weight;
+      font-style: $style;
   }
 }
 

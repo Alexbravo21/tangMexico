@@ -22,3 +22,106 @@
         }
     }
 }
+.receta_interior_texto{
+    @include medio(absolute, 30px, 50%, -50%, 0);
+    z-index: 10;
+    width: 90%;
+    height: 80%;
+    overflow: auto;
+    margin-top: 20px;
+    @include med-query($medium){
+        width: 350px;
+        @include medio(absolute, 30px, 80%, -100%, 0);
+    }
+    .receta_interior_titulo{
+        color: color(naranjada-texto);
+        font-family: 'muli';
+        font-weight: bold;
+        font-style: italic;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        width: 100%;
+        p{
+            text-align: center;
+            @include med-query($medium){
+                width: 70%;
+            }
+        }
+        span{
+            color: color(blanco);
+            font-weight: normal;
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+    .tiemporciones{
+        color: color(blanco);
+        font-size: .7rem;
+        line-height: .7rem;
+        margin: 20px auto 0;
+        width: 80%;
+        text-align: center;
+        @include med-query($medium){
+            width: 80%;
+            margin: 20px 0 0;
+            text-align: left;
+        }
+        .minutos, .porciones{
+            display: inline-block;
+            width: 50%;
+            .textbox{
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 3px;
+                text-align: left;
+            }
+        }
+        .minutos_num, .porciones_num{
+            color: color(naranjada-texto);
+            font-size: 1.1rem;
+            line-height: 1.1rem;
+            font-weight: bold;
+            display: block;
+        }
+    }
+    .receta_interior_ingredientes{
+        color: color(naranjada-texto);
+        font-weight: bold;
+        font-size: .9rem;
+        width: 70%;
+        margin: 0 auto;
+        @include med-query($medium){
+            width: 100%;
+        }
+        .ingredientes_titulo{
+            font-size: 1.3rem;
+            margin: 10px 0 15px;
+        }
+        .ingredientes_lista{
+            list-style-type: none;
+            padding-left: 0;
+            width: 80%;
+        }
+    }
+    .receta_interior_preparacion{
+        color: color(blanco);
+        width: 70%;
+        margin: 0 auto;
+        @include med-query($medium){
+            width: 100%;
+        }
+        .preparacion_titulo{
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .preparacion_lista{
+            list-style-type: none;
+            padding-left: 0;
+            font-size: .9rem;
+            span{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
