@@ -10,6 +10,7 @@
 @include fontface("muli", '/css/fonts/Muli-Bold.ttf', bold, normal);
 @include fontface("muli", '/css/fonts/Muli-Italic.ttf', normal, italic);
 @include fontface("muli", '/css/fonts/Muli-BoldItalic.ttf', bold, italic);
+@include fontface("muliBlackItalic", '/css/fonts/Muli-BlackItalic.ttf', bolder, italic);
 
 
 html{
@@ -58,9 +59,16 @@ html{
 }
 .fondo_madera_2{
     @include fondos('img/back_madera_2.jpg', cover); 
+    padding-top: 30px;
     height: 100%;
     @include med-query($medium){
         height: 100vh;
+    }
+    .sobre{
+        top: 20px;
+        @include med-query($medium){
+            top: 50%;
+        }
     }
 }
 .fondo_claro{

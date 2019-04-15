@@ -22,75 +22,119 @@
         }
     }
 }
-.sabor_interior_texto{
+.sabor_interior_cont{
     @include medio(absolute, 30px, 50%, -50%, 0);
-    z-index: 10;
+    overflow: hidden;
     width: 90%;
     height: 65%;
-    overflow: auto;
-    margin-top: 20px;
-    color: color(blanco);
-    text-align: center;
+    z-index: 10;
+    padding-top: 20px;
     @include med-query($petit){
-        height: 70%;
+        height: 80%;
+        padding-top: 50px;
     }
     @include med-query($medium){
         width: 70%;
         @include medio(absolute, 30px, 90%, -100%, 0);
+        padding-top: 0;
     }
-    .sabor_interior_titulo{
+    .sabor_interior_texto{
+        overflow: auto;
+        padding-right: 20px;
+        box-sizing: content-box;
         color: color(blanco);
-        font-family: 'muli';
-        font-size: 1.5rem;
-        line-height: 1.5rem;
+        text-align: center;
         width: 100%;
-        p{
-            text-align: center;
-            @include med-query($medium){
-                width: 85%;
+        height: 100%;
+        .sabor_interior_titulo{
+            color: color(blanco);
+            font-weight: bold;
+            font-size: 1.3rem;
+            line-height: 1.8rem;
+            width: 100%;
+            span{
+                color: color(naranjada-texto);
+                font-family: 'muliBlackItalic';
+                font-size: 1.8rem;
+                display: block;
             }
         }
-        span{
-            color: color(naranjada-texto);
-            font-weight: bold;
-            font-style: italic;
-            font-size: 1.8rem;
-            display: block;
-        }
     }
-}
-.porciones_cont{
-    .porciones_tamanos, .porciones_envase{
-        display: inline-block;
-        vertical-align: middle;
-        width: 50%;
-        *{
+    .porciones_cont{
+        .porciones_tamanos, .porciones_envase{
             display: inline-block;
             vertical-align: middle;
-            text-align: left;
-        }
-        .textbox{
-            width: 80%;
-        }
-        .porciones_img_item{
-            width: 30px;
+            width: 50%;
+            .porciones_titulo{
+                font-size: .9rem;
+                margin: 5px 0;
+            }
+            .porciones_img{
+                width: 90%;
+                margin-left: 10%;
+                .porciones_img_item{
+                    width: 30px;
+                }
+                .textbox{
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: left;
+                    width: 80%;
+                    p{
+                        margin: 2px 0;
+                        font-size: .7rem;
+                        line-height: .7rem;
+                        display: block;
+                        &.porciones_envase_minitext{
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 35%;
+                            &:first-child{
+                                width: 5%
+                            }
+                        }
+                    }
+                }
+                
+            }
         }
     }
-}
-.info_nutri_cont{
-    .info_nutri_tabla{
-        width: 60%;
-        font-size: .8rem;
-        text-align: left;
-        margin: 0 auto;
-        p{
-            margin-bottom: 0;
-            padding: 2px 0;
-            .info_nutri_num{
-                text-align: right;
-                border-left: 2px solid color(blanco);
-                display: inline-block;
-                width: 15%;
+    .sabor_desc_titulo{
+        font-family: 'muliBlackItalic';
+        width: 65%;
+        margin: 20px auto;
+        font-size: 1.1em;
+        color: color(naranjada-texto);
+    }
+    .sabor_desc{
+        font-size: .9rem;
+    }
+    .info_nutri_cont{
+        .info_nutri_titulo{
+            font-weight: bold;
+            color: color(naranjada-texto);
+            font-size: .8rem;
+        }
+        .info_nutri_tabla{
+            width: 95%;
+            font-size: .8rem;
+            text-align: left;
+            margin: 0 auto;
+            @include med-query($small){
+                width: 60%;
+            }
+            p{
+                margin-bottom: 0;
+                .info_nutri_texto{
+                    display: inline-block;
+                    width: 70%;
+                }
+                .info_nutri_num{
+                    text-align: right;
+                    border-left: 2px solid color(blanco);
+                    display: inline-block;
+                    width: 30%;
+                }
             }
         }
     }

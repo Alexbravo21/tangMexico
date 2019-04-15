@@ -67,10 +67,10 @@
                 position: relative;
                 .receta_home_nombre{
                     @include medio(absolute, 20px, 0, -70%, 0%);
-                    font-family: 'muli';
                     color: color(naranjada-texto);
                     font-size: 1rem;
                     font-weight: bold;
+                    font-style: italic;
                     line-height: 1rem;
                     text-align: right;
                     text-transform: uppercase;
@@ -80,9 +80,7 @@
                         line-height: 1.8rem;
                     }
                     span{
-                        font-family: 'muli';
-                        font-weight: bold;
-                        font-style: italic;
+                        font-family: 'muliBlackItalic';
                         color: color(blanco);
                         font-size: 1.2rem;
                         padding-right: 5px;

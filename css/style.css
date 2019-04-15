@@ -151,10 +151,10 @@
   left: 0;
   -webkit-transform: translate(-70%, 0%);
           transform: translate(-70%, 0%);
-  font-family: 'muli';
   color: #d87013;
   font-size: 1rem;
   font-weight: bold;
+  font-style: italic;
   line-height: 1rem;
   text-align: right;
   text-transform: uppercase;
@@ -173,9 +173,7 @@
 }
 
 .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre span {
-  font-family: 'muli';
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'muliBlackItalic';
   color: #fff;
   font-size: 1.2rem;
   padding-right: 5px;
@@ -536,101 +534,153 @@
   width: 100%;
 }
 
-.sabor_interior_texto {
+.sabor_interior_cont {
   position: absolute;
   top: 30px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  z-index: 10;
+  overflow: hidden;
   width: 90%;
   height: 65%;
-  overflow: auto;
-  margin-top: 20px;
-  color: #fff;
-  text-align: center;
+  z-index: 10;
+  padding-top: 20px;
 }
 
 @media (min-width: 365px) {
-  .sabor_interior_texto {
-    height: 70%;
+  .sabor_interior_cont {
+    height: 80%;
+    padding-top: 50px;
   }
 }
 
 @media (min-width: 770px) {
-  .sabor_interior_texto {
+  .sabor_interior_cont {
     width: 70%;
     position: absolute;
     top: 30px;
     left: 90%;
     -webkit-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
+    padding-top: 0;
   }
 }
 
-.sabor_interior_texto .sabor_interior_titulo {
+.sabor_interior_cont .sabor_interior_texto {
+  overflow: auto;
+  padding-right: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   color: #fff;
-  font-family: 'muli';
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sabor_interior_cont .sabor_interior_texto .sabor_interior_titulo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
   width: 100%;
 }
 
-.sabor_interior_texto .sabor_interior_titulo p {
-  text-align: center;
-}
-
-@media (min-width: 770px) {
-  .sabor_interior_texto .sabor_interior_titulo p {
-    width: 85%;
-  }
-}
-
-.sabor_interior_texto .sabor_interior_titulo span {
+.sabor_interior_cont .sabor_interior_texto .sabor_interior_titulo span {
   color: #d87013;
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'muliBlackItalic';
   font-size: 1.8rem;
   display: block;
 }
 
-.porciones_cont .porciones_tamanos, .porciones_cont .porciones_envase {
+.sabor_interior_cont .porciones_cont .porciones_tamanos, .sabor_interior_cont .porciones_cont .porciones_envase {
   display: inline-block;
   vertical-align: middle;
   width: 50%;
 }
 
-.porciones_cont .porciones_tamanos *, .porciones_cont .porciones_envase * {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_titulo, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_titulo {
+  font-size: .9rem;
+  margin: 5px 0;
 }
 
-.porciones_cont .porciones_tamanos .textbox, .porciones_cont .porciones_envase .textbox {
-  width: 80%;
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img {
+  width: 90%;
+  margin-left: 10%;
 }
 
-.porciones_cont .porciones_tamanos .porciones_img_item, .porciones_cont .porciones_envase .porciones_img_item {
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .porciones_img_item, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .porciones_img_item {
   width: 30px;
 }
 
-.info_nutri_cont .info_nutri_tabla {
-  width: 60%;
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  width: 80%;
+}
+
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p {
+  margin: 2px 0;
+  font-size: .7rem;
+  line-height: .7rem;
+  display: block;
+}
+
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p.porciones_envase_minitext, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p.porciones_envase_minitext {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35%;
+}
+
+.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p.porciones_envase_minitext:first-child, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p.porciones_envase_minitext:first-child {
+  width: 5%;
+}
+
+.sabor_interior_cont .sabor_desc_titulo {
+  font-family: 'muliBlackItalic';
+  width: 65%;
+  margin: 20px auto;
+  font-size: 1.1em;
+  color: #d87013;
+}
+
+.sabor_interior_cont .sabor_desc {
+  font-size: .9rem;
+}
+
+.sabor_interior_cont .info_nutri_cont .info_nutri_titulo {
+  font-weight: bold;
+  color: #d87013;
+  font-size: .8rem;
+}
+
+.sabor_interior_cont .info_nutri_cont .info_nutri_tabla {
+  width: 95%;
   font-size: .8rem;
   text-align: left;
   margin: 0 auto;
 }
 
-.info_nutri_cont .info_nutri_tabla p {
-  margin-bottom: 0;
-  padding: 2px 0;
+@media (min-width: 576px) {
+  .sabor_interior_cont .info_nutri_cont .info_nutri_tabla {
+    width: 60%;
+  }
 }
 
-.info_nutri_cont .info_nutri_tabla p .info_nutri_num {
+.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p {
+  margin-bottom: 0;
+}
+
+.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p .info_nutri_texto {
+  display: inline-block;
+  width: 70%;
+}
+
+.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p .info_nutri_num {
   text-align: right;
   border-left: 2px solid #fff;
   display: inline-block;
-  width: 15%;
+  width: 30%;
 }
 
 /*!
@@ -857,6 +907,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "muliBlackItalic";
+  src: url("/tang//css/fonts/Muli-BlackItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
+}
+
 html {
   height: 100%;
 }
@@ -910,6 +967,7 @@ html body {
   width: 100%;
   height: 100%;
   padding-top: 90px;
+  padding-top: 30px;
   height: 100%;
 }
 
@@ -922,6 +980,16 @@ html body {
 @media (min-width: 770px) {
   .fondo_madera_2 {
     height: 100vh;
+  }
+}
+
+.fondo_madera_2 .sobre {
+  top: 20px;
+}
+
+@media (min-width: 770px) {
+  .fondo_madera_2 .sobre {
+    top: 50%;
   }
 }
 
