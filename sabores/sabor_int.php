@@ -36,15 +36,15 @@
             <div class="info_nutri_cont">
                 <p class="info_nutri_titulo">INFORMACIÓN NUTRIMENTAL</p>
                 <div class="info_nutri_tabla">
-                    <p>Contenido energético<span>20kJ / 0 kcal</span></p>
-                    <p>Proteína<span>0 g</span></p>
-                    <p>Grasas<span>0 g</span></p>
-                    <p>De las cuales: Grasa saturada<span>0 g</span></p>
-                    <p>Carbohidratos disponibles:<span>1 g</span></p>
-                    <p>De los cuales: Azúcares<span>0 g</span></p>
-                    <p>Fibra dietética<span>0 g</span></p>
-                    <p>Sodio<span>5 mg</span></p>
-                    <p>Vitamina C<span>25% IDR*</span></p>
+                    <p>Contenido energético<span class="info_nutri_num">20kJ / 0 kcal</span></p>
+                    <p>Proteína<span class="info_nutri_num">0 g</span></p>
+                    <p>Grasas<span class="info_nutri_num">0 g</span></p>
+                    <p>De las cuales: Grasa saturada<span class="info_nutri_num">0 g</span></p>
+                    <p>Carbohidratos disponibles:<span class="info_nutri_num">1 g</span></p>
+                    <p>De los cuales: Azúcares<span class="info_nutri_num">0 g</span></p>
+                    <p>Fibra dietética<span class="info_nutri_num">0 g</span></p>
+                    <p>Sodio<span class="info_nutri_num">5 mg</span></p>
+                    <p>Vitamina C<span class="info_nutri_num">25% IDR*</span></p>
                 </div>
             </div>
         </div>
