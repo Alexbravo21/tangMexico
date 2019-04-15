@@ -536,6 +536,103 @@
   width: 100%;
 }
 
+.sabor_interior_texto {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 10;
+  width: 90%;
+  height: 65%;
+  overflow: auto;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 365px) {
+  .sabor_interior_texto {
+    height: 70%;
+  }
+}
+
+@media (min-width: 770px) {
+  .sabor_interior_texto {
+    width: 70%;
+    position: absolute;
+    top: 30px;
+    left: 90%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+}
+
+.sabor_interior_texto .sabor_interior_titulo {
+  color: #fff;
+  font-family: 'muli';
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  width: 100%;
+}
+
+.sabor_interior_texto .sabor_interior_titulo p {
+  text-align: center;
+}
+
+@media (min-width: 770px) {
+  .sabor_interior_texto .sabor_interior_titulo p {
+    width: 85%;
+  }
+}
+
+.sabor_interior_texto .sabor_interior_titulo span {
+  color: #d87013;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.8rem;
+  display: block;
+}
+
+.porciones_cont .porciones_tamanos, .porciones_cont .porciones_envase {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.porciones_cont .porciones_tamanos *, .porciones_cont .porciones_envase * {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.porciones_cont .porciones_tamanos .textbox, .porciones_cont .porciones_envase .textbox {
+  width: 80%;
+}
+
+.porciones_cont .porciones_tamanos .porciones_img_item, .porciones_cont .porciones_envase .porciones_img_item {
+  width: 30px;
+}
+
+.info_nutri_cont .info_nutri_tabla {
+  width: 60%;
+  font-size: .8rem;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.info_nutri_cont .info_nutri_tabla p {
+  margin-bottom: 0;
+  padding: 2px 0;
+}
+
+.info_nutri_cont .info_nutri_tabla p .info_nutri_num {
+  text-align: right;
+  border-left: 2px solid #fff;
+  display: inline-block;
+  width: 15%;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
