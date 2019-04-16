@@ -38,18 +38,18 @@
             </div>
         </div>
     </div>
-    <img src="<?=$site_url?>img/logo.png" alt="" class="<?=$logo ?>">
+    <a href="<?=$site_url?>"><img src="<?=$site_url?>img/logo.png" alt="" class="<?=$logo ?>"></a>
     <div class="menu_cont">
         <div class="madera madera1"></div>
         <div class="madera madera2"></div>
         <div class="madera madera3"></div>
         <div class="madera madera4"></div>
         <div class="menu_botones">
-            <a href="#"><button class="menu_boton">INICIO</button></a>
-            <a href="#"><button class="menu_boton">PRODUCTOS</button></a>
-            <a href="#"><button class="menu_boton">RECETAS</button></a>
-            <a href="#"><button class="menu_boton">#CAMPAÑA</button></a>
-            <a href="#"><button class="menu_boton">PROMO</button></a>
-            <a href="#"><button class="menu_boton">CONTACTO</button></a>
+            <a href="<?=$site_url?>"><button class="menu_boton">INICIO</button></a>
+            <a href="<?=$site_url?>sabores"><button class="menu_boton">PRODUCTOS</button></a>
+            <a href="<?=$site_url?>recetas"><button class="menu_boton">RECETAS</button></a>
+            <a href="<?=$site_url?>"><button class="menu_boton">#CAMPAÑA</button></a>
+            <a href="<?=$site_url?>"><button class="menu_boton">PROMO</button></a>
+            <a href="<?=$site_url?>contacto.php"><button class="menu_boton">CONTACTO</button></a>
         </div>
     </div>
