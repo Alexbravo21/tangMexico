@@ -29,7 +29,7 @@
                                 ?>
                                     <div class="col-6 col-md-3">
                                         <div class="receta_thumb_cont">
-                                            <img src="<?=$site_url?>img/sobres/mini/<?=$filename?>" alt="" class="receta_thumb">
+                                        <a href="sabor_int.php"><img src="<?=$site_url?>img/sobres/mini/<?=$filename?>" alt="" class="receta_thumb"></a>
                                         </div>
                                     </div>
                                 <?php
