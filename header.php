@@ -1,5 +1,5 @@
 <?php 
-    $site_url = '/tang/';
+    $site_url = '/tang-2019/';
     $uri = $_SERVER['REQUEST_URI'];
     //Este pequeño script detecta la url para saber si estás en una sección en la que el logo va al centro.
     $logo = strrpos($uri, 'contacto') !== false ? 'logo_2' : 'logo' ;

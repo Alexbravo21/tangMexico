@@ -2,6 +2,7 @@
 
 <?php 
     $log_directory = 'C:\xampp\htdocs\tang\img\recetas\thumbs';
+    //$log_directory = '/var/www/test.catorcedias.com/tang-2019/img/recetas/thumbs';
 ?>
 
 <div class="fondo_claro">
