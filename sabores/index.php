@@ -1,7 +1,7 @@
 <?php include('../header.php') ?>
 
 <?php 
-    $log_directory = 'C:\xampp\htdocs\tang\img\sobres\mini';
+    $log_directory = 'C:\xampp\htdocs\tang-2019\img\sobres\mini';
     //$log_directory = '/var/www/test.catorcedias.com/tang-2019/img/sobres/mini';
 ?>
 
