@@ -18,12 +18,6 @@
             $overflow = ($id == '' || $id == 'index.php') ? "over_hidden" : "over_visible";
         }
     }
-
-
-    // echo $overflow.', ';
-    // echo $seccion.', ';
-    // echo $pos.', ';
-    // echo $id.', ';
 ?>
 
 <!DOCTYPE html>
@@ -45,3 +39,17 @@
         </div>
     </div>
     <img src="<?=$site_url?>img/logo.png" alt="" class="<?=$logo ?>">
+    <div class="menu_cont">
+        <div class="madera madera1"></div>
+        <div class="madera madera2"></div>
+        <div class="madera madera3"></div>
+        <div class="madera madera4"></div>
+        <div class="menu_botones">
+            <a href="#"><button class="menu_boton">INICIO</button></a>
+            <a href="#"><button class="menu_boton">PRODUCTOS</button></a>
+            <a href="#"><button class="menu_boton">RECETAS</button></a>
+            <a href="#"><button class="menu_boton">#CAMPAÑA</button></a>
+            <a href="#"><button class="menu_boton">PROMO</button></a>
+            <a href="#"><button class="menu_boton">CONTACTO</button></a>
+        </div>
+    </div>

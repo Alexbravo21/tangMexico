@@ -13,6 +13,11 @@
 @include fontface("muliBlackItalic", '/css/fonts/Muli-BlackItalic.ttf', bolder, italic);
 
 
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
 html{
     // width: 100%;
     height: 100%;
@@ -121,7 +126,7 @@ html{
     border-radius: 100%;
     width: 35px;
     height: 35px;
-    z-index: 100;
+    z-index: 10000000;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
     @include med-query($small){
         width: 50px;
@@ -132,18 +137,28 @@ html{
     width: 70px;
     max-width: 40%;
     @include medio(absolute, 20px, 100%, -120%, 0);
-    z-index: 100;
+    z-index: 10000000;
+    transition: 600ms all ease-in-out;
     @include med-query($medium){
         width: 100px;
+    }
+    &.madera_move{
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 .logo_2{
     width: 70px;
     max-width: 40%;
     @include medio(absolute, 20px, 50%, -50%, 0);
-    z-index: 100;
+    z-index: 10000000;
+    transition: 400ms all ease-in-out;
     @include med-query($medium){
         width: 100px;
+    }
+    &.madera_move{
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
 .promo{
@@ -159,5 +174,63 @@ html{
     padding-top: 90px;
     @include med-query($medium){
         padding-top: 120px;
+    }
+}
+.menu_cont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    transform: translate(0, -100%);
+    &.madera_move{
+        transform: translate(0, 0);
+    }
+    .madera{
+        width: 100%;
+        height: 25%;
+        transition: all 500ms ease-in-out;
+        transform: translate(-100%, 0);
+        @for $i from 1 through 4{
+            &.madera#{$i}{
+                @include bg-image('img/menu/madera'+$i+'.jpg', 100% 100%);
+                &.madera_move{
+                    transform: translate(0, 0);
+                }
+            }
+
+        }
+    }
+    .menu_botones{
+        @include medio(absolute, 80px, 50%, -50%, -100px);
+        z-index: 2;
+        width: 100%;
+        height: calc(100% - 100px);
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+        &.madera_move{
+            transform: translate(-50%, 0);
+            opacity: 1;
+        }
+        .menu_boton{
+            background-color: color(blanco);
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: block;
+            margin: 30px auto;
+            border: none;
+            border-radius: 100px;
+            transition: all 80ms ease-in-out;
+            cursor: pointer;
+            @include prefix(box-shadow, 2px 3px 13px 2px rgba(0,0,0,0.75), webkit moz);
+            &:hover{
+                background-color: color(verde-tang);
+                width: 250px;
+                height: 63px;
+                font-size: 1.5rem;
+                color: color(blanco);
+            }
+        }
     }
 }
