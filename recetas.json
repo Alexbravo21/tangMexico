@@ -120,8 +120,7 @@
                     "3 cdas. de fécula de maíz",
                     "1 ½ tzs de caldo de res",
                     "1 tza. de vino tinto",
-                    "Sal y pimienta",
-                    "fff"
+                    "Sal y pimienta"
                 ],
                 "otros": [
                     "6 filetes de pechuga",
@@ -154,8 +153,7 @@
                 "DISOLVER el sobre de Tang® Sabor Limón en el agua.",
                 "AGREGAR  las flores de jamaica, las rodajas de limón y los hielos.",
                 "SERVIR."
-            ],
-            "tip": "fff"
+            ]
         },
         "mango":{
             "nombre": "BATIDO DE MANGO",
@@ -187,10 +185,7 @@
                 "normal": [
                     "2 tzas. de mezcla preparada para hotcakes",
                     "¼ de sobre Tang® Sabor Manzana",
-                    "Mantequilla derretida, la cantidad necesaria ",
-                    "fff",
-                    "fff",
-                    "fff"
+                    "Mantequilla derretida, la cantidad necesaria "
                 ],
                 "para_las_manzanas": [
                     "1 cda. de mantequilla ",
@@ -363,10 +358,7 @@
                 "normal": [
                     "1 sobre de Tang® Sabor Tamarindo",
                     "1 lt. de agua",
-                    "1 lt. de hielo",
-                    "fff",
-                    "fff",
-                    "fff"
+                    "1 lt. de hielo"
                 ],
                 "otros": [
                     "Pulpa de tamarindo al gusto",
