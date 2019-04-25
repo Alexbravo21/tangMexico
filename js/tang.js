@@ -6,6 +6,8 @@ var app = {
     init: function(){
         this.menu();
         this.pruebas();
+        this.masboton();
+        this.getJSON('sobres', 0);
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -41,6 +43,30 @@ var app = {
 
             }
             $(hamburger).toggleClass("is-active");
+        });
+    },
+    masboton: function(){
+        $(document).on("click", ".mas_nav_cont", function () {
+            $(".colores_cont").slideToggle(400);
+        });
+    },
+    getJSON: function(file, pos){
+        var este = this;
+        $.getJSON(file+".json", function(json) {
+            var laskeys = Object.keys(json[file]);
+            var first = laskeys[pos];
+            este.tieJSON(first, "recetas");
+        });
+    },
+    tieJSON: function(first, file2){
+        var este = this;
+        $.getJSON(file2+".json", function(json) {
+            var laskeys2 = Object.keys(json[file2]);
+            for (var i=0; i < laskeys2.length; i++){
+                if(first == laskeys2[i]){
+                    console.log(first, laskeys2[i]);
+                }
+            }
         });
     },
     pruebas: function(){

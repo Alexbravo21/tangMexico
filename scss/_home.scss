@@ -3,6 +3,7 @@ $tran: 80%;
     @include medio(fixed, 53%, 20px, 0, -50%);
     z-index: 100000;
     .mas_nav_cont{
+        cursor: pointer;
         position: relative;
         width: $width-buttons;
         height: $height-buttons;
@@ -42,6 +43,7 @@ $tran: 80%;
     border-radius: 100px;
     z-index: 10000000;
     padding: 5px 0;
+    display: none;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
     .colores_item{
         width: $width-buttons*.3;
