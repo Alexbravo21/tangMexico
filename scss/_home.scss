@@ -1,12 +1,14 @@
+$tran: 80%;
 .nav_home_cont{
-    @include medio(fixed, 50%, 20px, 0, -50%);
+    @include medio(fixed, 53%, 20px, 0, -50%);
+    z-index: 100000;
     .mas_nav_cont{
         position: relative;
         width: $width-buttons;
         height: $height-buttons;
         background-color: color(blanco);
         border-radius: 100%;
-        z-index: 10000000;
+        margin-bottom: 7px;
         @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
         @include med-query($small){
             width: $width-buttons*1.2;
@@ -34,18 +36,18 @@
     }
 }
 .colores_cont{
-    @include medio(fixed, 50%, 20px, 0, -50%);
+    position: relative;
     width: $width-buttons*1.2;
     background-color: color(blanco);
     border-radius: 100px;
     z-index: 10000000;
-    padding: 20px 0;
+    padding: 5px 0;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
     .colores_item{
         width: $width-buttons*.3;
         height: $height-buttons*.3;
         background-color: color(negro);
-        margin: 5px auto;
+        margin: 8px auto;
         border-radius: 100%;
     }
 }
@@ -150,6 +152,35 @@
                     }
                 }
             }
+        }
+    }
+    .home_flecha_cont{
+        background-color: color(blanco);
+        width: $width-buttons;
+        height: $width-buttons;
+        border-radius: 100px;
+        @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+        @include med-query($small){
+            width: $width-buttons*1.2;
+            height: $height-buttons*1.2;
+        }
+        &.izquierda{
+            @include medio(absolute, 50%, 8%, 0, -#{$tran});
+            transform: translate(0, -#{$tran}) rotate(-135deg);
+        }
+        &.derecha{
+            @include medio(absolute, 50%, 8%, 0, #{$tran});
+            transform: translate(0, #{$tran}) rotate(45deg);
+        }
+        .home_flecha{
+            @include medio(absolute, 50%, 50%,-60%, -60%);
+            z-index: 100;
+            border: solid color(gris-obscuro);
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 3px;
+            width: $width-buttons*.5;
+            height: $height-buttons*.5;
         }
     }
 }

@@ -13,13 +13,9 @@
         </div>
     </div>
     <div class="colores_cont">
-        <?php 
-        foreach(glob($log_directory.'/*.png') as $file) {
-            ?>
+        <?php foreach(glob($log_directory.'/*.png') as $file) { ?>
                 <div class="colores_item"></div>
-            <?php
-        }
-        ?>
+        <?php } ?>
     </div>
 </div>
 <div class="fondo_madera">
@@ -34,6 +30,12 @@
                     <img src="img/naranjadamix/receta.png" alt="" class="receta_home_img">
                 </div>
             </div>
+        </div>
+        <div class="home_flecha_cont izquierda">
+            <div class="home_flecha"></div>
+        </div>
+        <div class="home_flecha_cont derecha">
+            <div class="home_flecha"></div>
         </div>
     </div>
 </div>

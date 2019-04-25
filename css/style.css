@@ -1,9 +1,10 @@
 .nav_home_cont {
   position: fixed;
-  top: 50%;
+  top: 53%;
   left: 20px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  z-index: 100000;
 }
 
 .nav_home_cont .mas_nav_cont {
@@ -12,7 +13,7 @@
   height: 35px;
   background-color: #fff;
   border-radius: 100%;
-  z-index: 10000000;
+  margin-bottom: 7px;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
@@ -60,16 +61,12 @@
 }
 
 .colores_cont {
-  position: fixed;
-  top: 50%;
-  left: 20px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  position: relative;
   width: 42px;
   background-color: #fff;
   border-radius: 100px;
   z-index: 10000000;
-  padding: 20px 0;
+  padding: 5px 0;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
@@ -78,7 +75,7 @@
   width: 10.5px;
   height: 10.5px;
   background-color: #000000;
-  margin: 5px auto;
+  margin: 8px auto;
   border-radius: 100%;
 }
 
@@ -280,6 +277,57 @@
   .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_img {
     max-height: 400px;
   }
+}
+
+.derecho .home_flecha_cont {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 576px) {
+  .derecho .home_flecha_cont {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.derecho .home_flecha_cont.izquierda {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translate(0, -80%);
+          transform: translate(0, -80%);
+  -webkit-transform: translate(0, -80%) rotate(-135deg);
+          transform: translate(0, -80%) rotate(-135deg);
+}
+
+.derecho .home_flecha_cont.derecha {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  -webkit-transform: translate(0, 80%);
+          transform: translate(0, 80%);
+  -webkit-transform: translate(0, 80%) rotate(45deg);
+          transform: translate(0, 80%) rotate(45deg);
+}
+
+.derecho .home_flecha_cont .home_flecha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-60%, -60%);
+          transform: translate(-60%, -60%);
+  z-index: 100;
+  border: solid #342f2f;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 17.5px;
+  height: 17.5px;
 }
 
 .contacto_texto {
