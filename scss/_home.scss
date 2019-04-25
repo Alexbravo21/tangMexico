@@ -1,33 +1,52 @@
-.mas_nav_cont{
+.nav_home_cont{
     @include medio(fixed, 50%, 20px, 0, -50%);
-    width: $width-buttons;
-    height: $height-buttons;
-    background-color: color(blanco);
-    border-radius: 100%;
-    z-index: 10000000;
-    @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
-    @include med-query($small){
-        width: $width-buttons*1.2;
-        height: $height-buttons*1.2;
-    }
-    .mas_nav{
-        @include medio(absolute, 50%, 50%, -50%, -50%);
-        width: 60%;
-        height: 60%;
-        .mas_nav_item{
-            background-color: color(gris-obscuro);
-            &.horizontal{
-                width: 100%;
-                height: 3px;
-                @include medio(absolute, 50%, 0, 0, -50%);
-            }
-            &.vertical{
-                width: 3px;
-                height: 100%;
-                @include medio(absolute, 0, 50%, -50%, 0);
-                z-index: 3;
+    .mas_nav_cont{
+        position: relative;
+        width: $width-buttons;
+        height: $height-buttons;
+        background-color: color(blanco);
+        border-radius: 100%;
+        z-index: 10000000;
+        @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+        @include med-query($small){
+            width: $width-buttons*1.2;
+            height: $height-buttons*1.2;
+        }
+        .mas_nav{
+            @include medio(absolute, 50%, 50%, -50%, -50%);
+            width: 60%;
+            height: 60%;
+            .mas_nav_item{
+                background-color: color(gris-obscuro);
+                &.horizontal{
+                    width: 100%;
+                    height: 3px;
+                    @include medio(absolute, 50%, 0, 0, -50%);
+                }
+                &.vertical{
+                    width: 3px;
+                    height: 100%;
+                    @include medio(absolute, 0, 50%, -50%, 0);
+                    z-index: 3;
+                }
             }
         }
+    }
+}
+.colores_cont{
+    @include medio(fixed, 50%, 20px, 0, -50%);
+    width: $width-buttons*1.2;
+    background-color: color(blanco);
+    border-radius: 100px;
+    z-index: 10000000;
+    padding: 20px 0;
+    @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+    .colores_item{
+        width: $width-buttons*.3;
+        height: $height-buttons*.3;
+        background-color: color(negro);
+        margin: 5px auto;
+        border-radius: 100%;
     }
 }
 .izquierdo{

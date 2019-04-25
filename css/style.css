@@ -1,9 +1,13 @@
-.mas_nav_cont {
+.nav_home_cont {
   position: fixed;
   top: 50%;
   left: 20px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.nav_home_cont .mas_nav_cont {
+  position: relative;
   width: 35px;
   height: 35px;
   background-color: #fff;
@@ -14,13 +18,13 @@
 }
 
 @media (min-width: 576px) {
-  .mas_nav_cont {
+  .nav_home_cont .mas_nav_cont {
     width: 42px;
     height: 42px;
   }
 }
 
-.mas_nav_cont .mas_nav {
+.nav_home_cont .mas_nav_cont .mas_nav {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,11 +34,11 @@
   height: 60%;
 }
 
-.mas_nav_cont .mas_nav .mas_nav_item {
+.nav_home_cont .mas_nav_cont .mas_nav .mas_nav_item {
   background-color: #342f2f;
 }
 
-.mas_nav_cont .mas_nav .mas_nav_item.horizontal {
+.nav_home_cont .mas_nav_cont .mas_nav .mas_nav_item.horizontal {
   width: 100%;
   height: 3px;
   position: absolute;
@@ -44,7 +48,7 @@
           transform: translate(0, -50%);
 }
 
-.mas_nav_cont .mas_nav .mas_nav_item.vertical {
+.nav_home_cont .mas_nav_cont .mas_nav .mas_nav_item.vertical {
   width: 3px;
   height: 100%;
   position: absolute;
@@ -53,6 +57,29 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 3;
+}
+
+.colores_cont {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 42px;
+  background-color: #fff;
+  border-radius: 100px;
+  z-index: 10000000;
+  padding: 20px 0;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.colores_cont .colores_item {
+  width: 10.5px;
+  height: 10.5px;
+  background-color: #000000;
+  margin: 5px auto;
+  border-radius: 100%;
 }
 
 .izquierdo {
