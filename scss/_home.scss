@@ -1,3 +1,6 @@
+.mas_nav_cont{
+    @include medio(fixed, 50%, 20px, 0, -50%);
+}
 .izquierdo{
     display: inline-block;
     width: 100%;

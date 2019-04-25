@@ -1,5 +1,11 @@
 <?php include('header.php') ?>
 
+<div class="mas_nav_cont">
+    <div class="mas_nav">
+        <div class="mas_nav_item horizontal"></div>
+        <div class="mas_nav_item vertical"></div>
+    </div>
+</div>
 <div class="fondo_madera">
     <div class="izquierdo">
         <img src="img/sobres/naranjadamix.jpg" alt="Naranjada Mix" class="sobre">
