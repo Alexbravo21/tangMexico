@@ -9,6 +9,8 @@ $colors: (
     fondo-gris: #dddcdc,
     form-input: #969696
 );
+$width-buttons: 35px;
+$height-buttons: 35px;
 @mixin fontface($name, $src, $weight, $style){
   @font-face{
       font-family: $name;

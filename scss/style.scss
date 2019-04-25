@@ -95,15 +95,15 @@ html{
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #fff;
+    background-color: color(blanco);
     border-radius: 100%;
-    width: 35px;
-    height: 35px;
+    width: $width-buttons;
+    height: $height-buttons;
     z-index: 10000000;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
     @include med-query($small){
-        width: 50px;
-        height: 50px;
+        width: $width-buttons*1.30;
+        height: $height-buttons*1.30;
     }
 }
 .logo{
