@@ -1,424 +1,468 @@
 {
-    "recetas": [
-        {
-            "nombre": "Batido de Mango",
-            "minutos": 10,
+    "recetas": {
+        "durazno":{
+            "nombre": "GELATINA DE DURAZNO",
+            "minutos": 20,
             "porciones": 6,
             "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
+                "1 sobre de Tang® Sabor Durazno",
+                "1 lt. de agua",
+                "3 sobres de grenetina",
+                "¾ tza. de agua ",
+                "3 pzas. de duraznos cortados en gajos",
+                "Hojas de menta"
             ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Durazno en el agua.",
+                "HIDRATAR la grenetina en ¾ de taza de agua y posteriormente fundir a baño maría o en microondas hasta que esté completamente líquido",
+                "MEZCLAR la grenetina con el agua de durazno y verter en moldes individuales de gelatina.",
+                "AGREGAR gajos de durazno y hojas de menta al gusto."
+            ],
+            "tip": "Puedes usar duraznos en almíbar."
+        },
+        "fresa":{
+            "nombre": "PALETAS DE FRESA",
+            "minutos": 20,
+            "porciones": 6,
+            "ingredientes": [
+                "1 sobre de Tang® Sabor Fresa",
+                "1 lt. de agua ",
+                "2 tzas. de fresas fileteadas"
+            ],
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Fresa en el agua",
+                "COLOCAR las fresas dentro de los moldes para paleta y verter el agua Sabor Fresa.",
+                "CONGELAR durante 2 horas"
+            ],
+            "tip": "Puedes sustituir las fresas por cualquier fruta de temporada"
+        },
+        "fresadamix":{
+            "nombre": "DELICIA DE FRESA",
+            "minutos": 15,
+            "porciones": 4,
+            "ingredientes": [
+                "1 sobre de Tang® Sabor Fresada Mix",
+                "1 lt. de agua",
+                "1 lata de leche condensada",
+                "3 tzas. de hielo",
+                "1 tza. de fresas en rodajas"
+            ],
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Fresa Mix en el agua",
+                "LICUAR el hielo, con el agua Tang® Sabor Fresada Mix y la lata de leche condensada.",
+                "SERVIR con rodajas de fresa."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "guayaba":{
+            "nombre": "MINI CHEESECAKE DE GUAYABA",
+            "minutos": 30,
+            "porciones": 8,
+            "ingredientes": {
+                "normal": [
+                    "210 gr. de Queso Crema Philadelphia®",
+                    "2 pzas. de huevo",
+                    "30 gr. de fécula de maíz",
+                    "60 gr. de azúcar",
+                    "60 ml. de crema para batir",
+                    "½ sobre de Tang® Sabor Guayaba"
+                ],
+                "base":[
+                    "1 ½ tzas. de galleta molida Marbúdorada®",
+                    "75 gr. de mantequilla derretida"
+                ],
+                "otros":[
+                    "Capacillos",
+                    "Molde para cupcakes"
+                ]
+            },
+            "preparacion": [
+                "LICUAR el Queso Crema Philadelphia®, el azúcar, la fécula, el sobre de Tang® Sabor Guayaba, el huevo y la crema.",
+                "MEZCLAR la galleta molida Marbúdorada® con la mantequilla derretida.",
+                "COLOCAR los capacillos en el molde y cubrir el fondo con la galleta, presionando perfectamente.",
+                "VERTER el batido de pay sobre la base de galleta.",
+                "HORNEAR a 160°C durante 25 minutos o hasta que esté cocido. ",
+                "ENFRIAR antes de retirar el capacillo."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
+        "horchata":{
+            "nombre": "CREPAS DE PLÁTANO EN SALSA DE HORCHATA",
+            "minutos": 0,
+            "porciones": 4,
+            "ingredientes": {
+                "salsa": [
+                    "½ sobre de Tang® Sabor Horchata",
+                    "1 ½ tza. de leche",
+                    "190 gr. de Queso Crema Philadelphia®"
+                ],
+                "otros": [
+                    "4 plátanos",
+                    "5 cdas. de mantequilla",
+                    "2 cdas. de azúcar",
+                    "8 crepas"
+                ]
+            },
+            "preparacion": [
+                "LICUAR los ingredientes de la salsa.",
+                "VERTER la salsa en un recipiente y calentar hasta que suelte el hervor y reservar.",
+                "REBANAR los plátanos y en una sartén agregar dos cucharadas de mantequilla, cocinar los plátanos y el azúcar a que doren un poco.",
+                "CALENTAR nuevamente la sartén con la mantequilla restante y saltear poco las tortillas de harina.",
+                "RELLENAR con el plátano y bañar con la Salsa de Horchata."
             ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+            "tip": "Puedes usar tortillas de harina en lugar de crepas."
+        },
+        "jamaica":{
+            "nombre": "PECHUGA DE POLLO EN SALSA DE JAMAICA",
+            "minutos": 30,
+            "porciones": 6,
+            "ingredientes": {
+                "salsa": [
+                    "½ sobre de Tang® Sabor Jamaica",
+                    "3 cdas. de fécula de maíz",
+                    "1 ½ tzs de caldo de res",
+                    "1 tza. de vino tinto",
+                    "Sal y pimienta",
+                    "fff"
+                ],
+                "otros": [
+                    "6 filetes de pechuga",
+                    "Sal y pimienta"
+                ]
+            },
+            "preparacion": [
+                "DILUIR en el caldo de res la fécula de maíz y disolver el sobre de Tang® Sabor Jamaica.",
+                "CALENTAR en una olla pequeña el vino tinto; dejar que se reduzca una cuarta parte de caldo y seguir calentando sin dejar de mover hasta que la salsa espese.",
+                "SAZONAR con sal y pimienta al gusto. Reservar.",
+                "CALENTAR una sartén con aceite y cocer las pechugas de pollo  previamente salpimentadas.",
+                "SERVIR con la Salsa de Jamaica."
+            ],
+            "tip": "Puedes acompañar con verduras asadas."
+        },
+        "limon":{
+            "nombre": "LIMONADA ROSA",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Limón",
+                    "2 lts. de agua",
+                    "5 flores de jamaica secas",
+                    "1 limón amarillo en rodajas",
+                    "Hielo al gusto"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Limón en el agua.",
+                "AGREGAR  las flores de jamaica, las rodajas de limón y los hielos.",
+                "SERVIR."
+            ],
+            "tip": "fff"
+        },
+        "mango":{
+            "nombre": "BATIDO DE MANGO",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Mango",
+                    "1 lt. de agua",
+                    "1 tza. de mango en cubos",
+                    "3 tzas. de hielo",
+                    "Jugo de limón",
+                    "Sal al gusto"
+                ]
+            },
+            "preparacion": [
+                "ESCARCHAR los vasos en el jugo de limón y sal. Reservar.",
+                "DISOLVER el sobre de Tang® Sabor Mango en el agua.",
+                "LICUAR el hielo, con el agua Sabor Mango.",
+                "SERVIR con cubos de mango.",
+                "DECORAR con hojas de menta y gajos de limón."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
+        "manzana":{
+            "nombre": "HOTCAKES DE MANZANA",
+            "minutos": 20,
             "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+            "ingredientes": {
+                "normal": [
+                    "2 tzas. de mezcla preparada para hotcakes",
+                    "¼ de sobre Tang® Sabor Manzana",
+                    "Mantequilla derretida, la cantidad necesaria ",
+                    "fff",
+                    "fff",
+                    "fff"
+                ],
+                "para_las_manzanas": [
+                    "1 cda. de mantequilla ",
+                    "2 pzas. de manzanas verdes peladas y cortadas en rodajas",
+                    "2 cdas. de azúcar ",
+                    "½ cdita. de canela en polvo"
+                ]
+            },
+            "preparacion": [
+                "DERRETIR en una sartén la mantequilla y acomodar las manzanas, agregar azúcar, canela y dejar cocinar por 3 minutos. Reservar.",
+                "AGREGAR a la mezcla para hotcakes el sobre de Tang® Sabor Manzana, mezclar y preparar.",
+                "SERVIR con las manzanas caramelizadas."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "melon":{
+            "nombre": "AGUA DE MELÓN",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Melón",
+                    "1 lt. de agua",
+                    "2 tza. de kiwi en rodajas",
+                    "Hielo al gusto",
+                    "Hojas de menta"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Melón en el agua.",
+                "AGREGAR hielo, hojas de menta y kiwi.",
+                "SERVIR."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "naranja":{
+            "nombre": "TARTA DE NARANJA",
+            "minutos": 20,
+            "porciones": 8,
+            "ingredientes": {
+                "normal": [
+                    "300 gr. de Queso Crema Philadelphia®",
+                    "1 tza. de crema para batir",
+                    "1 tza. de leche",
+                    "2 sobres de grenetina hidratados en ¼ de tza. de agua fría",
+                    "½ sobre de Tang® Sabor Naranja"
+                ]
+            },
+            "preparacion": [
+                "LICUAR el Queso Crema Philadelphia® con la crema para batir, la leche y el sobre de Tang® Sabor Naranja.",
+                "DISOLVER la grenetina hidratada  a baño maría o en el microondas por unos segundos hasta que esté completamente líquida e integrar a la mezcla de Queso Crema Philadelphia®.",
+                "VACIAR en un molde rectangular previamente engrasado con aceite. Refrigerar hasta que cuaje.",
+                "DISOLVER  el sobre de Tang® Sabor Naranja en la miel de maple y servir con el pay."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "limonada":{
+            "nombre": "LIMONADA BRASILEÑA",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Limonada Mix",
+                    "1 lt. de agua",
+                    "1 lata de leche condensada ",
+                    "3 tzas. de hielo"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Limonada Mix en el agua.",
+                "LICUAR el hielo, con el agua de limón y la lata de leche condensada.",
+                "SERVIR."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "naranjada":{
+            "nombre": "BATIDO DE NARANJA Y MANGO",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "2 tzas. de crema para batir",
+                    "1 tza. de mango natural  en rebanadas",
+                    "1 cda. de Tang® Sabor Naranjada Mix"
+                ],
+                "para_el_concentrado": [
+                    "1 sobre de Tang® Sabor Naranjada Mix",
+                    "1 tza. de agua"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Naranjada Mix en 1 taza de agua. Reservar.",
+                "LICUAR la crema batida con la cucharada de Tang® Sabor Naranjada Mix.",
+                "AGREGAR en un vaso un poco del batido anterior, añadir concentrado de Tang® Sabor Naranjada Mix, añadir un poco más de batido, más concentrado y terminar con rebanadas de mango al gusto.",
+                "DECORAR con rebanadas de naranja y hojas de menta."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "pina":{
+            "nombre": "PAY DE PIÑA",
+            "minutos": 50,
+            "porciones": 9,
+            "ingredientes": {
+                "normal": [
+                    "4 pzas. de huevo",
+                    "30 gr. de fécula de maíz",
+                    "60 gr. de  azúcar",
+                    "60 ml. de crema para batir",
+                    "½ sobre de Tang® Sabor Piña",
+                    "1 ½ tzas. de mermelada de piña"
+                ],
+                "base": [
+                    "200 gr. de azúcar",
+                    "200 gr. de mantequilla",
+                    "2 huevos",
+                    "400 gr. de harina"
+                ]
+            },
+            "preparacion": [
+                "MEZCLAR el azúcar con la mantequilla, agregar el huevo e integrar, incorporar la harina y amasar. ",
+                "REFRIGERAR la masa por 15 minutos, dividir en 2 (1 porción para la base del molde  y la otra será para el enrejado). ",
+                "EXTENDER una porción de masa, cubrir la base y orillas de un molde para tarta.",
+                "LICUAR el Queso Crema Philadelphia®, azúcar, fécula, ½ sobre de Tang® Sabor Piña, huevo y la crema.",
+                "VERTER el batido de pay sobre el molde previamente cubierto con la masa. Pre-cocer a 160°C durante 20 minutos o hasta que el pay haya creado una costra. ",
+                "CUBRIR cuidadosamente con la mermelada de piña para no romper la costra. Reservar.",
+                "EXTENDER la masa restante y cortar tiras de 25 centímetros aproximadamente.",
+                "COLOCAR la tiras de masa sobre el pay pre-horneado, formar un enrejado, sellar bien las orillas y barnizar con huevo.",
+                "TERMINAR de hornear a 160°C por 25 minutos o hasta que el enrejado esté cocido.",
+                "DEJAR enfriar y servir."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "pina_colada":{
+            "nombre": "PIÑA COLADA PLAYERA",
+            "minutos": 15,
+            "porciones": 4,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor a Piña Colada",
+                    "1 lt. de agua ",
+                    "1 lata de leche evaporada",
+                    "3 tzas. de hielo "
+                ]
+            },
+            "preparacion": [
+                "DISOLVER  el sobre de Tang® Sabor Piña Colada en el agua.",
+                "LICUAR el hielo, con el agua de Piña Colada y la lata de leche evaporada.",
+                "SERVIR."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "pinada":{
+            "nombre": "PIÑADA FRESCA",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Piñada Mix",
+                    "1 lt. de agua mineral",
+                    "3 guayabas rosas en rodajas",
+                    "Piña al gusto ",
+                    "Hielo al gusto",
+                    "Hojas de menta"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Piñada Mix en el agua.",
+                "AGREGAR hielo, hojas de menta y piña.",
+                "SERVIR."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "tamarindo":{
+            "nombre": "SMOOTHIE DE TAMARINDO",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Tamarindo",
+                    "1 lt. de agua",
+                    "1 lt. de hielo",
+                    "fff",
+                    "fff",
+                    "fff"
+                ],
+                "otros": [
+                    "Pulpa de tamarindo al gusto",
+                    "Chile en polvo"
+                ]
+            },
+            "preparacion": [
+                "ESCARCHAR los vasos con tamarindo y chile en polvo.",
+                "DISOLVER el sobre de Tang® Sabor Tamarindo en el agua.",
+                "LICUAR todo y servir.",
+                "AGREGAR chamoy en las paredes  y en el fondo del vaso.",
+                "AÑADIR el Smoothie de Tamarindo y decorar con palitos de tamarindo."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "te_negro_frutos":{
+            "nombre": "TÉ FRUTAL",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Té Negro Sabor Frutos Rojos",
+                    "2 lt. de agua",
+                    "2 tzas. de frutos rojos mixtos",
+                    "Hojas de menta"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Té Negro Sabor Frutos Rojos en el agua.",
+                "SERVIR en copas con frutas y hojitas de menta."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+        "te_negro_limon":{
+            "nombre": "TÉ HELADO CÍTRICO",
+            "minutos": 0,
+            "porciones": 0,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Té Negro Sabor Limón",
+                    "2 lt. de agua",
+                    "1 limón sin semillas en rebanadas delgadas",
+                    "Romero fresco",
+                    "Blueberry al gusto",
+                    "Hielo al gusto"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Té Negro Sabor Limón en el agua.",
+                "SERVIR con hielo, rebanadas de limón y una ramita de romero fresco."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
+        "uva":{
+            "nombre": "UVA CLERICOT ",
+            "minutos": 20,
             "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Uva",
+                    "2 tzas. de fruta natural  (toronja en rodajas, blueberry y uvas)",
+                    "2 lts. de agua",
+                    "¼ tza. de jugo de limón"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Uva en el agua.",
+                "AGREGAR  el jugo de limón y la fruta.",
+                "SERVIR."
             ]
         },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
+        "mandarina":{
+            "nombre": "PASTA ORIENTAL MANDARINA",
+            "minutos": 30,
+            "porciones": 4,
+            "ingredientes": {
+                "normal": [
+                    "½ sobre de Tang® Sabor Mandarina",
+                    "1 ½ tza. de caldo de pollo",
+                    "2 cdas. de fécula de maíz",
+                    "½ tza. de agua ",
+                    "4 cdas. de aceite ",
+                    "1 pimiento rojo, 1 verde y 1 amarillo cortados en cubos medianos",
+                    "½ cebolla morada cortada en cubos grandes",
+                    "2 medias pechugas cortadas en cubos grandes",
+                    "½ tza. de brócoli cocido ",
+                    "2 cdas. de ajonjolí negro",
+                    "500 gr. de pasta tornillo cocida"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Mandarina en el caldo de pollo. Reservar.",
+                "DILUIR  la fécula en ½ taza de agua. Reservar.",
+                "CALENTAR una sartén con 4 cucharadas de aceite, incorporar el pollo, la cebolla y los  pimientos. Cocinar.",
+                "VERTER el sobre de Tang® Sabor Mandarina con la fécula y dejar que espese un poco.",
+                "INCORPORAR el brócoli y la pasta.",
+                "SERVIR y espolvorear con ajonjolí negro."
             ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
-        },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
-        },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
-        },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
-        },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
-        },
-        {
-            "nombre": "batido de mango",
-            "minutos": 10,
-            "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® sabor limón",
-                "2 L de agua natural rebanadas delgadas",
-                "1 pza. de limón sin semillas en rebanadas delgadas",
-                "1 cda. de chía",
-                "1 ramita de hierbabuena",
-                "Hielo al gusto"
-            ],
-            "Preparacion": [
-                "DISOLVER el sobre de Tang® sabor limón en los 2 L de agua.",
-                "SERVIR en una garra con el pepino",
-                "limón",
-                "chía",
-                "hielo y hierbabuena."
-            ]
+            "tip": "Puedes sustituir el pollo por camarones."
         }
-    ]
+    }
 }
