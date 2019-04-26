@@ -1,10 +1,5 @@
 <?php include('header.php') ?>
 
-<?php 
-    $log_directory = 'C:\xampp\htdocs\tang-2019\img\sobres\mini';
-    //$log_directory = '/var/www/test.catorcedias.com/tang-2019/img/sobres/mini';
-?>
-
 <div class="nav_home_cont">
     <div class="mas_nav_cont">
         <div class="mas_nav">
@@ -13,9 +8,6 @@
         </div>
     </div>
     <div class="colores_cont">
-        <?php foreach(glob($log_directory.'/*.png') as $file) { ?>
-                <div class="colores_item"></div>
-        <?php } ?>
     </div>
 </div>
 <div class="fondo_madera">

@@ -8,6 +8,7 @@ var app = {
         this.pruebas();
         this.masboton();
         this.getJSON('recetas', 'sobres', 0);
+        this.colores_home();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -51,15 +52,18 @@ var app = {
         });
     },
     getJSON: function(file, file2, pos){
-        var este = this;
         $.getJSON(file+".json", function(json) {
+            $(".colores_cont").html("");
             var laskeys = Object.keys(json[file]);
             var first = laskeys[pos];
+            for (var h=0; h < laskeys.length; h++){
+                $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
+            }
             $.getJSON(file2+".json", function(json2) {
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
-                        var nombres = json[file][laskeys[i]].nombre.split(" ");
+                        var nombres = json[file][first].nombre.split(" ");
                         var media = Math.floor(nombres.length/2);
                         var nomb = "";
                         var nomb2 = "";
@@ -70,6 +74,7 @@ var app = {
                              nomb2 = nomb2 + nombres[j] + " ";
                         }
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
+                        $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                         $(".receta_home_nombre").html(elnombre);
                         $(".receta_home_img").attr("src", json[file][first].img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
@@ -78,6 +83,13 @@ var app = {
                     }
                 }
             });
+        });
+    },
+    colores_home: function(){
+        var este = this;
+        $(document).on("click", ".colores_item", function(){
+            var pos = $(this).data('pos');
+            este.getJSON("recetas", "sobres", pos);
         });
     },
     pruebas: function(){
