@@ -53,6 +53,33 @@ $tran: 80%;
         border-radius: 100%;
     }
 }
+
+
+.home_flecha_cont{
+    background-color: color(blanco);
+    width: $width-buttons;
+    height: $width-buttons;
+    border-radius: 100px;
+    cursor: pointer;
+    @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+    @include med-query($small){
+        width: $width-buttons*1.2;
+        height: $height-buttons*1.2;
+    }
+    .home_flecha{
+        @include medio(absolute, 50%, 50%,-60%, -60%);
+        z-index: 100;
+        border: solid color(gris-obscuro);
+        border-width: 0 4px 4px 0;
+        display: inline-block;
+        padding: 3px;
+        width: $width-buttons*.5;
+        height: $height-buttons*.5;
+    }
+}
+
+
+
 .izquierdo{
     display: inline-block;
     width: 100%;
@@ -73,6 +100,16 @@ $tran: 80%;
             @include medio(absolute, 50%, 50%, -50%, -50%);
             @include multi-transforms(translate(-50%, -50%) rotate(-5deg));
             width: 250px;
+        }
+    }
+    .home_flecha_cont{
+        &.izquierda{
+            @include medio(absolute, 90%, 50%, -#{$tran}, -100%);
+            transform: translate(-#{$tran}, -100%) rotate(135deg);
+        }
+        &.derecha{
+            @include medio(absolute, 90%, 50%, #{$tran}, -100%);
+            transform: translate(#{$tran}, -100%) rotate(-45deg);
         }
     }
 }
@@ -157,15 +194,6 @@ $tran: 80%;
         }
     }
     .home_flecha_cont{
-        background-color: color(blanco);
-        width: $width-buttons;
-        height: $width-buttons;
-        border-radius: 100px;
-        @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
-        @include med-query($small){
-            width: $width-buttons*1.2;
-            height: $height-buttons*1.2;
-        }
         &.izquierda{
             @include medio(absolute, 50%, 8%, 0, -#{$tran});
             transform: translate(0, -#{$tran}) rotate(-135deg);
@@ -173,16 +201,6 @@ $tran: 80%;
         &.derecha{
             @include medio(absolute, 50%, 8%, 0, #{$tran});
             transform: translate(0, #{$tran}) rotate(45deg);
-        }
-        .home_flecha{
-            @include medio(absolute, 50%, 50%,-60%, -60%);
-            z-index: 100;
-            border: solid color(gris-obscuro);
-            border-width: 0 4px 4px 0;
-            display: inline-block;
-            padding: 3px;
-            width: $width-buttons*.5;
-            height: $height-buttons*.5;
         }
     }
 }

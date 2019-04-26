@@ -116,6 +116,21 @@ var app = {
             }
         });
     },
+    flechas_interior: function(position){
+        var este = this;
+
+        $(document).on("click", ".home_flecha_cont", function(){
+            if($(this).hasClass('izquierda')){
+                pos = (pos == 0) ? 21 : pos;
+                este.getJSON("recetas", "sobres", (pos-1));
+                pos--;
+            }else{
+                pos = (pos == 20) ? -1 : pos;
+                este.getJSON("recetas", "sobres", (pos+1));
+                pos++;
+            }
+        });
+    },
     getInterior: function(){
         var url = window.location.href;
         var indicador = url.indexOf('?');

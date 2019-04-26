@@ -1,7 +1,14 @@
 <?php include('../header.php') ?>
 
 <div class="receta_interior_cont">
-    <div class="izquierdo"></div><!--
+    <div class="izquierdo"> 
+        <div class="home_flecha_cont izquierda">
+            <div class="home_flecha"></div>
+        </div>
+        <div class="home_flecha_cont derecha">
+            <div class="home_flecha"></div>
+        </div>
+    </div><!--
 --><div class="derecho">
         <div class="receta_interior_contenedor">
             <div class="receta_interior_texto">

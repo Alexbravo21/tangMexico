@@ -81,6 +81,38 @@
   border-radius: 100%;
 }
 
+.home_flecha_cont {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 576px) {
+  .home_flecha_cont {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.home_flecha_cont .home_flecha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-60%, -60%);
+          transform: translate(-60%, -60%);
+  z-index: 100;
+  border: solid #342f2f;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 17.5px;
+  height: 17.5px;
+}
+
 .izquierdo {
   display: inline-block;
   width: 100%;
@@ -120,6 +152,26 @@
     transform: translate(-50%, -50%) rotate(-5deg);
     width: 250px;
   }
+}
+
+.izquierdo .home_flecha_cont.izquierda {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-80%, -100%);
+          transform: translate(-80%, -100%);
+  -webkit-transform: translate(-80%, -100%) rotate(135deg);
+          transform: translate(-80%, -100%) rotate(135deg);
+}
+
+.izquierdo .home_flecha_cont.derecha {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(80%, -100%);
+          transform: translate(80%, -100%);
+  -webkit-transform: translate(80%, -100%) rotate(-45deg);
+          transform: translate(80%, -100%) rotate(-45deg);
 }
 
 .derecho {
@@ -280,22 +332,6 @@
   }
 }
 
-.derecho .home_flecha_cont {
-  background-color: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 100px;
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
-}
-
-@media (min-width: 576px) {
-  .derecho .home_flecha_cont {
-    width: 42px;
-    height: 42px;
-  }
-}
-
 .derecho .home_flecha_cont.izquierda {
   position: absolute;
   top: 50%;
@@ -314,21 +350,6 @@
           transform: translate(0, 80%);
   -webkit-transform: translate(0, 80%) rotate(45deg);
           transform: translate(0, 80%) rotate(45deg);
-}
-
-.derecho .home_flecha_cont .home_flecha {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-60%, -60%);
-          transform: translate(-60%, -60%);
-  z-index: 100;
-  border: solid #342f2f;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 3px;
-  width: 17.5px;
-  height: 17.5px;
 }
 
 .contacto_texto {
@@ -940,8 +961,8 @@
 }
 
 .hamburger--spin .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
@@ -963,8 +984,8 @@
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
@@ -988,8 +1009,8 @@
 }
 
 .hamburger--spin-r .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin-r .hamburger-inner::after {
@@ -1011,8 +1032,8 @@
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin-r.is-active .hamburger-inner::after {
