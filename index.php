@@ -27,7 +27,7 @@
             <div class="receta_home_cont">
                 <div class="receta_home">
                     <p class="receta_home_nombre">Naranjada <br><span>Mango</span></p>
-                    <img src="img/naranjadamix/receta.png" alt="" class="receta_home_img">
+                    <img src="" alt="" class="receta_home_img">
                 </div>
             </div>
         </div>

@@ -60,6 +60,7 @@ var app = {
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
                         $(".sobre_home").attr("src", json[file][first].img_url);
+                        $(".receta_home_img").attr("src", json2[file2][laskeys2[i]].img_url);
                         console.log(json[file][first]);
                         console.log(json2[file2][laskeys2[i]]);
                     }
