@@ -117,16 +117,27 @@ var app = {
         if(indicador > -1){
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
-            console.log(file);
             var key = url.substring(indicador2 + 1);
             $.getJSON(site_url+file+".json", function(json) {
+                console.log(json[file], key);
                 var jsonItem = json[file][key];
-                console.log(jsonItem);
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
-                if(file == 'recetas'){
+                if(file == 'recetas'){  
                     $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
                 }else if(file == 'sobres'){
-                    console.log("hola");
+                    $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
+                    $(".sabor_interior_titulo p span").html(jsonItem.nombre);
+                    $(".sabor_desc_titulo").html(jsonItem.titulo);
+                    $(".sabor_desc").html(jsonItem.descripcion);
+                    $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png")
+                    var info_nutri = [];
+                    for (var key2 in jsonItem.info_nutri) {
+                        info_nutri.push(jsonItem.info_nutri[key2]);
+                    }
+                    $(".info_nutri_num").each(function (index, element) {
+                        var ele = $(this);
+                        ele.html(info_nutri[index]);
+                    });
                 }
             });
         }

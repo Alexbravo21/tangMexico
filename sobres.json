@@ -16,6 +16,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=uva",
+            "color": "#6b2078",
             "img_url": "img/sobres/uva.jpg"
         },
         "melon":{
@@ -34,6 +35,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=melon",
+            "color": "#fbaf71",
             "img_url": "img/sobres/melon.jpg"
         },
         "naranja":{
@@ -52,6 +54,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranja",
+            "color": "#f1912a",
             "img_url": "img/sobres/naranja.jpg"
         },
         "mandarina":{
@@ -70,6 +73,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mandarina",
+            "color": "#f1912a",
             "img_url": "img/sobres/mandarina.jpg"
         },
         "mango":{
@@ -88,6 +92,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mango",
+            "color": "#efc133",
             "img_url": "img/sobres/mango.jpg"
         },
         "durazno":{
@@ -106,6 +111,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=durazno",
+            "color": "#fd9f85",
             "img_url": "img/sobres/durazno.jpg"
         },
         "limon":{
@@ -124,6 +130,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limon",
+            "color": "#9fca61",
             "img_url": "img/sobres/limon.jpg"
         },
         "guayaba":{
@@ -142,6 +149,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=guayaba",
+            "color": "#e0c348",
             "img_url": "img/sobres/guayaba.jpg"
         },
         "tamarindo":{
@@ -160,6 +168,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=tamarindo",
+            "color": "#854d27",
             "img_url": "img/sobres/tamarindo.jpg"
         },
         "fresa":{
@@ -178,6 +187,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=fresa",
+            "color": "#ea505c",
             "img_url": "img/sobres/fresa.jpg"
         },
         "pina":{
@@ -196,6 +206,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina",
+            "color": "#e9c500",
             "img_url": "img/sobres/pina.jpg"
         },
         "manzana":{
@@ -214,6 +225,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=manzana",
+            "color": "#c6212d",
             "img_url": "img/sobres/manzana.jpg"
         },
         "pina_colada":{
@@ -232,6 +244,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina_colada",
+            "color": "#e9da86",
             "img_url": "img/sobres/pinacolada.jpg"
         },
         "horchata":{
@@ -250,6 +263,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=horchata",
+            "color": "#e7d5a4",
             "img_url": "img/sobres/horchata.jpg"
         },
         "jamaica":{
@@ -268,6 +282,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=jamaica",
+            "color": "#96080a",
             "img_url": "img/sobres/jamaica.jpg"
         },
         "te_negro_limon":{
@@ -286,6 +301,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_limon",
+            "color": "#cee27b",
             "img_url": "img/sobres/telimon.jpg"
         },
         "te_negro_frutos":{
@@ -303,7 +319,8 @@
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
-            "link": "/tang-2019/sabores/sabor_int.php?sobres=te_frutos_rojos",
+            "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_frutos",
+            "color": "#922617",
             "img_url": "img/sobres/tefrutosrojos.jpg"
         },
         "limonada":{
@@ -322,6 +339,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limonada",
+            "color": "#e5d331",
             "img_url": "img/sobres/limonadamix.jpg"
         },
         "fresadamix":{
@@ -339,7 +357,8 @@
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
-            "link": "/tang-2019/sabores/sabor_int.php?sobres=fresada",
+            "link": "/tang-2019/sabores/sabor_int.php?sobres=fresadamix",
+            "color": "#da9362",
             "img_url": "img/sobres/fresadamix.jpg"
         },
         "naranjada":{
@@ -358,6 +377,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranjada",
+            "color": "#e7a531",
             "img_url": "img/sobres/naranjadamix.jpg"
         },
         "pinada":{
@@ -376,6 +396,7 @@
                 "vitamina_c": " 6 mg (10% del VNR**)"
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pinada",
+            "color": "#f47569",
             "img_url": "img/sobres/pinadamix.jpg"
         }
     }
