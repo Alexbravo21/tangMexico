@@ -19,10 +19,10 @@
                 "AGREGAR gajos de durazno y hojas de menta al gusto."
             ],
             "tip": "Puedes usar duraznos en almíbar.",
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "color": "#fd9f85",
+            "img_url" : "img/recetas/home/durazno.png",
+            "home_img_url": "img/recetas/home/durazno.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "fresa":{
             "nombre": "PALETAS DE FRESA",
@@ -39,10 +39,10 @@
                 "CONGELAR durante 2 horas"
             ],
             "tip": "Puedes sustituir las fresas por cualquier fruta de temporada",
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "color": "#ea505c",
+            "img_url" : "img/recetas/home/fresa.png",
+            "home_img_url": "img/recetas/home/fresa.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=fresa"
         },
         "fresadamix":{
             "nombre": "DELICIA DE FRESA",
@@ -60,10 +60,10 @@
                 "LICUAR el hielo, con el agua Tang® Sabor Fresada Mix y la lata de leche condensada.",
                 "SERVIR con rodajas de fresa."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "color": "#da9362",
+            "img_url" : "img/recetas/home/fresadamix.png",
+            "home_img_url": "img/recetas/home/fresadamix.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=fresadamix"
         },
         "guayaba":{
             "nombre": "MINI CHEESECAKE DE GUAYABA",
@@ -95,10 +95,10 @@
                 "HORNEAR a 160°C durante 25 minutos o hasta que esté cocido. ",
                 "ENFRIAR antes de retirar el capacillo."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "color": "#e0c348",
+            "img_url" : "img/recetas/home/guayaba.png",
+            "home_img_url": "img/recetas/home/guayaba.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=guayaba"
         },
         "horchata":{
             "nombre": "CREPAS DE PLÁTANO EN SALSA DE HORCHATA",
@@ -127,8 +127,8 @@
             "tip": "Puedes usar tortillas de harina en lugar de crepas.",
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "jamaica":{
             "nombre": "PECHUGA DE POLLO EN SALSA DE JAMAICA",
@@ -157,8 +157,8 @@
             "tip": "Puedes acompañar con verduras asadas.",
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "limon":{
             "nombre": "LIMONADA ROSA",
@@ -180,8 +180,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "mango":{
             "nombre": "BATIDO DE MANGO",
@@ -206,8 +206,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "manzana":{
             "nombre": "HOTCAKES DE MANZANA",
@@ -233,8 +233,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "melon":{
             "nombre": "AGUA DE MELÓN",
@@ -256,8 +256,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "naranja":{
             "nombre": "TARTA DE NARANJA",
@@ -280,8 +280,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "limonada":{
             "nombre": "LIMONADA BRASILEÑA",
@@ -302,8 +302,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "naranjada":{
             "nombre": "BATIDO DE NARANJA Y MANGO",
@@ -328,8 +328,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "pina":{
             "nombre": "PAY DE PIÑA",
@@ -365,8 +365,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "pina_colada":{
             "nombre": "PIÑA COLADA PLAYERA",
@@ -387,8 +387,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "pinada":{
             "nombre": "PIÑADA FRESCA",
@@ -411,8 +411,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "tamarindo":{
             "nombre": "SMOOTHIE DE TAMARINDO",
@@ -438,8 +438,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "te_negro_frutos":{
             "nombre": "TÉ FRUTAL",
@@ -459,8 +459,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "te_negro_limon":{
             "nombre": "TÉ HELADO CÍTRICO",
@@ -482,8 +482,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "uva":{
             "nombre": "UVA CLERICOT ",
@@ -504,8 +504,8 @@
             ],
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         },
         "mandarina":{
             "nombre": "PASTA ORIENTAL MANDARINA",
@@ -537,8 +537,8 @@
             "tip": "Puedes sustituir el pollo por camarones.",
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "hola",
-            "link": "hola"
+            "home_img_url": "img/recetas/home/naranjada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
         }
     }
 }
