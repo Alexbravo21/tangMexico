@@ -18,7 +18,11 @@
                 "MEZCLAR la grenetina con el agua de durazno y verter en moldes individuales de gelatina.",
                 "AGREGAR gajos de durazno y hojas de menta al gusto."
             ],
-            "tip": "Puedes usar duraznos en almíbar."
+            "tip": "Puedes usar duraznos en almíbar.",
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "fresa":{
             "nombre": "PALETAS DE FRESA",
@@ -34,7 +38,11 @@
                 "COLOCAR las fresas dentro de los moldes para paleta y verter el agua Sabor Fresa.",
                 "CONGELAR durante 2 horas"
             ],
-            "tip": "Puedes sustituir las fresas por cualquier fruta de temporada"
+            "tip": "Puedes sustituir las fresas por cualquier fruta de temporada",
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "fresadamix":{
             "nombre": "DELICIA DE FRESA",
@@ -51,7 +59,11 @@
                 "DISOLVER el sobre de Tang® Sabor Fresa Mix en el agua",
                 "LICUAR el hielo, con el agua Tang® Sabor Fresada Mix y la lata de leche condensada.",
                 "SERVIR con rodajas de fresa."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "guayaba":{
             "nombre": "MINI CHEESECAKE DE GUAYABA",
@@ -82,7 +94,11 @@
                 "VERTER el batido de pay sobre la base de galleta.",
                 "HORNEAR a 160°C durante 25 minutos o hasta que esté cocido. ",
                 "ENFRIAR antes de retirar el capacillo."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "horchata":{
             "nombre": "CREPAS DE PLÁTANO EN SALSA DE HORCHATA",
@@ -108,7 +124,11 @@
                 "CALENTAR nuevamente la sartén con la mantequilla restante y saltear poco las tortillas de harina.",
                 "RELLENAR con el plátano y bañar con la Salsa de Horchata."
             ],
-            "tip": "Puedes usar tortillas de harina en lugar de crepas."
+            "tip": "Puedes usar tortillas de harina en lugar de crepas.",
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "jamaica":{
             "nombre": "PECHUGA DE POLLO EN SALSA DE JAMAICA",
@@ -134,7 +154,11 @@
                 "CALENTAR una sartén con aceite y cocer las pechugas de pollo  previamente salpimentadas.",
                 "SERVIR con la Salsa de Jamaica."
             ],
-            "tip": "Puedes acompañar con verduras asadas."
+            "tip": "Puedes acompañar con verduras asadas.",
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "limon":{
             "nombre": "LIMONADA ROSA",
@@ -153,7 +177,11 @@
                 "DISOLVER el sobre de Tang® Sabor Limón en el agua.",
                 "AGREGAR  las flores de jamaica, las rodajas de limón y los hielos.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "mango":{
             "nombre": "BATIDO DE MANGO",
@@ -175,7 +203,11 @@
                 "LICUAR el hielo, con el agua Sabor Mango.",
                 "SERVIR con cubos de mango.",
                 "DECORAR con hojas de menta y gajos de limón."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "manzana":{
             "nombre": "HOTCAKES DE MANZANA",
@@ -198,7 +230,11 @@
                 "DERRETIR en una sartén la mantequilla y acomodar las manzanas, agregar azúcar, canela y dejar cocinar por 3 minutos. Reservar.",
                 "AGREGAR a la mezcla para hotcakes el sobre de Tang® Sabor Manzana, mezclar y preparar.",
                 "SERVIR con las manzanas caramelizadas."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "melon":{
             "nombre": "AGUA DE MELÓN",
@@ -217,7 +253,11 @@
                 "DISOLVER el sobre de Tang® Sabor Melón en el agua.",
                 "AGREGAR hielo, hojas de menta y kiwi.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "naranja":{
             "nombre": "TARTA DE NARANJA",
@@ -237,7 +277,11 @@
                 "DISOLVER la grenetina hidratada  a baño maría o en el microondas por unos segundos hasta que esté completamente líquida e integrar a la mezcla de Queso Crema Philadelphia®.",
                 "VACIAR en un molde rectangular previamente engrasado con aceite. Refrigerar hasta que cuaje.",
                 "DISOLVER  el sobre de Tang® Sabor Naranja en la miel de maple y servir con el pay."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "limonada":{
             "nombre": "LIMONADA BRASILEÑA",
@@ -255,7 +299,11 @@
                 "DISOLVER el sobre de Tang® Sabor Limonada Mix en el agua.",
                 "LICUAR el hielo, con el agua de limón y la lata de leche condensada.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "naranjada":{
             "nombre": "BATIDO DE NARANJA Y MANGO",
@@ -277,7 +325,11 @@
                 "LICUAR la crema batida con la cucharada de Tang® Sabor Naranjada Mix.",
                 "AGREGAR en un vaso un poco del batido anterior, añadir concentrado de Tang® Sabor Naranjada Mix, añadir un poco más de batido, más concentrado y terminar con rebanadas de mango al gusto.",
                 "DECORAR con rebanadas de naranja y hojas de menta."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "pina":{
             "nombre": "PAY DE PIÑA",
@@ -310,7 +362,11 @@
                 "COLOCAR la tiras de masa sobre el pay pre-horneado, formar un enrejado, sellar bien las orillas y barnizar con huevo.",
                 "TERMINAR de hornear a 160°C por 25 minutos o hasta que el enrejado esté cocido.",
                 "DEJAR enfriar y servir."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "pina_colada":{
             "nombre": "PIÑA COLADA PLAYERA",
@@ -328,7 +384,11 @@
                 "DISOLVER  el sobre de Tang® Sabor Piña Colada en el agua.",
                 "LICUAR el hielo, con el agua de Piña Colada y la lata de leche evaporada.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "pinada":{
             "nombre": "PIÑADA FRESCA",
@@ -348,7 +408,11 @@
                 "DISOLVER el sobre de Tang® Sabor Piñada Mix en el agua.",
                 "AGREGAR hielo, hojas de menta y piña.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "tamarindo":{
             "nombre": "SMOOTHIE DE TAMARINDO",
@@ -371,7 +435,11 @@
                 "LICUAR todo y servir.",
                 "AGREGAR chamoy en las paredes  y en el fondo del vaso.",
                 "AÑADIR el Smoothie de Tamarindo y decorar con palitos de tamarindo."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "te_negro_frutos":{
             "nombre": "TÉ FRUTAL",
@@ -388,7 +456,11 @@
             "preparacion": [
                 "DISOLVER el sobre de Tang® Té Negro Sabor Frutos Rojos en el agua.",
                 "SERVIR en copas con frutas y hojitas de menta."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "te_negro_limon":{
             "nombre": "TÉ HELADO CÍTRICO",
@@ -407,7 +479,11 @@
             "preparacion": [
                 "DISOLVER el sobre de Tang® Té Negro Sabor Limón en el agua.",
                 "SERVIR con hielo, rebanadas de limón y una ramita de romero fresco."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "uva":{
             "nombre": "UVA CLERICOT ",
@@ -425,7 +501,11 @@
                 "DISOLVER el sobre de Tang® Sabor Uva en el agua.",
                 "AGREGAR  el jugo de limón y la fruta.",
                 "SERVIR."
-            ]
+            ],
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         },
         "mandarina":{
             "nombre": "PASTA ORIENTAL MANDARINA",
@@ -454,7 +534,11 @@
                 "INCORPORAR el brócoli y la pasta.",
                 "SERVIR y espolvorear con ajonjolí negro."
             ],
-            "tip": "Puedes sustituir el pollo por camarones."
+            "tip": "Puedes sustituir el pollo por camarones.",
+            "color": "#fff",
+            "img_url" : "hola",
+            "home_img_url": "hola",
+            "link": "hola"
         }
     }
 }

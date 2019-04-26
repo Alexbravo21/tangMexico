@@ -20,7 +20,7 @@
 </div>
 <div class="fondo_madera">
     <div class="izquierdo">
-        <img src="img/sobres/naranjadamix.jpg" alt="Naranjada Mix" class="sobre">
+        <img src="" alt="Naranjada Mix" class="sobre sobre_home">
     </div><!--
     --><div class="derecho">
         <div class="plasta_circular">
