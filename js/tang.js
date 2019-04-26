@@ -121,9 +121,12 @@ var app = {
             var key = url.substring(indicador2 + 1);
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
+                console.log(jsonItem);
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 if(file == 'recetas'){
-                    $(".receta_interior_cont").css("background-image", jsonItem.img_url);
+                    $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
+                }else if(file == 'sobres'){
+                    console.log("hola");
                 }
             });
         }
