@@ -482,7 +482,7 @@
   width: 100%;
 }
 
-.receta_interior_texto {
+.receta_interior_contenedor {
   position: absolute;
   top: 30px;
   left: 50%;
@@ -491,18 +491,18 @@
   z-index: 10;
   width: 90%;
   height: 65%;
-  overflow: auto;
+  overflow: hidden;
   margin-top: 20px;
 }
 
 @media (min-width: 365px) {
-  .receta_interior_texto {
+  .receta_interior_contenedor {
     height: 80%;
   }
 }
 
 @media (min-width: 770px) {
-  .receta_interior_texto {
+  .receta_interior_contenedor {
     width: 350px;
     position: absolute;
     top: 30px;
@@ -512,7 +512,16 @@
   }
 }
 
-.receta_interior_texto .receta_interior_titulo {
+.receta_interior_contenedor .receta_interior_texto {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-right: 20px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo {
   color: #d87013;
   font-family: 'muli';
   font-weight: bold;
@@ -522,24 +531,24 @@
   width: 100%;
 }
 
-.receta_interior_texto .receta_interior_titulo p {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo p {
   text-align: center;
 }
 
 @media (min-width: 770px) {
-  .receta_interior_texto .receta_interior_titulo p {
+  .receta_interior_contenedor .receta_interior_texto .receta_interior_titulo p {
     width: 70%;
   }
 }
 
-.receta_interior_texto .receta_interior_titulo span {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo span {
   color: #fff;
   font-weight: normal;
   font-size: 1.5rem;
   display: block;
 }
 
-.receta_interior_texto .tiemporciones {
+.receta_interior_contenedor .receta_interior_texto .tiemporciones {
   color: #fff;
   font-size: .7rem;
   line-height: .7rem;
@@ -549,26 +558,26 @@
 }
 
 @media (min-width: 770px) {
-  .receta_interior_texto .tiemporciones {
+  .receta_interior_contenedor .receta_interior_texto .tiemporciones {
     width: 80%;
     margin: 20px 0 0;
     text-align: left;
   }
 }
 
-.receta_interior_texto .tiemporciones .minutos, .receta_interior_texto .tiemporciones .porciones {
+.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones {
   display: inline-block;
   width: 50%;
 }
 
-.receta_interior_texto .tiemporciones .minutos .textbox, .receta_interior_texto .tiemporciones .porciones .textbox {
+.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos .textbox, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones .textbox {
   display: inline-block;
   vertical-align: top;
   margin-left: 3px;
   text-align: left;
 }
 
-.receta_interior_texto .tiemporciones .minutos_num, .receta_interior_texto .tiemporciones .porciones_num {
+.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos_num, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones_num {
   color: #d87013;
   font-size: 1.1rem;
   line-height: 1.1rem;
@@ -576,7 +585,7 @@
   display: block;
 }
 
-.receta_interior_texto .receta_interior_ingredientes {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes {
   color: #d87013;
   font-weight: bold;
   font-size: .9rem;
@@ -585,46 +594,50 @@
 }
 
 @media (min-width: 770px) {
-  .receta_interior_texto .receta_interior_ingredientes {
+  .receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes {
     width: 100%;
   }
 }
 
-.receta_interior_texto .receta_interior_ingredientes .ingredientes_titulo {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes .ingredientes_titulo {
   font-size: 1.3rem;
   margin: 10px 0 15px;
 }
 
-.receta_interior_texto .receta_interior_ingredientes .ingredientes_lista {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes .ingredientes_lista {
   list-style-type: none;
   padding-left: 0;
   width: 80%;
 }
 
-.receta_interior_texto .receta_interior_preparacion {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion {
   color: #fff;
   width: 70%;
   margin: 0 auto;
 }
 
 @media (min-width: 770px) {
-  .receta_interior_texto .receta_interior_preparacion {
+  .receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion {
     width: 100%;
   }
 }
 
-.receta_interior_texto .receta_interior_preparacion .preparacion_titulo {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_titulo {
   font-weight: bold;
   font-size: 1.3rem;
 }
 
-.receta_interior_texto .receta_interior_preparacion .preparacion_lista {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista {
   list-style-type: none;
   padding-left: 0;
   font-size: .9rem;
 }
 
-.receta_interior_texto .receta_interior_preparacion .preparacion_lista span {
+.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista .preparacion_item {
+  margin-bottom: 10px;
+}
+
+.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista .preparacion_item span {
   text-transform: uppercase;
   font-weight: bold;
 }

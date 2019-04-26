@@ -153,6 +153,8 @@ var app = {
                                 $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][o]+'</li>');
                         }
                     }
+                    for(var p=0; p < jsonItem.preparacion.length; p++)
+                    $(".preparacion_lista").append('<li class="preparacion_item">'+jsonItem.preparacion[p]+'</li>');
 
                 }else if(file == 'sobres'){
                     $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
