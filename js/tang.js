@@ -2,15 +2,19 @@ $(document).ready(function () {
     app.init();
 });
 var pos = 0;
+var site_url = '/tang-2019/';
 
 var app = {
     init: function(){
         this.menu();
         this.pruebas();
         this.masboton();
-        this.getJSON('recetas', 'sobres', 0);
+        if($(".fondo_madera").length > 0){
+            this.getJSON('recetas', 'sobres', 0);
+        }
         this.colores_home();
         this.flechas_home();
+        this.getInterior();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -54,7 +58,7 @@ var app = {
         });
     },
     getJSON: function(file, file2, pos){
-        $.getJSON(file+".json", function(json) {
+        $.getJSON(site_url+file+".json", function(json) {
             $(".colores_cont").html("");
             var laskeys = Object.keys(json[file]);
             console.log(laskeys);
@@ -62,7 +66,7 @@ var app = {
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
             }
-            $.getJSON(file2+".json", function(json2) {
+            $.getJSON(site_url+file2+".json", function(json2) {
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
@@ -105,6 +109,21 @@ var app = {
                 pos++;
             }
         });
+    },
+    getInterior: function(){
+        var url = window.location.href;
+        var indicador = url.indexOf('?');
+        var indicador2 = url.indexOf('=');
+        if(indicador > -1){
+            var getvar = url.substring(indicador + 1);
+            var file = getvar.split("=")[0];
+            console.log(file);
+            var key = url.substring(indicador2 + 1);
+            $.getJSON(site_url+file+".json", function(json) {
+                var lareceta = json[file][key];
+                $(".derecho .plasta_circular").css("background-color", lareceta.color);
+            });
+        }
     },
     pruebas: function(){
         //alert("Width: "+$(window).width());
