@@ -7,7 +7,7 @@ var app = {
         this.menu();
         this.pruebas();
         this.masboton();
-        this.getJSON('sobres', 'recetas', 0);
+        this.getJSON('recetas', 'sobres', 0);
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -59,10 +59,10 @@ var app = {
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
-                        $(".sobre_home").attr("src", json[file][first].img_url);
-                        $(".receta_home_img").attr("src", json2[file2][laskeys2[i]].img_url);
-                        console.log(json[file][first]);
-                        console.log(json2[file2][laskeys2[i]]);
+                        $(".receta_home_img").attr("src", json[file][first].img_url);
+                        $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
+                        console.log(json[file][first].img_url);
+                        console.log(json2[file2][laskeys2[i]].img_url);
                     }
                 }
             });
