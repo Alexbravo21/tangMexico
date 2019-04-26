@@ -12,14 +12,14 @@
 </div>
 <div class="fondo_madera">
     <div class="izquierdo">
-        <img src="" alt="Naranjada Mix" class="sobre sobre_home">
+        <a href="" class="sobre_home_a"><img src="" alt="Naranjada Mix" class="sobre sobre_home"></a>
     </div><!--
     --><div class="derecho">
         <div class="plasta_circular">
             <div class="receta_home_cont">
                 <div class="receta_home">
                     <p class="receta_home_nombre"></p>
-                    <img src="" alt="" class="receta_home_img">
+                    <a href="" class="receta_home_img_a"><img src="" alt="" class="receta_home_img"></a>
                 </div>
             </div>
         </div>

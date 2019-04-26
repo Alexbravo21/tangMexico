@@ -2,7 +2,6 @@ $(document).ready(function () {
     app.init();
 });
 var pos = 0;
-var laskeys;
 
 var app = {
     init: function(){
@@ -57,7 +56,8 @@ var app = {
     getJSON: function(file, file2, pos){
         $.getJSON(file+".json", function(json) {
             $(".colores_cont").html("");
-            laskeys = Object.keys(json[file]);
+            var laskeys = Object.keys(json[file]);
+            console.log(laskeys);
             var first = laskeys[pos];
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
@@ -78,6 +78,8 @@ var app = {
                         $(".receta_home_nombre").html(elnombre);
                         $(".receta_home_img").attr("src", json[file][first].img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
+                        $(".receta_home_img_a").attr("href", json[file][first].link);
+                        $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
                     }
                 }
             });

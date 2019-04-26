@@ -288,7 +288,7 @@
             "link": "/tang-2019/sabores/sabor_int.php?sabor=te_negro_limon",
             "img_url": "img/sobres/telimon.jpg"
         },
-        "te_frutos_rojos":{
+        "te_negro_frutos":{
             "nombre": "TÉ NEGRO FRUTOS ROJOS",
             "titulo": "¡Crea una tarde perfecta!",
             "descripcion": "Tang® Té Negro Sabor Frutos Rojos, será ideal para compartir momentos deliciosos y refrescantes con quien tu quieras",
@@ -324,7 +324,7 @@
             "link": "/tang-2019/sabores/sabor_int.php?sabor=limonada",
             "img_url": "img/sobres/limonadamix.jpg"
         },
-        "fresada":{
+        "fresadamix":{
             "nombre": "FRESADA MIX",
             "titulo": "Los sabores más ricos, ahora en un solo sobre ¡Disfrútalos!",
             "descripcion": "Tang® Fresada Mix, es la fusión de Fresa y Maracuyá, sabores tropicales que no vas a dejar de tomar.",
