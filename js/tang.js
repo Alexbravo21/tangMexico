@@ -125,7 +125,6 @@ var app = {
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
             $.getJSON(site_url+file+".json", function(json) {
-                console.log(json[file], key);
                 var jsonItem = json[file][key];
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 if(file == 'recetas'){  
@@ -141,6 +140,20 @@ var app = {
                     $(".receta_interior_titulo").html(elnombre);
                     $(".minutos_num").html(jsonItem.minutos);
                     $(".porciones_num").html(jsonItem.porciones);
+                    var ing_laskeys = Object.keys(jsonItem.ingredientes);
+                    for(var m=0; m < ing_laskeys.length; m++){
+                        var ing_key = ing_laskeys[m];
+                        console.log(ing_key);
+                        if(ing_key == 'normal'){
+                            for(var n=0; n < jsonItem.ingredientes[ing_key].length; n++)
+                                $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][n]+'</li>');
+                        }else{
+                            $(".ingredientes_lista").append('<li class="ingredientes_item ingredientes_titulo uppercase">'+ing_key+'</li>');
+                            for(var o=0; o < jsonItem.ingredientes[ing_key].length; o++)
+                                $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][o]+'</li>');
+                        }
+                    }
+
                 }else if(file == 'sobres'){
                     $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
                     $(".sabor_interior_titulo p span").html(jsonItem.nombre);

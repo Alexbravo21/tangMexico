@@ -21,15 +21,7 @@
             </div>
             <div class="receta_interior_ingredientes">
                 <p class="ingredientes_titulo">INGREDIENTES</p>
-                <ul class="ingredientes_lista">
-                    <li class="ingredientes_item">1 sobre de Tang® sabor limón</li>
-                    <li class="ingredientes_item">2 L de agua natural</li>
-                    <li class="ingredientes_item">rebanadas delgadas</li>
-                    <li class="ingredientes_item">1 pza. de limón sin semillas en rebanadas delgadas</li>
-                    <li class="ingredientes_item">1 cda. de chía</li>
-                    <li class="ingredientes_item">1 ramita de hierbabuena</li>
-                    <li class="ingredientes_item">Hielo al gusto</li>
-                </ul>
+                <ul class="ingredientes_lista"></ul>
             </div>
             <div class="receta_interior_preparacion">
                 <p class="preparacion_titulo">PREPARACIÓN</p>

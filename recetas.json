@@ -4,14 +4,16 @@
             "nombre": "GELATINA DE DURAZNO",
             "minutos": 20,
             "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® Sabor Durazno",
-                "1 lt. de agua",
-                "3 sobres de grenetina",
-                "¾ tza. de agua",
-                "3 pzas. de duraznos cortados en gajos",
-                "Hojas de menta"
-            ],
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Durazno",
+                    "1 lt. de agua",
+                    "3 sobres de grenetina",
+                    "¾ tza. de agua",
+                    "3 pzas. de duraznos cortados en gajos",
+                    "Hojas de menta"
+                ]
+            },
             "preparacion": [
                 "DISOLVER el sobre de Tang® Sabor Durazno en el agua.",
                 "HIDRATAR la grenetina en ¾ de taza de agua y posteriormente fundir a baño maría o en microondas hasta que esté completamente líquido",
@@ -28,11 +30,13 @@
             "nombre": "PALETAS DE FRESA",
             "minutos": 20,
             "porciones": 6,
-            "ingredientes": [
-                "1 sobre de Tang® Sabor Fresa",
-                "1 lt. de agua",
-                "2 tzas. de fresas fileteadas"
-            ],
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Fresa",
+                    "1 lt. de agua",
+                    "2 tzas. de fresas fileteadas"
+                ]
+            },
             "preparacion": [
                 "DISOLVER el sobre de Tang® Sabor Fresa en el agua",
                 "COLOCAR las fresas dentro de los moldes para paleta y verter el agua Sabor Fresa.",
@@ -48,13 +52,15 @@
             "nombre": "DELICIA DE FRESA",
             "minutos": 15,
             "porciones": 4,
-            "ingredientes": [
-                "1 sobre de Tang® Sabor Fresada Mix",
-                "1 lt. de agua",
-                "1 lata de leche condensada",
-                "3 tzas. de hielo",
-                "1 tza. de fresas en rodajas"
-            ],
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor Fresada Mix",
+                    "1 lt. de agua",
+                    "1 lata de leche condensada",
+                    "3 tzas. de hielo",
+                    "1 tza. de fresas en rodajas"
+                ]
+            },
             "preparacion": [
                 "DISOLVER el sobre de Tang® Sabor Fresa Mix en el agua",
                 "LICUAR el hielo, con el agua Tang® Sabor Fresada Mix y la lata de leche condensada.",
