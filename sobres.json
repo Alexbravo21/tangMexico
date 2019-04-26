@@ -14,7 +14,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "7mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=uva",
+            "img_url": "img/sobres/uva.jpg"
         },
         "melon":{
             "nombre": "MELÓN ",
@@ -30,7 +32,9 @@
                 "fibra_dietetica": "0,1g",
                 "sodio": "2mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=melon",
+            "img_url": "img/sobres/melon.jpg"
         },
         "naranja":{
             "nombre": "NARANJA",
@@ -46,7 +50,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "7mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=naranja",
+            "img_url": "img/sobres/naranja.jpg"
         },
         "mandarina":{
             "nombre": "MANDARINA",
@@ -62,7 +68,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "7mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=mandarina",
+            "img_url": "img/sobres/mandarina.jpg"
         },
         "mango":{
             "nombre": "MANGO",
@@ -78,7 +86,9 @@
                 "fibra_dietetica": "0,1g",
                 "sodio": "21mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=mango",
+            "img_url": "img/sobres/mango.jpg"
         },
         "durazno":{
             "nombre": "DURAZNO",
@@ -94,7 +104,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "1mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=durazno",
+            "img_url": "img/sobres/durazno.jpg"
         },
         "limon":{
             "nombre": "LIMÓN",
@@ -110,7 +122,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "20mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=limon",
+            "img_url": "img/sobres/limon.jpg"
         },
         "guayaba":{
             "nombre": "GUAYABA",
@@ -126,7 +140,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=guayaba",
+            "img_url": "img/sobres/guayaba.jpg"
         },
         "tamarindo":{
             "nombre": "TAMARINDO",
@@ -142,7 +158,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "22mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=tamarindo",
+            "img_url": "img/sobres/tamarindo.jpg"
         },
         "fresa":{
             "nombre": "FRESA",
@@ -158,7 +176,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "7mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=fresa",
+            "img_url": "img/sobres/fresa.jpg"
         },
         "pina":{
             "nombre": "PIÑA",
@@ -174,7 +194,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=pina",
+            "img_url": "img/sobres/pina.jpg"
         },
         "manzana":{
             "nombre": "MANZANA",
@@ -190,7 +212,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "5mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=manzana",
+            "img_url": "img/sobres/manzana.jpg"
         },
         "pina_colada":{
             "nombre": "PIÑA COLADA",
@@ -206,7 +230,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=pina_colada",
+            "img_url": "img/sobres/pinacolada.jpg"
         },
         "horchata":{
             "nombre": "HORCHATA",
@@ -222,7 +248,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "1mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=horchata",
+            "img_url": "img/sobres/horchata.jpg"
         },
         "jamaica":{
             "nombre": "JAMAICA",
@@ -238,7 +266,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "1mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=jamaica",
+            "img_url": "img/sobres/jamaica.jpg"
         },
         "te_negro_limon":{
             "nombre": "TÉ NEGRO LIMÓN",
@@ -254,7 +284,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=te_negro_limon",
+            "img_url": "img/sobres/telimon.jpg"
         },
         "te_frutos_rojos":{
             "nombre": "TÉ NEGRO FRUTOS ROJOS",
@@ -270,7 +302,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=te_frutos_rojos",
+            "img_url": "img/sobres/tefrutosrojos.jpg"
         },
         "limonada":{
             "nombre": "LIMONADA MIX",
@@ -286,7 +320,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "23mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=limonada",
+            "img_url": "img/sobres/limonadamix.jpg"
         },
         "fresada":{
             "nombre": "FRESADA MIX",
@@ -302,7 +338,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "0mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=fresada",
+            "img_url": "img/sobres/fresadamix.jpg"
         },
         "naranjada":{
             "nombre": "NARANJADA MIX",
@@ -318,7 +356,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "24mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=naranjada",
+            "img_url": "img/sobres/naranjadamix.jpg"
         },
         "pinada":{
             "nombre": "PIÑADA MIX",
@@ -334,7 +374,9 @@
                 "fibra_dietetica": "0g",
                 "sodio": "23mg",
                 "vitamina_c": " 6 mg (10% del VNR**)"
-            }
+            },
+            "link": "/tang-2019/sabores/sabor_int.php?sabor=pinada",
+            "img_url": "img/sobres/pinadamix.jpg"
         }
     }
 }

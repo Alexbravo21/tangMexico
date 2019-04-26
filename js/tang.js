@@ -7,7 +7,7 @@ var app = {
         this.menu();
         this.pruebas();
         this.masboton();
-        this.getJSON('sobres', 0);
+        this.getJSON('sobres', 'recetas', 0);
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -50,23 +50,20 @@ var app = {
             $(".colores_cont").slideToggle(400);
         });
     },
-    getJSON: function(file, pos){
+    getJSON: function(file, file2, pos){
         var este = this;
         $.getJSON(file+".json", function(json) {
             var laskeys = Object.keys(json[file]);
             var first = laskeys[pos];
-            este.tieJSON(first, "recetas");
-        });
-    },
-    tieJSON: function(first, file2){
-        var este = this;
-        $.getJSON(file2+".json", function(json) {
-            var laskeys2 = Object.keys(json[file2]);
-            for (var i=0; i < laskeys2.length; i++){
-                if(first == laskeys2[i]){
-                    console.log(first, laskeys2[i]);
+            $.getJSON(file2+".json", function(json2) {
+                var laskeys2 = Object.keys(json2[file2]);
+                for (var i=0; i < laskeys2.length; i++){
+                    if(first == laskeys2[i]){
+                        console.log(json[file][first]);
+                        console.log(json2[file2][laskeys2[i]]);
+                    }
                 }
-            }
+            });
         });
     },
     pruebas: function(){
