@@ -9,7 +9,7 @@
             <div class="back_color"></div>
             <div class="recetas_cont">
                 <div class="botones_recetas">
-                    <button type="button" class="enviar_contacto">TODAS</button>
+                    <button type="button" class="enviar_contacto">VER TODO</button>
                     <button type="button" class="enviar_contacto">BEBIDAS</button>
                     <button type="button" class="enviar_contacto">PLATILLOS</button>
                 </div>

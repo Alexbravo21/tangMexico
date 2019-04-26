@@ -3,7 +3,8 @@
 <div class="fondo_claro">
     <div class="secion_logo_medio">
         <p class="contacto_texto">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit nascetur aliquet aenean, nisi interdum placerat eget sociosqu ornare mollis mauris.
+        <strong>¡Queremos escucharte!</strong><br>
+        Si tienes dudas o comentarios respecto a nuestros productos o recetas puedes escribirnos. Pronto alguien de nuestro equipo se pondrá en contacto contigo.
         </p>
         <div class="fondo_claro_int">
             <div class="back_color"></div>

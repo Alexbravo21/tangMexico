@@ -46,7 +46,7 @@
         <div class="madera madera4"></div>
         <div class="menu_botones">
             <a href="<?=$site_url?>"><button class="menu_boton">INICIO</button></a>
-            <a href="<?=$site_url?>sabores"><button class="menu_boton">PRODUCTOS</button></a>
+            <a href="<?=$site_url?>sabores"><button class="menu_boton">SABORES</button></a>
             <a href="<?=$site_url?>recetas"><button class="menu_boton">RECETAS</button></a>
             <a href="<?=$site_url?>"><button class="menu_boton">#CAMPAÑA</button></a>
             <a href="<?=$site_url?>"><button class="menu_boton">PROMO</button></a>
