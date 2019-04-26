@@ -20,7 +20,7 @@
             ],
             "tip": "Puedes usar duraznos en almíbar.",
             "color": "#fd9f85",
-            "img_url" : "img/recetas/home/durazno.png",
+            "img_url" : "img/recetas/big/durazno.png",
             "home_img_url": "img/recetas/home/durazno.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=durazno"
         },
@@ -40,7 +40,7 @@
             ],
             "tip": "Puedes sustituir las fresas por cualquier fruta de temporada",
             "color": "#ea505c",
-            "img_url" : "img/recetas/home/fresa.png",
+            "img_url" : "img/recetas/big/fresa.png",
             "home_img_url": "img/recetas/home/fresa.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=fresa"
         },
@@ -61,7 +61,7 @@
                 "SERVIR con rodajas de fresa."
             ],
             "color": "#da9362",
-            "img_url" : "img/recetas/home/fresadamix.png",
+            "img_url" : "img/recetas/big/fresadamix.png",
             "home_img_url": "img/recetas/home/fresadamix.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=fresadamix"
         },
@@ -96,7 +96,7 @@
                 "ENFRIAR antes de retirar el capacillo."
             ],
             "color": "#e0c348",
-            "img_url" : "img/recetas/home/guayaba.png",
+            "img_url" : "img/recetas/big/guayaba.png",
             "home_img_url": "img/recetas/home/guayaba.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=guayaba"
         },
@@ -126,7 +126,7 @@
             ],
             "tip": "Puedes usar tortillas de harina en lugar de crepas.",
             "color": "#e7d5a4",
-            "img_url" : "img/recetas/home/horchata.png",
+            "img_url" : "img/recetas/big/horchata.png",
             "home_img_url": "img/recetas/home/horchata.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=horchata"
         },
@@ -156,7 +156,7 @@
             ],
             "tip": "Puedes acompañar con verduras asadas.",
             "color": "#96080a",
-            "img_url" : "img/recetas/home/jamaica.png",
+            "img_url" : "img/recetas/big/jamaica.png",
             "home_img_url": "img/recetas/home/jamaica.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=jamaica"
         },
@@ -179,7 +179,7 @@
                 "SERVIR."
             ],
             "color": "#9fca61",
-            "img_url" : "img/recetas/home/limon.png",
+            "img_url" : "img/recetas/big/limon.png",
             "home_img_url": "img/recetas/home/limon.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=limon"
         },
@@ -212,7 +212,7 @@
             ],
             "tip": "Puedes sustituir el pollo por camarones.",
             "color": "#f1912a",
-            "img_url" : "img/recetas/home/mandarina.png",
+            "img_url" : "img/recetas/big/mandarina.png",
             "home_img_url": "img/recetas/home/mandarina.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=mandarina"
         },
@@ -238,7 +238,7 @@
                 "DECORAR con hojas de menta y gajos de limón."
             ],
             "color": "#efc133",
-            "img_url" : "img/recetas/home/mango.png",
+            "img_url" : "img/recetas/big/mango.png",
             "home_img_url": "img/recetas/home/mango.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=mango"
         },
@@ -265,7 +265,7 @@
                 "SERVIR con las manzanas caramelizadas."
             ],
             "color": "#c6212d",
-            "img_url" : "img/recetas/home/manzana.png",
+            "img_url" : "img/recetas/big/manzana.png",
             "home_img_url": "img/recetas/home/manzana.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=manzana"
         },
@@ -288,7 +288,7 @@
                 "SERVIR."
             ],
             "color": "#fbaf71",
-            "img_url" : "img/recetas/home/melon.png",
+            "img_url" : "img/recetas/big/melon.png",
             "home_img_url": "img/recetas/home/melon.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=melon"
         },
@@ -312,7 +312,7 @@
                 "DISOLVER  el sobre de Tang® Sabor Naranja en la miel de maple y servir con el pay."
             ],
             "color": "#f1912a",
-            "img_url" : "img/recetas/home/naranja.png",
+            "img_url" : "img/recetas/big/naranja.png",
             "home_img_url": "img/recetas/home/naranja.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=naranja"
         },
@@ -334,7 +334,7 @@
                 "SERVIR."
             ],
             "color": "#e5d331",
-            "img_url" : "img/recetas/home/limonada.png",
+            "img_url" : "img/recetas/big/limonada.png",
             "home_img_url": "img/recetas/home/limonada.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=limonada"
         },
@@ -360,7 +360,7 @@
                 "DECORAR con rebanadas de naranja y hojas de menta."
             ],
             "color": "#e7a531",
-            "img_url" : "img/recetas/home/naranjada.png",
+            "img_url" : "img/recetas/big/naranjada.png",
             "home_img_url": "img/recetas/home/naranjada.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=naranjada"
         },
@@ -397,7 +397,7 @@
                 "DEJAR enfriar y servir."
             ],
             "color": "#e9c500",
-            "img_url" : "img/recetas/home/pina.png",
+            "img_url" : "img/recetas/big/pina.png",
             "home_img_url": "img/recetas/home/pina.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pina"
         },
@@ -421,7 +421,7 @@
                 "SERVIR."
             ],
             "color": "#f47569",
-            "img_url" : "img/recetas/home/pinada.png",
+            "img_url" : "img/recetas/big/pinada.png",
             "home_img_url": "img/recetas/home/pinada.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pinada"
         },
@@ -443,7 +443,7 @@
                 "SERVIR."
             ],
             "color": "#e9da86",
-            "img_url" : "img/recetas/home/pina_colada.png",
+            "img_url" : "img/recetas/big/pina_colada.png",
             "home_img_url": "img/recetas/home/pina_colada.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pina_colada"
         },
@@ -470,7 +470,7 @@
                 "AÑADIR el Smoothie de Tamarindo y decorar con palitos de tamarindo."
             ],
             "color": "#854d27",
-            "img_url" : "img/recetas/home/tamarindo.png",
+            "img_url" : "img/recetas/big/tamarindo.png",
             "home_img_url": "img/recetas/home/tamarindo.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=tamarindo"
         },
@@ -491,7 +491,7 @@
                 "SERVIR en copas con frutas y hojitas de menta."
             ],
             "color": "#922617",
-            "img_url" : "img/recetas/home/te_negro_frutos.png",
+            "img_url" : "img/recetas/big/te_negro_frutos.png",
             "home_img_url": "img/recetas/home/te_negro_frutos.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_frutos"
         },
@@ -514,7 +514,7 @@
                 "SERVIR con hielo, rebanadas de limón y una ramita de romero fresco."
             ],
             "color": "#cee27b",
-            "img_url" : "img/recetas/home/te_negro_limon.png",
+            "img_url" : "img/recetas/big/te_negro_limon.png",
             "home_img_url": "img/recetas/home/te_negro_limon.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_limon"
         },
@@ -536,7 +536,7 @@
                 "SERVIR."
             ],
             "color": "#6b2078",
-            "img_url" : "img/recetas/home/uva.png",
+            "img_url" : "img/recetas/big/uva.png",
             "home_img_url": "img/recetas/home/uva.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=uva"
         }

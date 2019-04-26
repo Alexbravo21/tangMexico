@@ -1,6 +1,6 @@
 <?php include('../header.php') ?>
 
-<div class="receta_interior_cont" style="background-image: url(<?=$site_url?>img/recetas/big/batido_naranja_mango.jpg);">
+<div class="receta_interior_cont">
     <div class="izquierdo"></div><!--
 --><div class="derecho">
         <div class="receta_interior_texto">

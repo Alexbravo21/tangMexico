@@ -80,7 +80,7 @@ var app = {
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
                         $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                         $(".receta_home_nombre").html(elnombre);
-                        $(".receta_home_img").attr("src", json[file][first].img_url);
+                        $(".receta_home_img").attr("src", json[file][first].home_img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
                         $(".receta_home_img_a").attr("href", json[file][first].link);
                         $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
@@ -120,8 +120,11 @@ var app = {
             console.log(file);
             var key = url.substring(indicador2 + 1);
             $.getJSON(site_url+file+".json", function(json) {
-                var lareceta = json[file][key];
-                $(".derecho .plasta_circular").css("background-color", lareceta.color);
+                var jsonItem = json[file][key];
+                $(".derecho .plasta_circular").css("background-color", jsonItem.color);
+                if(file == 'recetas'){
+                    $(".receta_interior_cont").css("background-image", jsonItem.img_url);
+                }
             });
         }
     },
