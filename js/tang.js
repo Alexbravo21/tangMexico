@@ -1,6 +1,8 @@
 $(document).ready(function () {
     app.init();
 });
+var pos = 0;
+var laskeys;
 
 var app = {
     init: function(){
@@ -9,6 +11,7 @@ var app = {
         this.masboton();
         this.getJSON('recetas', 'sobres', 0);
         this.colores_home();
+        this.flechas_home();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -54,7 +57,7 @@ var app = {
     getJSON: function(file, file2, pos){
         $.getJSON(file+".json", function(json) {
             $(".colores_cont").html("");
-            var laskeys = Object.keys(json[file]);
+            laskeys = Object.keys(json[file]);
             var first = laskeys[pos];
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
@@ -65,21 +68,16 @@ var app = {
                     if(first == laskeys2[i]){
                         var nombres = json[file][first].nombre.split(" ");
                         var media = Math.floor(nombres.length/2);
-                        var nomb = "";
-                        var nomb2 = "";
-                        for(var k=0; k<media; k++){
+                        var nomb = "", nomb2 = "";
+                        for(var k=0; k<media; k++)
                              nomb = nomb + nombres[k] + " ";
-                        }
-                        for(var j=media; j<nombres.length; j++){
+                        for(var j=media; j<nombres.length; j++)
                              nomb2 = nomb2 + nombres[j] + " ";
-                        }
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
                         $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                         $(".receta_home_nombre").html(elnombre);
                         $(".receta_home_img").attr("src", json[file][first].img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
-                        // console.log(json[file][first].img_url);
-                        // console.log(json2[file2][laskeys2[i]].img_url);
                     }
                 }
             });
@@ -88,8 +86,22 @@ var app = {
     colores_home: function(){
         var este = this;
         $(document).on("click", ".colores_item", function(){
-            var pos = $(this).data('pos');
+            pos = $(this).data('pos');
             este.getJSON("recetas", "sobres", pos);
+        });
+    },
+    flechas_home: function(){
+        var este = this;
+        $(document).on("click", ".home_flecha_cont", function(){
+            if($(this).hasClass('izquierda')){
+                pos = (pos == 0) ? 21 : pos;
+                este.getJSON("recetas", "sobres", (pos-1));
+                pos--;
+            }else{
+                pos = (pos == 20) ? -1 : pos;
+                este.getJSON("recetas", "sobres", (pos+1));
+                pos++;
+            }
         });
     },
     pruebas: function(){
