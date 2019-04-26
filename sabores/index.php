@@ -1,11 +1,6 @@
 <?php include('../header.php') ?>
 
-<?php 
-    $log_directory = 'C:\xampp\htdocs\tang-2019\img\sobres\mini';
-    //$log_directory = '/var/www/test.catorcedias.com/tang-2019/img/sobres/mini';
-?>
-
-<div class="fondo_claro">
+<div class="fondo_claro sabores_seccion">
     <div class="secion_logo_medio">
         <p class="contacto_texto">
             Lorem ipsum dolor sit amet consectetur adipiscing elit nascetur aliquet aenean, nisi interdum placerat eget sociosqu ornare mollis mauris.
@@ -21,21 +16,7 @@
                 </div>
                 <div class="sobres_thumbs_cont">
                     <div class="col-12">
-                        <div class="row">
-                            <?php 
-                            foreach(glob($log_directory.'/*.png') as $file) {
-                                $position = strrpos($file, '/');
-                                $filename = $position === false ? $file : substr($file, $position + 1);
-                                ?>
-                                    <div class="col-6 col-md-3">
-                                        <div class="receta_thumb_cont">
-                                        <a href="sabor_int.php"><img src="<?=$site_url?>img/sobres/mini/<?=$filename?>" alt="" class="receta_thumb"></a>
-                                        </div>
-                                    </div>
-                                <?php
-                            }
-                            ?>
-                        </div>
+                        <div class="row"></div>
                     </div>
                 </div>
             </div>

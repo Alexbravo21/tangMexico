@@ -4,14 +4,12 @@
     <div class="izquierdo"></div><!--
 --><div class="derecho">
         <div class="receta_interior_texto">
-            <div class="receta_interior_titulo">
-                <p>BATIDO DE <span>NARANJA Y MANGO</span></p>
-            </div>
+            <div class="receta_interior_titulo"></div>
             <div class="tiemporciones">
                 <div class="minutos">
                     <img src="<?=$site_url?>img/reloj.png" alt="" class="reloj">
                     <div class="textbox">
-                        <span class="minutos_num">10</span><span class="minutos_texto">MINUTOS</span>
+                        <span class="minutos_num"></span><span class="minutos_texto">MINUTOS</span>
                     </div>
                 </div><!--
                 --><div class="porciones">

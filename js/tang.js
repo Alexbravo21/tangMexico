@@ -12,6 +12,12 @@ var app = {
         if($(".fondo_madera").length > 0){
             this.getJSON('recetas', 'sobres', 0);
         }
+        if($(".recetas_seccion").length > 0){
+            this.getThumbs('recetas');
+        }
+        if($(".sabores_seccion").length > 0){
+            this.getThumbs('sobres');
+        }
         this.colores_home();
         this.flechas_home();
         this.getInterior();
@@ -123,7 +129,18 @@ var app = {
                 var jsonItem = json[file][key];
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 if(file == 'recetas'){  
+                    var nombres = json[file][key].nombre.split(" ");
+                    var media = Math.floor(nombres.length/2);
+                    var nomb = "", nomb2 = "";
+                    for(var k=0; k<media; k++)
+                         nomb = nomb + nombres[k] + " ";
+                    for(var j=media; j<nombres.length; j++)
+                         nomb2 = nomb2 + nombres[j] + " ";
+                    var elnombre = nomb+"<br><span>"+nomb2+"</span>";
                     $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
+                    $(".receta_interior_titulo").html(elnombre);
+                    $(".minutos_num").html(jsonItem.minutos);
+                    $(".porciones_num").html(jsonItem.porciones);
                 }else if(file == 'sobres'){
                     $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
                     $(".sabor_interior_titulo p span").html(jsonItem.nombre);
@@ -141,6 +158,21 @@ var app = {
                 }
             });
         }
+    },
+    getThumbs: function(file){
+        $.getJSON(site_url+file+".json", function(json) {
+            var carpeta = (file == 'recetas') ? 'thumbs' : 'mini';
+            for (const key in json[file]) {
+                $("."+file+"_thumbs_cont .row").append(`
+                    <div class="col-6 col-md-3">
+                        <div class="receta_thumb_cont">
+                            <a href="sabor_int.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
+                        </div>
+                    </div>
+                `);
+            }
+            
+        });
     },
     pruebas: function(){
         //alert("Width: "+$(window).width());
