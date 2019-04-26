@@ -162,11 +162,12 @@ var app = {
     getThumbs: function(file){
         $.getJSON(site_url+file+".json", function(json) {
             var carpeta = (file == 'recetas') ? 'thumbs' : 'mini';
+            var int = (file == 'recetas') ? 'receta_int' : 'sabor_int';
             for (const key in json[file]) {
                 $("."+file+"_thumbs_cont .row").append(`
                     <div class="col-6 col-md-3">
                         <div class="receta_thumb_cont">
-                            <a href="sabor_int.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
+                            <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
                         </div>
                     </div>
                 `);
