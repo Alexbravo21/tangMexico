@@ -59,12 +59,22 @@ var app = {
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
-                        console.log(json[file][first].nombre);
-                        $(".receta_home_nombre").html(json[file][first].nombre);
+                        var nombres = json[file][laskeys[i]].nombre.split(" ");
+                        var media = Math.floor(nombres.length/2);
+                        var nomb = "";
+                        var nomb2 = "";
+                        for(var k=0; k<media; k++){
+                             nomb = nomb + nombres[k] + " ";
+                        }
+                        for(var j=media; j<nombres.length; j++){
+                             nomb2 = nomb2 + nombres[j] + " ";
+                        }
+                        var elnombre = nomb+"<br><span>"+nomb2+"</span>";
+                        $(".receta_home_nombre").html(elnombre);
                         $(".receta_home_img").attr("src", json[file][first].img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
-                        console.log(json[file][first].img_url);
-                        console.log(json2[file2][laskeys2[i]].img_url);
+                        // console.log(json[file][first].img_url);
+                        // console.log(json2[file2][laskeys2[i]].img_url);
                     }
                 }
             });
