@@ -8,7 +8,7 @@
                 "1 sobre de Tang® Sabor Durazno",
                 "1 lt. de agua",
                 "3 sobres de grenetina",
-                "¾ tza. de agua ",
+                "¾ tza. de agua",
                 "3 pzas. de duraznos cortados en gajos",
                 "Hojas de menta"
             ],
@@ -30,7 +30,7 @@
             "porciones": 6,
             "ingredientes": [
                 "1 sobre de Tang® Sabor Fresa",
-                "1 lt. de agua ",
+                "1 lt. de agua",
                 "2 tzas. de fresas fileteadas"
             ],
             "preparacion": [
@@ -92,7 +92,7 @@
                 "MEZCLAR la galleta molida Marbúdorada® con la mantequilla derretida.",
                 "COLOCAR los capacillos en el molde y cubrir el fondo con la galleta, presionando perfectamente.",
                 "VERTER el batido de pay sobre la base de galleta.",
-                "HORNEAR a 160°C durante 25 minutos o hasta que esté cocido. ",
+                "HORNEAR a 160°C durante 25 minutos o hasta que esté cocido.",
                 "ENFRIAR antes de retirar el capacillo."
             ],
             "color": "#e0c348",
@@ -192,12 +192,12 @@
                     "½ sobre de Tang® Sabor Mandarina",
                     "1 ½ tza. de caldo de pollo",
                     "2 cdas. de fécula de maíz",
-                    "½ tza. de agua ",
-                    "4 cdas. de aceite ",
+                    "½ tza. de agua",
+                    "4 cdas. de aceite",
                     "1 pimiento rojo, 1 verde y 1 amarillo cortados en cubos medianos",
                     "½ cebolla morada cortada en cubos grandes",
                     "2 medias pechugas cortadas en cubos grandes",
-                    "½ tza. de brócoli cocido ",
+                    "½ tza. de brócoli cocido",
                     "2 cdas. de ajonjolí negro",
                     "500 gr. de pasta tornillo cocida"
                 ]
@@ -253,9 +253,9 @@
                     "Mantequilla derretida, la cantidad necesaria"
                 ],
                 "para_las_manzanas": [
-                    "1 cda. de mantequilla ",
+                    "1 cda. de mantequilla",
                     "2 pzas. de manzanas verdes peladas y cortadas en rodajas",
-                    "2 cdas. de azúcar ",
+                    "2 cdas. de azúcar",
                     "½ cdita. de canela en polvo"
                 ]
             },
@@ -324,7 +324,7 @@
                 "normal": [
                     "1 sobre de Tang® Sabor Limonada Mix",
                     "1 lt. de agua",
-                    "1 lata de leche condensada ",
+                    "1 lata de leche condensada",
                     "3 tzas. de hielo"
                 ]
             },
@@ -385,11 +385,11 @@
                 ]
             },
             "preparacion": [
-                "MEZCLAR el azúcar con la mantequilla, agregar el huevo e integrar, incorporar la harina y amasar. ",
-                "REFRIGERAR la masa por 15 minutos, dividir en 2 (1 porción para la base del molde  y la otra será para el enrejado). ",
+                "MEZCLAR el azúcar con la mantequilla, agregar el huevo e integrar, incorporar la harina y amasar.",
+                "REFRIGERAR la masa por 15 minutos, dividir en 2 (1 porción para la base del molde  y la otra será para el enrejado).",
                 "EXTENDER una porción de masa, cubrir la base y orillas de un molde para tarta.",
                 "LICUAR el Queso Crema Philadelphia®, azúcar, fécula, ½ sobre de Tang® Sabor Piña, huevo y la crema.",
-                "VERTER el batido de pay sobre el molde previamente cubierto con la masa. Pre-cocer a 160°C durante 20 minutos o hasta que el pay haya creado una costra. ",
+                "VERTER el batido de pay sobre el molde previamente cubierto con la masa. Pre-cocer a 160°C durante 20 minutos o hasta que el pay haya creado una costra.",
                 "CUBRIR cuidadosamente con la mermelada de piña para no romper la costra. Reservar.",
                 "EXTENDER la masa restante y cortar tiras de 25 centímetros aproximadamente.",
                 "COLOCAR la tiras de masa sobre el pay pre-horneado, formar un enrejado, sellar bien las orillas y barnizar con huevo.",
@@ -410,7 +410,7 @@
                     "1 sobre de Tang® Sabor Piñada Mix",
                     "1 lt. de agua mineral",
                     "3 guayabas rosas en rodajas",
-                    "Piña al gusto ",
+                    "Piña al gusto",
                     "Hielo al gusto",
                     "Hojas de menta"
                 ]
@@ -432,7 +432,7 @@
             "ingredientes": {
                 "normal": [
                     "1 sobre de Tang® Sabor a Piña Colada",
-                    "1 lt. de agua ",
+                    "1 lt. de agua",
                     "1 lata de leche evaporada",
                     "3 tzas. de hielo "
                 ]
@@ -469,10 +469,10 @@
                 "AGREGAR chamoy en las paredes  y en el fondo del vaso.",
                 "AÑADIR el Smoothie de Tamarindo y decorar con palitos de tamarindo."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#854d27",
+            "img_url" : "img/recetas/home/tamarindo.png",
+            "home_img_url": "img/recetas/home/tamarindo.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=tamarindo"
         },
         "te_negro_frutos":{
             "nombre": "TÉ FRUTAL",
@@ -490,10 +490,10 @@
                 "DISOLVER el sobre de Tang® Té Negro Sabor Frutos Rojos en el agua.",
                 "SERVIR en copas con frutas y hojitas de menta."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#922617",
+            "img_url" : "img/recetas/home/te_negro_frutos.png",
+            "home_img_url": "img/recetas/home/te_negro_frutos.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=te_negro_frutos"
         },
         "te_negro_limon":{
             "nombre": "TÉ HELADO CÍTRICO",
@@ -513,13 +513,13 @@
                 "DISOLVER el sobre de Tang® Té Negro Sabor Limón en el agua.",
                 "SERVIR con hielo, rebanadas de limón y una ramita de romero fresco."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#cee27b",
+            "img_url" : "img/recetas/home/te_negro_limon.png",
+            "home_img_url": "img/recetas/home/te_negro_limon.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=te_negro_limon"
         },
         "uva":{
-            "nombre": "UVA CLERICOT ",
+            "nombre": "UVA CLERICOT",
             "minutos": 20,
             "porciones": 6,
             "ingredientes": {
@@ -535,10 +535,10 @@
                 "AGREGAR  el jugo de limón y la fruta.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#6b2078",
+            "img_url" : "img/recetas/home/uva.png",
+            "home_img_url": "img/recetas/home/uva.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=uva"
         }
     }
 }

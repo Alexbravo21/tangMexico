@@ -26,7 +26,7 @@
         <div class="plasta_circular">
             <div class="receta_home_cont">
                 <div class="receta_home">
-                    <p class="receta_home_nombre">Naranjada <br><span>Mango</span></p>
+                    <p class="receta_home_nombre"></p>
                     <img src="" alt="" class="receta_home_img">
                 </div>
             </div>

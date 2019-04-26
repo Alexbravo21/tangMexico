@@ -59,6 +59,8 @@ var app = {
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
                     if(first == laskeys2[i]){
+                        console.log(json[file][first].nombre);
+                        $(".receta_home_nombre").html(json[file][first].nombre);
                         $(".receta_home_img").attr("src", json[file][first].img_url);
                         $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
                         console.log(json[file][first].img_url);
