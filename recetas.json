@@ -125,10 +125,10 @@
                 "RELLENAR con el plátano y bañar con la Salsa de Horchata."
             ],
             "tip": "Puedes usar tortillas de harina en lugar de crepas.",
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#e7d5a4",
+            "img_url" : "img/recetas/home/horchata.png",
+            "home_img_url": "img/recetas/home/horchata.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=horchata"
         },
         "jamaica":{
             "nombre": "PECHUGA DE POLLO EN SALSA DE JAMAICA",
@@ -155,10 +155,10 @@
                 "SERVIR con la Salsa de Jamaica."
             ],
             "tip": "Puedes acompañar con verduras asadas.",
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#96080a",
+            "img_url" : "img/recetas/home/jamaica.png",
+            "home_img_url": "img/recetas/home/jamaica.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=jamaica"
         },
         "limon":{
             "nombre": "LIMONADA ROSA",
@@ -178,10 +178,43 @@
                 "AGREGAR  las flores de jamaica, las rodajas de limón y los hielos.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#9fca61",
+            "img_url" : "img/recetas/home/limon.png",
+            "home_img_url": "img/recetas/home/limon.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=limon"
+        },
+        "mandarina":{
+            "nombre": "PASTA ORIENTAL MANDARINA",
+            "minutos": 30,
+            "porciones": 4,
+            "ingredientes": {
+                "normal": [
+                    "½ sobre de Tang® Sabor Mandarina",
+                    "1 ½ tza. de caldo de pollo",
+                    "2 cdas. de fécula de maíz",
+                    "½ tza. de agua ",
+                    "4 cdas. de aceite ",
+                    "1 pimiento rojo, 1 verde y 1 amarillo cortados en cubos medianos",
+                    "½ cebolla morada cortada en cubos grandes",
+                    "2 medias pechugas cortadas en cubos grandes",
+                    "½ tza. de brócoli cocido ",
+                    "2 cdas. de ajonjolí negro",
+                    "500 gr. de pasta tornillo cocida"
+                ]
+            },
+            "preparacion": [
+                "DISOLVER el sobre de Tang® Sabor Mandarina en el caldo de pollo. Reservar.",
+                "DILUIR  la fécula en ½ taza de agua. Reservar.",
+                "CALENTAR una sartén con 4 cucharadas de aceite, incorporar el pollo, la cebolla y los  pimientos. Cocinar.",
+                "VERTER el sobre de Tang® Sabor Mandarina con la fécula y dejar que espese un poco.",
+                "INCORPORAR el brócoli y la pasta.",
+                "SERVIR y espolvorear con ajonjolí negro."
+            ],
+            "tip": "Puedes sustituir el pollo por camarones.",
+            "color": "#f1912a",
+            "img_url" : "img/recetas/home/mandarina.png",
+            "home_img_url": "img/recetas/home/mandarina.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=mandarina"
         },
         "mango":{
             "nombre": "BATIDO DE MANGO",
@@ -204,10 +237,10 @@
                 "SERVIR con cubos de mango.",
                 "DECORAR con hojas de menta y gajos de limón."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#efc133",
+            "img_url" : "img/recetas/home/mango.png",
+            "home_img_url": "img/recetas/home/mango.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=mango"
         },
         "manzana":{
             "nombre": "HOTCAKES DE MANZANA",
@@ -217,7 +250,7 @@
                 "normal": [
                     "2 tzas. de mezcla preparada para hotcakes",
                     "¼ de sobre Tang® Sabor Manzana",
-                    "Mantequilla derretida, la cantidad necesaria "
+                    "Mantequilla derretida, la cantidad necesaria"
                 ],
                 "para_las_manzanas": [
                     "1 cda. de mantequilla ",
@@ -231,10 +264,10 @@
                 "AGREGAR a la mezcla para hotcakes el sobre de Tang® Sabor Manzana, mezclar y preparar.",
                 "SERVIR con las manzanas caramelizadas."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#c6212d",
+            "img_url" : "img/recetas/home/manzana.png",
+            "home_img_url": "img/recetas/home/manzana.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=manzana"
         },
         "melon":{
             "nombre": "AGUA DE MELÓN",
@@ -254,10 +287,10 @@
                 "AGREGAR hielo, hojas de menta y kiwi.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#fbaf71",
+            "img_url" : "img/recetas/home/melon.png",
+            "home_img_url": "img/recetas/home/melon.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=melon"
         },
         "naranja":{
             "nombre": "TARTA DE NARANJA",
@@ -278,10 +311,10 @@
                 "VACIAR en un molde rectangular previamente engrasado con aceite. Refrigerar hasta que cuaje.",
                 "DISOLVER  el sobre de Tang® Sabor Naranja en la miel de maple y servir con el pay."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#f1912a",
+            "img_url" : "img/recetas/home/naranja.png",
+            "home_img_url": "img/recetas/home/naranja.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=naranja"
         },
         "limonada":{
             "nombre": "LIMONADA BRASILEÑA",
@@ -300,10 +333,10 @@
                 "LICUAR el hielo, con el agua de limón y la lata de leche condensada.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#e5d331",
+            "img_url" : "img/recetas/home/limonada.png",
+            "home_img_url": "img/recetas/home/limonada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=limonada"
         },
         "naranjada":{
             "nombre": "BATIDO DE NARANJA Y MANGO",
@@ -326,10 +359,10 @@
                 "AGREGAR en un vaso un poco del batido anterior, añadir concentrado de Tang® Sabor Naranjada Mix, añadir un poco más de batido, más concentrado y terminar con rebanadas de mango al gusto.",
                 "DECORAR con rebanadas de naranja y hojas de menta."
             ],
-            "color": "#fff",
+            "color": "#e7a531",
             "img_url" : "img/recetas/home/naranjada.png",
             "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "link": "/tang-2019/recetas/receta_int.php?receta=naranjada"
         },
         "pina":{
             "nombre": "PAY DE PIÑA",
@@ -363,32 +396,10 @@
                 "TERMINAR de hornear a 160°C por 25 minutos o hasta que el enrejado esté cocido.",
                 "DEJAR enfriar y servir."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
-        },
-        "pina_colada":{
-            "nombre": "PIÑA COLADA PLAYERA",
-            "minutos": 15,
-            "porciones": 4,
-            "ingredientes": {
-                "normal": [
-                    "1 sobre de Tang® Sabor a Piña Colada",
-                    "1 lt. de agua ",
-                    "1 lata de leche evaporada",
-                    "3 tzas. de hielo "
-                ]
-            },
-            "preparacion": [
-                "DISOLVER  el sobre de Tang® Sabor Piña Colada en el agua.",
-                "LICUAR el hielo, con el agua de Piña Colada y la lata de leche evaporada.",
-                "SERVIR."
-            ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#e9c500",
+            "img_url" : "img/recetas/home/pina.png",
+            "home_img_url": "img/recetas/home/pina.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=pina"
         },
         "pinada":{
             "nombre": "PIÑADA FRESCA",
@@ -409,10 +420,32 @@
                 "AGREGAR hielo, hojas de menta y piña.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
+            "color": "#f47569",
+            "img_url" : "img/recetas/home/pinada.png",
+            "home_img_url": "img/recetas/home/pinada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=pinada"
+        },
+        "pina_colada":{
+            "nombre": "PIÑA COLADA PLAYERA",
+            "minutos": 15,
+            "porciones": 4,
+            "ingredientes": {
+                "normal": [
+                    "1 sobre de Tang® Sabor a Piña Colada",
+                    "1 lt. de agua ",
+                    "1 lata de leche evaporada",
+                    "3 tzas. de hielo "
+                ]
+            },
+            "preparacion": [
+                "DISOLVER  el sobre de Tang® Sabor Piña Colada en el agua.",
+                "LICUAR el hielo, con el agua de Piña Colada y la lata de leche evaporada.",
+                "SERVIR."
+            ],
+            "color": "#e9da86",
+            "img_url" : "img/recetas/home/pina_colada.png",
+            "home_img_url": "img/recetas/home/pina_colada.png",
+            "link": "/tang-2019/recetas/receta_int.php?receta=pina_colada"
         },
         "tamarindo":{
             "nombre": "SMOOTHIE DE TAMARINDO",
@@ -502,39 +535,6 @@
                 "AGREGAR  el jugo de limón y la fruta.",
                 "SERVIR."
             ],
-            "color": "#fff",
-            "img_url" : "img/recetas/home/naranjada.png",
-            "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?receta=durazno"
-        },
-        "mandarina":{
-            "nombre": "PASTA ORIENTAL MANDARINA",
-            "minutos": 30,
-            "porciones": 4,
-            "ingredientes": {
-                "normal": [
-                    "½ sobre de Tang® Sabor Mandarina",
-                    "1 ½ tza. de caldo de pollo",
-                    "2 cdas. de fécula de maíz",
-                    "½ tza. de agua ",
-                    "4 cdas. de aceite ",
-                    "1 pimiento rojo, 1 verde y 1 amarillo cortados en cubos medianos",
-                    "½ cebolla morada cortada en cubos grandes",
-                    "2 medias pechugas cortadas en cubos grandes",
-                    "½ tza. de brócoli cocido ",
-                    "2 cdas. de ajonjolí negro",
-                    "500 gr. de pasta tornillo cocida"
-                ]
-            },
-            "preparacion": [
-                "DISOLVER el sobre de Tang® Sabor Mandarina en el caldo de pollo. Reservar.",
-                "DILUIR  la fécula en ½ taza de agua. Reservar.",
-                "CALENTAR una sartén con 4 cucharadas de aceite, incorporar el pollo, la cebolla y los  pimientos. Cocinar.",
-                "VERTER el sobre de Tang® Sabor Mandarina con la fécula y dejar que espese un poco.",
-                "INCORPORAR el brócoli y la pasta.",
-                "SERVIR y espolvorear con ajonjolí negro."
-            ],
-            "tip": "Puedes sustituir el pollo por camarones.",
             "color": "#fff",
             "img_url" : "img/recetas/home/naranjada.png",
             "home_img_url": "img/recetas/home/naranjada.png",
