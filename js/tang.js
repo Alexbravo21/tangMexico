@@ -10,7 +10,7 @@ var app = {
         this.pruebas();
         this.masboton();
         if($(".fondo_madera").length > 0){
-            this.getJSON('recetas', 'sobres', 0);
+            this.getJSON('recetas', 'sobres', 0, '');
         }
         if($(".recetas_seccion").length > 0){
             this.getThumbs('recetas');
@@ -63,19 +63,25 @@ var app = {
             $(".colores_cont").slideToggle(400);
         });
     },
-    getJSON: function(file, file2, pos){
+    getJSON: function(file, file2, pos, laurl){
+        //Obtenemos el primer Json
         $.getJSON(site_url+file+".json", function(json) {
+            //Reseteamos el menu de colores
             $(".colores_cont").html("");
+            //Obtenemos un Array con los keys del objeto JSON y obtenemos los colores de cada botón
             var laskeys = Object.keys(json[file]);
-            console.log(laskeys);
             var first = laskeys[pos];
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
             }
+            //Matchamos ambos JSON para que se obtengan las recetas y los sobres del mismo sabor
             $.getJSON(site_url+file2+".json", function(json2) {
+                //Obtenemos el array de este JSON
                 var laskeys2 = Object.keys(json2[file2]);
                 for (var i=0; i < laskeys2.length; i++){
+                    //Se loopea en el segundo JSON y se compara que sea el mismo del primero
                     if(first == laskeys2[i]){
+                        //Separamos el titulo para que sea igual al diseño (No. palabras/2 redondeado hacia arriba)
                         var nombres = json[file][first].nombre.split(" ");
                         var media = Math.floor(nombres.length/2);
                         var nomb = "", nomb2 = "";
@@ -83,11 +89,13 @@ var app = {
                              nomb = nomb + nombres[k] + " ";
                         for(var j=media; j<nombres.length; j++)
                              nomb2 = nomb2 + nombres[j] + " ";
+                        //Se genera la palabra de nuevo con las etiquetas necesarias
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
+                        //Se insertan todos 
                         $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                         $(".receta_home_nombre").html(elnombre);
                         $(".receta_home_img").attr("src", json[file][first].home_img_url);
-                        $(".sobre_home").attr("src", json2[file2][laskeys2[i]].img_url);
+                        $(".sobre").attr("src", laurl+json2[file2][laskeys2[i]].img_url);
                         $(".receta_home_img_a").attr("href", json[file][first].link);
                         $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
                     }
@@ -99,50 +107,58 @@ var app = {
         var este = this;
         $(document).on("click", ".colores_item", function(){
             pos = $(this).data('pos');
-            este.getJSON("recetas", "sobres", pos);
+            este.getJSON("recetas", "sobres", pos, '');
         });
     },
     flechas_home: function(){
         var este = this;
-        $(document).on("click", ".home_flecha_cont", function(){
+        $(document).on("click", ".derecho .home_flecha_cont", function(){
             if($(this).hasClass('izquierda')){
                 pos = (pos == 0) ? 21 : pos;
-                este.getJSON("recetas", "sobres", (pos-1));
+                este.getJSON("recetas", "sobres", (pos-1), '');
                 pos--;
             }else{
                 pos = (pos == 20) ? -1 : pos;
-                este.getJSON("recetas", "sobres", (pos+1));
+                este.getJSON("recetas", "sobres", (pos+1), '');
                 pos++;
             }
         });
     },
     flechas_interior: function(position){
         var este = this;
-
-        $(document).on("click", ".home_flecha_cont", function(){
+        $(document).on("click", ".izquierdo .home_flecha_cont", function(){
             if($(this).hasClass('izquierda')){
-                pos = (pos == 0) ? 21 : pos;
-                este.getJSON("recetas", "sobres", (pos-1));
-                pos--;
+                position = (position == 0) ? 21 : position;
+                este.getJSON("recetas", "sobres", (position-1), site_url);
+                position--;
             }else{
-                pos = (pos == 20) ? -1 : pos;
-                este.getJSON("recetas", "sobres", (pos+1));
-                pos++;
+                position = (position == 20) ? -1 : position;
+                este.getJSON("recetas", "sobres", (position+1), site_url);
+                position++;
             }
         });
     },
     getInterior: function(){
+        //Se obtiene los index de la variable de la URL
         var url = window.location.href;
         var indicador = url.indexOf('?');
         var indicador2 = url.indexOf('=');
+        var este = this;
+        //Si existe entramos
         if(indicador > -1){
+            //Se obtiene la variable de la URL
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
+            //Obtenemos el objeto con la key de la variable de URL
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
-                if(file == 'recetas'){  
+                //Se envía la posición de la key para indexar la navegación entre recetas y sobres
+                var position = Object.keys(json[file]).indexOf(key);
+                este.flechas_interior(position + 2);
+                if(file == 'recetas'){
+                    //Separamos el titulo para que sea igual al diseño
                     var nombres = json[file][key].nombre.split(" ");
                     var media = Math.floor(nombres.length/2);
                     var nomb = "", nomb2 = "";
@@ -151,33 +167,39 @@ var app = {
                     for(var j=media; j<nombres.length; j++)
                          nomb2 = nomb2 + nombres[j] + " ";
                     var elnombre = nomb+"<br><span>"+nomb2+"</span>";
+                    //Insertamos datos en los campos
                     $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
                     $(".receta_interior_titulo").html(elnombre);
                     $(".minutos_num").html(jsonItem.minutos);
                     $(".porciones_num").html(jsonItem.porciones);
+                    //Loopeamos en el objeto de ingredientes para determinar si tiene subtitulos como "otros" "base" "salsa"
                     var ing_laskeys = Object.keys(jsonItem.ingredientes);
                     for(var m=0; m < ing_laskeys.length; m++){
                         var ing_key = ing_laskeys[m];
-                        console.log(ing_key);
+                        //Si el subtitulo es "normal" se ignora el subtitulo y se añaden directamente
                         if(ing_key == 'normal'){
                             for(var n=0; n < jsonItem.ingredientes[ing_key].length; n++)
                                 $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][n]+'</li>');
                         }else{
+                            //Si es alguno de los anteriores se imprime el subtitulo y después los ingredientes
                             $(".ingredientes_lista").append('<li class="ingredientes_item ingredientes_titulo uppercase">'+ing_key+'</li>');
                             for(var o=0; o < jsonItem.ingredientes[ing_key].length; o++)
                                 $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][o]+'</li>');
                         }
                     }
+                    //Se añaden los puntos de la preparación
                     for(var p=0; p < jsonItem.preparacion.length; p++)
-                    $(".preparacion_lista").append('<li class="preparacion_item">'+jsonItem.preparacion[p]+'</li>');
+                        $(".preparacion_lista").append('<li class="preparacion_item">'+jsonItem.preparacion[p]+'</li>');
 
                 }else if(file == 'sobres'){
+                    //Si es interior de sobres se imprimen sus datos
                     $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
                     $(".sabor_interior_titulo p span").html(jsonItem.nombre);
                     $(".sabor_desc_titulo").html(jsonItem.titulo);
                     $(".sabor_desc").html(jsonItem.descripcion);
                     $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png")
                     var info_nutri = [];
+                    //Se itera en el objeto de tabla nutrimental generando un array con sus keys para después ponerlo en su posición correcta con el $.each
                     for (var key2 in jsonItem.info_nutri) {
                         info_nutri.push(jsonItem.info_nutri[key2]);
                     }
