@@ -126,7 +126,9 @@ var app = {
     },
     flechas_interior: function(position){
         var este = this;
+        console.log(position);
         $(document).on("click", ".izquierdo .home_flecha_cont", function(){
+            console.log(position);
             if($(this).hasClass('izquierda')){
                 position = (position == 0) ? 21 : position;
                 este.getJSON("recetas", "sobres", (position-1), site_url);
@@ -157,6 +159,7 @@ var app = {
                 //Se envía la posición de la key para indexar la navegación entre recetas y sobres
                 var position = Object.keys(json[file]).indexOf(key);
                 este.flechas_interior(position + 2);
+                //console.log(position, json[file], json[file].melon);
                 if(file == 'recetas'){
                     //Separamos el titulo para que sea igual al diseño
                     var nombres = json[file][key].nombre.split(" ");
