@@ -21,6 +21,7 @@ var app = {
         this.colores_home();
         this.flechas_home();
         this.getInterior();
+        this.cerrarPromo();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -229,6 +230,11 @@ var app = {
                 `);
             }
             
+        });
+    },
+    cerrarPromo: function(){
+        $(document).on('click', '.cerrar_promo', function(){
+            $(".promo").fadeOut(400);
         });
     },
     pruebas: function(){

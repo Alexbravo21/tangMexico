@@ -1247,6 +1247,12 @@ html body {
   }
 }
 
+@media (min-width: 1200px) {
+  .receta_interior_cont {
+    background-size: cover;
+  }
+}
+
 .hamburger_cont {
   position: absolute;
   top: 20px;
@@ -1336,6 +1342,77 @@ html body {
     -webkit-transform: translate(-100%, -100%);
             transform: translate(-100%, -100%);
   }
+}
+
+.promo .promo_img {
+  width: 100%;
+}
+
+.promo .cerrar_promo {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 100%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  width: 24.5px;
+  height: 24.5px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin-bottom: 7px;
+  -webkit-transform: translate(-100%, -50%) rotate(45deg);
+          transform: translate(-100%, -50%) rotate(45deg);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 576px) {
+  .promo .cerrar_promo {
+    position: absolute;
+    top: 10px;
+    left: 95%;
+    -webkit-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+    width: 24.5px;
+    height: 24.5px;
+    -webkit-transform: translate(-100%, -50%) rotate(45deg);
+            transform: translate(-100%, -50%) rotate(45deg);
+  }
+}
+
+.promo .cerrar_promo .mas_nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+}
+
+.promo .cerrar_promo .mas_nav .mas_nav_item {
+  background-color: #342f2f;
+}
+
+.promo .cerrar_promo .mas_nav .mas_nav_item.horizontal {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.promo .cerrar_promo .mas_nav .mas_nav_item.vertical {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 3;
 }
 
 .secion_logo_medio {

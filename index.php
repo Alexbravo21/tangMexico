@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<div class="nav_home_cont">
+<div class="nav_home_cont d-none d-md-block">
     <div class="mas_nav_cont">
         <div class="mas_nav">
             <div class="mas_nav_item horizontal"></div>
