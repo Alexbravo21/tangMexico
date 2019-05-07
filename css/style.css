@@ -15,6 +15,8 @@
   background-color: #fff;
   border-radius: 100%;
   margin-bottom: 7px;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
@@ -24,6 +26,11 @@
     width: 42px;
     height: 42px;
   }
+}
+
+.nav_home_cont .mas_nav_cont.is-active {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 
 .nav_home_cont .mas_nav_cont .mas_nav {
@@ -961,8 +968,8 @@
 }
 
 .hamburger--spin .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
@@ -984,8 +991,8 @@
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
@@ -1009,8 +1016,8 @@
 }
 
 .hamburger--spin-r .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin-r .hamburger-inner::after {
@@ -1032,8 +1039,8 @@
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin-r.is-active .hamburger-inner::after {

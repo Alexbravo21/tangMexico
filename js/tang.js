@@ -61,6 +61,7 @@ var app = {
     masboton: function(){
         $(document).on("click", ".mas_nav_cont", function () {
             $(".colores_cont").slideToggle(400);
+            $(this).toggleClass("is-active");
         });
     },
     getJSON: function(file, file2, pos, laurl){

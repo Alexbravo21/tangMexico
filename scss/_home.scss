@@ -10,10 +10,14 @@ $tran: 80%;
         background-color: color(blanco);
         border-radius: 100%;
         margin-bottom: 7px;
+        transition: all 400ms ease-in-out;
         @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
         @include med-query($small){
             width: $width-buttons*1.2;
             height: $height-buttons*1.2;
+        }
+        &.is-active{
+            transform: rotate(225deg);
         }
         .mas_nav{
             @include medio(absolute, 50%, 50%, -50%, -50%);
