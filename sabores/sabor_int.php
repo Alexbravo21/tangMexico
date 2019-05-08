@@ -3,18 +3,18 @@
 <div class="fondo_madera_2">
     <div class="izquierdo">
         <img src="" alt="" class="sobre sobre_interior">
-        <div class="home_flecha_cont izquierda d-none d-md-block">
+        <div class="home_flecha_cont izquierda d-none d-md-block" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-none d-md-block">
+        <div class="home_flecha_cont derecha d-none d-md-block" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
     </div><!--
     --><div class="derecho">
-        <div class="home_flecha_cont izquierda d-block d-md-none">
+        <div class="home_flecha_cont izquierda d-block d-md-none" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-block d-md-none">
+        <div class="home_flecha_cont derecha d-block d-md-none" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
         <div class="sabor_interior_cont">

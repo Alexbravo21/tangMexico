@@ -2,18 +2,18 @@
 
 <div class="receta_interior_cont">
     <div class="izquierdo"> 
-        <div class="home_flecha_cont izquierda d-none d-md-block">
+        <div class="home_flecha_cont izquierda d-none d-md-block" data-seccion="recetas">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-none d-md-block">
+        <div class="home_flecha_cont derecha d-none d-md-block" data-seccion="recetas">
             <div class="home_flecha"></div>
         </div>
     </div><!--
 --><div class="derecho">
-        <div class="home_flecha_cont izquierda d-block d-md-none">
+        <div class="home_flecha_cont izquierda d-block d-md-none" data-seccion="recetas">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-block d-md-none">
+        <div class="home_flecha_cont derecha d-block d-md-none" data-seccion="recetas">
             <div class="home_flecha"></div>
         </div>
         <div class="receta_interior_contenedor">

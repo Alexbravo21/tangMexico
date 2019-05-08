@@ -10,7 +10,7 @@ var app = {
         this.pruebas();
         this.masboton();
         if($(".fondo_madera").length > 0){
-            this.getJSON('recetas', 'sobres', 0, '');
+            this.getTheJSON('recetas', 'sobres', 0, '', 'home');
         }
         if($(".recetas_seccion").length > 0){
             this.getThumbs('recetas', 'todos');
@@ -66,7 +66,7 @@ var app = {
             $(this).toggleClass("is-active");
         });
     },
-    getJSON: function(file, file2, pos, laurl){
+    getTheJSON: function(file, file2, pos, laurl, seccion){
         //Obtenemos el primer Json
         $.getJSON(site_url+file+".json", function(json) {
             //Reseteamos el menu de colores
@@ -81,6 +81,8 @@ var app = {
             $.getJSON(site_url+file2+".json", function(json2) {
                 //Obtenemos el array de este JSON
                 var laskeys2 = Object.keys(json2[file2]);
+                var first_sobres = laskeys2[pos];
+                //console.log(first_sobres);
                 for (var i=0; i < laskeys2.length; i++){
                     //Se loopea en el segundo JSON y se compara que sea el mismo del primero
                     if(first == laskeys2[i]){
@@ -94,13 +96,40 @@ var app = {
                              nomb2 = nomb2 + nombres[j] + " ";
                         //Se genera la palabra de nuevo con las etiquetas necesarias
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
-                        //Se insertan todos 
-                        $(".derecho .plasta_circular").css('background-color', json[file][first].color);
-                        $(".receta_home_nombre").html(elnombre);
-                        $(".receta_home_img").attr("src", json[file][first].home_img_url);
-                        $(".sobre").attr("src", laurl+json2[file2][laskeys2[i]].img_url);
-                        $(".receta_home_img_a").attr("href", json[file][first].link);
-                        $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
+                        //Se insertan todos
+                        if(seccion == 'home'){
+                            $(".derecho .plasta_circular").css('background-color', json[file][first].color);
+                            $(".receta_home_nombre").html(elnombre);
+                            $(".receta_home_img").attr("src", json[file][first].home_img_url);
+                            $(".sobre").attr("src", laurl+json2[file2][laskeys2[i]].img_url);
+                            $(".receta_home_img_a").attr("href", json[file][first].link);
+                            $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
+                        } 
+
+                        //Acomodo con las flechas de recetas
+                        if(seccion == 'recetas'){
+                            $(".derecho .plasta_circular").css('background-color', json[file][first].color);
+                            $(".receta_interior_cont").css('background-image', 'url('+laurl+json[file][first].img_url+')');
+                        }
+                        //Acomodo con las flechas de sobres
+                        if(seccion == 'sobres'){
+                            $(".derecho .plasta_circular").css('background-color', json2[file2][first_sobres].color);
+                            $(".sobre").attr("src", laurl+json2[file2][first_sobres].img_url);
+                            $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+first_sobres+".png");
+                            $(".sabor_interior_titulo p span").html(json2[file2][first_sobres].nombre);
+                            $(".sabor_desc_titulo").html(json2[file2][first_sobres].titulo);
+                            $(".sabor_desc").html(json2[file2][first_sobres].descripcion);
+                            var info_nutri = [];
+                            //Se itera en el objeto de tabla nutrimental generando un array con sus keys para después ponerlo en su posición correcta con el $.each
+                            for (var key2 in json2[file2][first_sobres].info_nutri) {
+                                info_nutri.push(json2[file2][first_sobres].info_nutri[key2]);
+                            }
+                            $(".info_nutri_num").each(function (index, element) {
+                                var ele = $(this);
+                                ele.html(info_nutri[index]);
+                            });
+                        }
+                       
                     }
                 }
             });
@@ -110,7 +139,7 @@ var app = {
         var este = this;
         $(document).on("click", ".colores_item", function(){
             pos = $(this).data('pos');
-            este.getJSON("recetas", "sobres", pos, '');
+            este.getTheJSON("recetas", "sobres", pos, '', 'home');
         });
     },
     flechas_home: function(){
@@ -118,27 +147,28 @@ var app = {
         $(document).on("click", ".derecho .home_flecha_cont", function(){
             if($(this).hasClass('izquierda')){
                 pos = (pos == 0) ? 21 : pos;
-                este.getJSON("recetas", "sobres", (pos-1), '');
+                este.getTheJSON("recetas", "sobres", (pos-1), '', 'home');
                 pos--;
             }else{
                 pos = (pos == 20) ? -1 : pos;
-                este.getJSON("recetas", "sobres", (pos+1), '');
+                este.getTheJSON("recetas", "sobres", (pos+1), '', 'home');
                 pos++;
             }
         });
     },
     flechas_interior: function(position){
         var este = this;
-        console.log(position);
+        var elinterior;
         $(document).on("click", ".izquierdo .home_flecha_cont", function(){
-            console.log(position);
+            elinterior = $(this).data('seccion');
+            //console.log(position);
             if($(this).hasClass('izquierda')){
                 position = (position == 0) ? 21 : position;
-                este.getJSON("recetas", "sobres", (position-1), site_url);
+                este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
                 position--;
             }else{
                 position = (position == 20) ? -1 : position;
-                este.getJSON("recetas", "sobres", (position+1), site_url);
+                este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
                 position++;
             }
         });
@@ -161,7 +191,7 @@ var app = {
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 //Se envía la posición de la key para indexar la navegación entre recetas y sobres
                 var position = Object.keys(json[file]).indexOf(key);
-                este.flechas_interior(position + 2);
+                este.flechas_interior(position);
                 //console.log(position, json[file], json[file].melon);
                 if(file == 'recetas'){
                     //Separamos el titulo para que sea igual al diseño
@@ -203,7 +233,8 @@ var app = {
                     $(".sabor_interior_titulo p span").html(jsonItem.nombre);
                     $(".sabor_desc_titulo").html(jsonItem.titulo);
                     $(".sabor_desc").html(jsonItem.descripcion);
-                    $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png")
+                    $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png");
+                    //console.log(key);
                     var info_nutri = [];
                     //Se itera en el objeto de tabla nutrimental generando un array con sus keys para después ponerlo en su posición correcta con el $.each
                     for (var key2 in jsonItem.info_nutri) {
