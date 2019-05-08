@@ -64,6 +64,7 @@ $tran: 80%;
     width: $width-buttons;
     height: $width-buttons;
     border-radius: 100px;
+    z-index: 10;
     cursor: pointer;
     @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
     @include med-query($small){
@@ -110,10 +111,18 @@ $tran: 80%;
         &.izquierda{
             @include medio(absolute, 90%, 50%, -#{$tran}, -100%);
             transform: translate(-#{$tran}, -100%) rotate(135deg);
+            @include med-query($medium){
+                @include medio(absolute, 90%, 50%, -#{$tran}, -100%);
+                transform: translate(-#{$tran}, -100%) rotate(135deg);
+            } 
         }
         &.derecha{
             @include medio(absolute, 90%, 50%, #{$tran}, -100%);
             transform: translate(#{$tran}, -100%) rotate(-45deg);
+            @include med-query($medium){
+                @include medio(absolute, 90%, 50%, #{$tran}, -100%);
+                transform: translate(#{$tran}, -100%) rotate(-45deg);
+            }
         }
     }
 }
@@ -130,7 +139,7 @@ $tran: 80%;
     }
     .plasta_circular{
         width: 250%;
-        @include medio(relative, 5%, 50%, -50%, 0);
+        @include medio(relative, 8%, 50%, -50%, 0);
         //background-color: color(naranja-mango);
         border-radius: 100%;
         @include responsive-box(100%);
@@ -199,12 +208,20 @@ $tran: 80%;
     }
     .home_flecha_cont{
         &.izquierda{
-            @include medio(absolute, 50%, 8%, 0, -#{$tran});
-            transform: translate(0, -#{$tran}) rotate(-135deg);
+            @include medio(absolute, 3%, 50%, -150%, 0);
+            transform: translate(-150%, 0) rotate(135deg);
+            @include med-query($medium){
+                @include medio(absolute, 50%, 8%, 0, -#{$tran});
+                transform: translate(0, -#{$tran}) rotate(-135deg);
+            }
         }
         &.derecha{
-            @include medio(absolute, 50%, 8%, 0, #{$tran});
-            transform: translate(0, #{$tran}) rotate(45deg);
+            @include medio(absolute, 3%, 50%, 50%, 0);
+            transform: translate(50%, 0) rotate(-45deg);
+            @include med-query($medium){
+                @include medio(absolute, 50%, 8%, 0, #{$tran});
+                transform: translate(0, #{$tran}) rotate(45deg);
+            }
         }
     }
 }

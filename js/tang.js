@@ -13,14 +13,15 @@ var app = {
             this.getJSON('recetas', 'sobres', 0, '');
         }
         if($(".recetas_seccion").length > 0){
-            this.getThumbs('recetas');
+            this.getThumbs('recetas', 'todos');
         }
         if($(".sabores_seccion").length > 0){
-            this.getThumbs('sobres');
+            this.getThumbs('sobres', 'todos');
         }
         this.colores_home();
         this.flechas_home();
         this.getInterior();
+        this.filtros();
         this.cerrarPromo();
     },
     menu: function(){
@@ -216,20 +217,48 @@ var app = {
             });
         }
     },
-    getThumbs: function(file){
+    getThumbs: function(file, eltipo){
         $.getJSON(site_url+file+".json", function(json) {
             var carpeta = (file == 'recetas') ? 'thumbs' : 'mini';
             var int = (file == 'recetas') ? 'receta_int' : 'sabor_int';
-            for (const key in json[file]) {
-                $("."+file+"_thumbs_cont .row").append(`
-                    <div class="col-6 col-md-3">
-                        <div class="receta_thumb_cont">
-                            <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
+            var type; 
+            $("."+file+"_thumbs_cont .row").html('');
+            if(eltipo == 'todos'){
+                for (const key in json[file]) {
+                    $("."+file+"_thumbs_cont .row").append(`
+                        <div class="col-6 col-md-3">
+                            <div class="receta_thumb_cont">
+                                <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
+                            </div>
                         </div>
-                    </div>
-                `);
+                    `);
+                }
+            }else{
+                for (const key in json[file]) {
+                    type = json[file][key].tipo;
+                    if(eltipo == type){
+                        $("."+file+"_thumbs_cont .row").append(`
+                            <div class="col-6 col-md-3">
+                                <div class="receta_thumb_cont">
+                                    <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                }
             }
             
+        });
+    },
+    filtros: function(){
+        var este = this;
+        $(document).on('click', '.botones_sobres .enviar_contacto', function(){
+            var boton = $(this).data('boton');
+            este.getThumbs('sobres', boton);
+        });
+        $(document).on('click', '.botones_recetas .enviar_contacto', function(){
+            var boton = $(this).data('boton');
+            este.getThumbs('recetas', boton);
         });
     },
     cerrarPromo: function(){

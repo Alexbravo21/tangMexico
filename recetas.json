@@ -24,7 +24,8 @@
             "color": "#fd9f85",
             "img_url" : "img/recetas/big/durazno.jpg",
             "home_img_url": "img/recetas/home/durazno.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=durazno"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=durazno",
+            "tipo": "platillo"
         },
         "fresa":{
             "nombre": "PALETAS DE FRESA",
@@ -46,7 +47,8 @@
             "color": "#ea505c",
             "img_url" : "img/recetas/big/fresa.jpg",
             "home_img_url": "img/recetas/home/fresa.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=fresa"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=fresa",
+            "tipo": "platillo"
         },
         "fresadamix":{
             "nombre": "DELICIA DE FRESA",
@@ -69,7 +71,8 @@
             "color": "#da9362",
             "img_url" : "img/recetas/big/fresadamix.jpg",
             "home_img_url": "img/recetas/home/fresadamix.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=fresadamix"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=fresadamix",
+            "tipo": "bebida"
         },
         "guayaba":{
             "nombre": "MINI CHEESECAKE DE GUAYABA",
@@ -104,7 +107,8 @@
             "color": "#e0c348",
             "img_url" : "img/recetas/big/guayaba.jpg",
             "home_img_url": "img/recetas/home/guayaba.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=guayaba"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=guayaba",
+            "tipo": "platillo"
         },
         "horchata":{
             "nombre": "CREPAS DE PLÁTANO EN SALSA DE HORCHATA",
@@ -134,7 +138,8 @@
             "color": "#e7d5a4",
             "img_url" : "img/recetas/big/horchata.jpg",
             "home_img_url": "img/recetas/home/horchata.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=horchata"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=horchata",
+            "tipo": "platillo"
         },
         "jamaica":{
             "nombre": "PECHUGA DE POLLO EN SALSA DE JAMAICA",
@@ -164,7 +169,8 @@
             "color": "#96080a",
             "img_url" : "img/recetas/big/jamaica.jpg",
             "home_img_url": "img/recetas/home/jamaica.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=jamaica"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=jamaica",
+            "tipo": "platillo"
         },
         "limon":{
             "nombre": "LIMONADA ROSA",
@@ -187,7 +193,8 @@
             "color": "#9fca61",
             "img_url" : "img/recetas/big/limon.jpg",
             "home_img_url": "img/recetas/home/limon.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=limon"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=limon",
+            "tipo": "bebida"
         },
         "mandarina":{
             "nombre": "PASTA ORIENTAL A LA MANDARINA",
@@ -220,7 +227,8 @@
             "color": "#f1912a",
             "img_url" : "img/recetas/big/mandarina.jpg",
             "home_img_url": "img/recetas/home/mandarina.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=mandarina"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=mandarina",
+            "tipo": "platillo"
         },
         "mango":{
             "nombre": "BATIDO DE MANGO",
@@ -246,7 +254,8 @@
             "color": "#efc133",
             "img_url" : "img/recetas/big/mango.jpg",
             "home_img_url": "img/recetas/home/mango.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=mango"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=mango",
+            "tipo": "bebida"
         },
         "manzana":{
             "nombre": "HOTCAKES DE MANZANA",
@@ -273,7 +282,8 @@
             "color": "#c6212d",
             "img_url" : "img/recetas/big/manzana.jpg",
             "home_img_url": "img/recetas/home/manzana.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=manzana"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=manzana",
+            "tipo": "platillo"
         },
         "melon":{
             "nombre": "AGUA DE MELÓN",
@@ -296,7 +306,8 @@
             "color": "#fbaf71",
             "img_url" : "img/recetas/big/melon.jpg",
             "home_img_url": "img/recetas/home/melon.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=melon"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=melon",
+            "tipo": "bebida"
         },
         "naranja":{
             "nombre": "TARTA DE NARANJA",
@@ -320,7 +331,8 @@
             "color": "#f1912a",
             "img_url" : "img/recetas/big/naranja.jpg",
             "home_img_url": "img/recetas/home/naranja.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=naranja"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=naranja",
+            "tipo": "platillo"
         },
         "limonada":{
             "nombre": "LIMONADA BRASILEÑA",
@@ -342,7 +354,8 @@
             "color": "#e5d331",
             "img_url" : "img/recetas/big/limonada.jpg",
             "home_img_url": "img/recetas/home/limonada.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=limonada"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=limonada",
+            "tipo": "bebida"
         },
         "naranjada":{
             "nombre": "BATIDO DE NARANJA Y MANGO",
@@ -368,7 +381,8 @@
             "color": "#e7a531",
             "img_url" : "img/recetas/big/naranjada.jpg",
             "home_img_url": "img/recetas/home/naranjada.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=naranjada"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=naranjada",
+            "tipo": "bebida"
         },
         "pina":{
             "nombre": "PAY DE PIÑA",
@@ -405,7 +419,8 @@
             "color": "#e9c500",
             "img_url" : "img/recetas/big/pina.jpg",
             "home_img_url": "img/recetas/home/pina.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=pina"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=pina",
+            "tipo": "platillo"
         },
         "pinada":{
             "nombre": "PIÑADA FRESCA",
@@ -429,7 +444,8 @@
             "color": "#f47569",
             "img_url" : "img/recetas/big/pinada.jpg",
             "home_img_url": "img/recetas/home/pinada.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=pinada"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=pinada",
+            "tipo": "bebida"
         },
         "pina_colada":{
             "nombre": "PIÑA COLADA PLAYERA",
@@ -451,7 +467,8 @@
             "color": "#e9da86",
             "img_url" : "img/recetas/big/pina_colada.jpg",
             "home_img_url": "img/recetas/home/pina_colada.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=pina_colada"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=pina_colada",
+            "tipo": "bebida"
         },
         "tamarindo":{
             "nombre": "SMOOTHIE DE TAMARINDO",
@@ -478,7 +495,8 @@
             "color": "#854d27",
             "img_url" : "img/recetas/big/tamarindo.jpg",
             "home_img_url": "img/recetas/home/tamarindo.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=tamarindo"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=tamarindo",
+            "tipo": "bebida"
         },
         "te_negro_frutos":{
             "nombre": "TÉ FRUTAL",
@@ -499,7 +517,8 @@
             "color": "#922617",
             "img_url" : "img/recetas/big/te_negro_frutos.jpg",
             "home_img_url": "img/recetas/home/te_negro_frutos.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_frutos"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_frutos",
+            "tipo": "bebida"
         },
         "te_negro_limon":{
             "nombre": "TÉ HELADO CÍTRICO",
@@ -522,7 +541,8 @@
             "color": "#cee27b",
             "img_url" : "img/recetas/big/te_negro_limon.jpg",
             "home_img_url": "img/recetas/home/te_negro_limon.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_limon"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_limon",
+            "tipo": "bebida"
         },
         "uva":{
             "nombre": "UVA CLERICOT",
@@ -544,7 +564,8 @@
             "color": "#6b2078",
             "img_url" : "img/recetas/big/uva.jpg",
             "home_img_url": "img/recetas/home/uva.png",
-            "link": "/tang-2019/recetas/receta_int.php?recetas=uva"
+            "link": "/tang-2019/recetas/receta_int.php?recetas=uva",
+            "tipo": "bebida"
         }
     }
 }

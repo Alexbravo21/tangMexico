@@ -9,9 +9,9 @@
             <div class="back_color"></div>
             <div class="recetas_cont">
                 <div class="botones_recetas">
-                    <button type="button" class="enviar_contacto">VER TODO</button>
-                    <button type="button" class="enviar_contacto">BEBIDAS</button>
-                    <button type="button" class="enviar_contacto">PLATILLOS</button>
+                    <button type="button" class="enviar_contacto" data-boton="todos">VER TODO</button>
+                    <button type="button" class="enviar_contacto" data-boton="bebida">BEBIDAS</button>
+                    <button type="button" class="enviar_contacto" data-boton="platillo">PLATILLOS</button>
                 </div>
                 <div class="recetas_thumbs_cont">
                     <div class="col-12">

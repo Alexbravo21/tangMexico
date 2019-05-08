@@ -17,7 +17,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=uva",
             "color": "#6b2078",
-            "img_url": "img/sobres/uva.jpg"
+            "img_url": "img/sobres/uva.jpg",
+            "tipo": "sabor"
         },
         "melon":{
             "nombre": "MELÓN ",
@@ -36,7 +37,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=melon",
             "color": "#fbaf71",
-            "img_url": "img/sobres/melon.jpg"
+            "img_url": "img/sobres/melon.jpg",
+            "tipo": "sabor"
         },
         "naranja":{
             "nombre": "NARANJA",
@@ -55,7 +57,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranja",
             "color": "#f1912a",
-            "img_url": "img/sobres/naranja.jpg"
+            "img_url": "img/sobres/naranja.jpg",
+            "tipo": "sabor"
         },
         "mandarina":{
             "nombre": "MANDARINA",
@@ -74,7 +77,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mandarina",
             "color": "#f1912a",
-            "img_url": "img/sobres/mandarina.jpg"
+            "img_url": "img/sobres/mandarina.jpg",
+            "tipo": "sabor"
         },
         "mango":{
             "nombre": "MANGO",
@@ -93,7 +97,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mango",
             "color": "#efc133",
-            "img_url": "img/sobres/mango.jpg"
+            "img_url": "img/sobres/mango.jpg",
+            "tipo": "sabor"
         },
         "durazno":{
             "nombre": "DURAZNO",
@@ -112,7 +117,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=durazno",
             "color": "#fd9f85",
-            "img_url": "img/sobres/durazno.jpg"
+            "img_url": "img/sobres/durazno.jpg",
+            "tipo": "sabor"
         },
         "limon":{
             "nombre": "LIMÓN",
@@ -131,7 +137,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limon",
             "color": "#9fca61",
-            "img_url": "img/sobres/limon.jpg"
+            "img_url": "img/sobres/limon.jpg",
+            "tipo": "sabor"
         },
         "guayaba":{
             "nombre": "GUAYABA",
@@ -150,7 +157,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=guayaba",
             "color": "#e0c348",
-            "img_url": "img/sobres/guayaba.jpg"
+            "img_url": "img/sobres/guayaba.jpg",
+            "tipo": "sabor"
         },
         "tamarindo":{
             "nombre": "TAMARINDO",
@@ -169,7 +177,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=tamarindo",
             "color": "#854d27",
-            "img_url": "img/sobres/tamarindo.jpg"
+            "img_url": "img/sobres/tamarindo.jpg",
+            "tipo": "sabor"
         },
         "fresa":{
             "nombre": "FRESA",
@@ -188,7 +197,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=fresa",
             "color": "#ea505c",
-            "img_url": "img/sobres/fresa.jpg"
+            "img_url": "img/sobres/fresa.jpg",
+            "tipo": "sabor"
         },
         "pina":{
             "nombre": "PIÑA",
@@ -207,7 +217,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina",
             "color": "#e9c500",
-            "img_url": "img/sobres/pina.jpg"
+            "img_url": "img/sobres/pina.jpg",
+            "tipo": "sabor"
         },
         "manzana":{
             "nombre": "MANZANA",
@@ -226,7 +237,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=manzana",
             "color": "#c6212d",
-            "img_url": "img/sobres/manzana.jpg"
+            "img_url": "img/sobres/manzana.jpg",
+            "tipo": "sabor"
         },
         "pina_colada":{
             "nombre": "PIÑA COLADA",
@@ -245,7 +257,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina_colada",
             "color": "#e9da86",
-            "img_url": "img/sobres/pinacolada.jpg"
+            "img_url": "img/sobres/pinacolada.jpg",
+            "tipo": "sabor"
         },
         "horchata":{
             "nombre": "HORCHATA",
@@ -264,7 +277,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=horchata",
             "color": "#e7d5a4",
-            "img_url": "img/sobres/horchata.jpg"
+            "img_url": "img/sobres/horchata.jpg",
+            "tipo": "sabor"
         },
         "jamaica":{
             "nombre": "JAMAICA",
@@ -283,7 +297,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=jamaica",
             "color": "#96080a",
-            "img_url": "img/sobres/jamaica.jpg"
+            "img_url": "img/sobres/jamaica.jpg",
+            "tipo": "sabor"
         },
         "te_negro_limon":{
             "nombre": "TÉ NEGRO LIMÓN",
@@ -302,7 +317,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_limon",
             "color": "#cee27b",
-            "img_url": "img/sobres/telimon.jpg"
+            "img_url": "img/sobres/telimon.jpg",
+            "tipo": "te"
         },
         "te_negro_frutos":{
             "nombre": "TÉ NEGRO FRUTOS ROJOS",
@@ -321,7 +337,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_frutos",
             "color": "#922617",
-            "img_url": "img/sobres/tefrutosrojos.jpg"
+            "img_url": "img/sobres/tefrutosrojos.jpg",
+            "tipo": "te"
         },
         "limonada":{
             "nombre": "LIMONADA MIX",
@@ -340,7 +357,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limonada",
             "color": "#e5d331",
-            "img_url": "img/sobres/limonadamix.jpg"
+            "img_url": "img/sobres/limonadamix.jpg",
+            "tipo": "mix"
         },
         "fresadamix":{
             "nombre": "FRESADA MIX",
@@ -359,7 +377,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=fresadamix",
             "color": "#da9362",
-            "img_url": "img/sobres/fresadamix.jpg"
+            "img_url": "img/sobres/fresadamix.jpg",
+            "tipo": "mix"
         },
         "naranjada":{
             "nombre": "NARANJADA MIX",
@@ -378,7 +397,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranjada",
             "color": "#e7a531",
-            "img_url": "img/sobres/naranjadamix.jpg"
+            "img_url": "img/sobres/naranjadamix.jpg",
+            "tipo": "mix"
         },
         "pinada":{
             "nombre": "PIÑADA MIX",
@@ -397,7 +417,8 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pinada",
             "color": "#f47569",
-            "img_url": "img/sobres/pinadamix.jpg"
+            "img_url": "img/sobres/pinadamix.jpg",
+            "tipo": "mix"
         }
     }
 }
