@@ -144,10 +144,12 @@ $tran: 80%;
         border-radius: 100%;
         @include responsive-box(100%);
         @include prefix(box-shadow, 0px 0px 24px -9px rgba(0,0,0,0.75), webkit moz);
+        transform: translate(-50%, 0) scale(1);
         @include med-query($medium){
             width: 170%;
             @include medio(relative, 50%, 10%, 0, -50%);
             @include prefix(box-shadow, 0px 0px 32px -4px rgba(0,0,0,0.75), webkit moz);
+            transform: translate(0, -50%) scale(1);
         }
         .receta_home_cont{
             @include medio(absolute, 10px, 50%, -50%, 0);

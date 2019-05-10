@@ -48,11 +48,12 @@
 
 .hamburger-box {
   width: $hamburger-layer-width-small;
-  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 1.5;
   display: inline-block;
   position: relative;
-  @include med-query($small){
+  @include med-query($medium){
     width: $hamburger-layer-width;
+    height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   }
 }
 
@@ -65,7 +66,7 @@
   &::before,
   &::after {
     width: $hamburger-layer-width-small;
-    @include med-query($small){
+    @include med-query($medium){
       width: $hamburger-layer-width;
     }
     height: $hamburger-layer-height;
@@ -84,10 +85,16 @@
   }
 
   &::before {
-    top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    top: ($hamburger-layer-spacing + ($hamburger-layer-height - 2)) * -1;
+    @include med-query($medium){
+      top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    }
   }
 
   &::after {
-    bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    bottom: ($hamburger-layer-spacing + ($hamburger-layer-height - 2)) * -1;
+    @include med-query($medium){
+      bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+    }
   }
 }

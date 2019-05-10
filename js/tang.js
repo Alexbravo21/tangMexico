@@ -23,6 +23,12 @@ var app = {
         this.getInterior();
         this.filtros();
         this.cerrarPromo();
+        setTimeout(function(){
+            $(".plasta_circular").addClass('bounce-scale');
+            setTimeout(function(){
+                $(".plasta_circular").addClass('bounce-scale2');
+            }, 1000);
+        }, 1000);
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -108,8 +114,46 @@ var app = {
 
                         //Acomodo con las flechas de recetas
                         if(seccion == 'recetas'){
-                            $(".derecho .plasta_circular").css('background-color', json[file][first].color);
-                            $(".receta_interior_cont").css('background-image', 'url('+laurl+json[file][first].img_url+')');
+                            $(".ingredientes_lista, .preparacion_lista").html('');
+                            var jsonItem = json[file][first];
+                            $(".derecho .plasta_circular").css('background-color', jsonItem.color);
+                            $(".receta_interior_cont").css('background-image', 'url('+laurl+jsonItem.img_url+')');
+                            
+                            //Separamos el titulo para que sea igual al diseño
+                            var nombres = jsonItem.nombre.split(" ");
+                            var media = Math.floor(nombres.length/2);
+                            var nomb = "", nomb2 = "";
+                            for(var k=0; k<media; k++)
+                                nomb = nomb + nombres[k] + " ";
+                            for(var j=media; j<nombres.length; j++)
+                                nomb2 = nomb2 + nombres[j] + " ";
+                            var elnombre = nomb+"<br><span>"+nomb2+"</span>";
+                            //Insertamos datos en los campos
+                            $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
+                            $(".receta_interior_titulo").html(elnombre);
+                            $(".minutos_num").html(jsonItem.minutos);
+                            $(".porciones_num").html(jsonItem.porciones);
+                            //Loopeamos en el objeto de ingredientes para determinar si tiene subtitulos como "otros" "base" "salsa"
+                            var ing_laskeys = Object.keys(jsonItem.ingredientes);
+                            for(var m=0; m < ing_laskeys.length; m++){
+                                var ing_key = ing_laskeys[m];
+                                //Si el subtitulo es "normal" se ignora el subtitulo y se añaden directamente
+                                if(ing_key == 'normal'){
+                                    for(var n=0; n < jsonItem.ingredientes[ing_key].length; n++)
+                                        $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][n]+'</li>');
+                                }else{
+                                    //Si es alguno de los anteriores se imprime el subtitulo y después los ingredientes
+                                    $(".ingredientes_lista").append('<li class="ingredientes_item ingredientes_titulo uppercase">'+ing_key+'</li>');
+                                    for(var o=0; o < jsonItem.ingredientes[ing_key].length; o++)
+                                        $(".ingredientes_lista").append('<li class="ingredientes_item">'+jsonItem.ingredientes[ing_key][o]+'</li>');
+                                }
+                            }
+                            //Se añaden los puntos de la preparación
+                            for(var p=0; p < jsonItem.preparacion.length; p++)
+                                $(".preparacion_lista").append('<li class="preparacion_item">'+jsonItem.preparacion[p]+'</li>');
+
+
+
                         }
                         //Acomodo con las flechas de sobres
                         if(seccion == 'sobres'){
