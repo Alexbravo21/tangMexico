@@ -23,12 +23,6 @@ var app = {
         this.getInterior();
         this.filtros();
         this.cerrarPromo();
-        setTimeout(function(){
-            $(".plasta_circular").addClass('bounce-scale');
-            setTimeout(function(){
-                $(".plasta_circular").addClass('bounce-scale2');
-            }, 1000);
-        }, 1000);
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -183,21 +177,54 @@ var app = {
         var este = this;
         $(document).on("click", ".colores_item", function(){
             pos = $(this).data('pos');
-            este.getTheJSON("recetas", "sobres", pos, '', 'home');
+            //Se añaden clases que animan la plasta y el sobre
+            $(".plasta_circular").addClass('bounce-scale');
+            $(".izquierdo .sobre").addClass("rotate-scale");
+            setTimeout(function(){
+                //Se manda llamar la función que cambia los elementos con base en el JSON
+                este.getTheJSON("recetas", "sobres", pos, '', 'home');
+            }, 250);
+            setTimeout(function(){
+                //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
+                $(".plasta_circular").addClass('bounce-scale2');
+                $(".izquierdo .sobre").removeClass("rotate-scale");
+                setTimeout(function(){
+                    // Se quitan todas las clases para reiniciar las animaciones
+                    $(".plasta_circular").removeClass('bounce-scale');
+                    $(".plasta_circular").removeClass('bounce-scale2');
+                }, 510);
+            }, 800);
         });
     },
     flechas_home: function(){
         var este = this;
         $(document).on("click", ".derecho .home_flecha_cont", function(){
-            if($(this).hasClass('izquierda')){
-                pos = (pos == 0) ? 21 : pos;
-                este.getTheJSON("recetas", "sobres", (pos-1), '', 'home');
-                pos--;
-            }else{
-                pos = (pos == 20) ? -1 : pos;
-                este.getTheJSON("recetas", "sobres", (pos+1), '', 'home');
-                pos++;
-            }
+            //Se añaden clases que animan la plasta y el sobre
+            $(".plasta_circular").addClass('bounce-scale');
+            $(".izquierdo .sobre").addClass("rotate-scale");
+            setTimeout(function(){
+                //Se manda llamar la función que cambia los elementos con base en el JSON
+                if($(this).hasClass('izquierda')){
+                    pos = (pos == 0) ? 21 : pos;
+                    este.getTheJSON("recetas", "sobres", (pos-1), '', 'home');
+                    pos--;
+                }else{
+                    pos = (pos == 20) ? -1 : pos;
+                    este.getTheJSON("recetas", "sobres", (pos+1), '', 'home');
+                    pos++;
+                }
+            }, 250);
+            setTimeout(function(){
+                //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
+                $(".plasta_circular").addClass('bounce-scale2');
+                $(".izquierdo .sobre").removeClass("rotate-scale");
+                setTimeout(function(){
+                    // Se quitan todas las clases para reiniciar las animaciones
+                    $(".plasta_circular").removeClass('bounce-scale');
+                    $(".plasta_circular").removeClass('bounce-scale2');
+                }, 510);
+            }, 800);
+            
         });
     },
     flechas_interior: function(position){
@@ -205,16 +232,36 @@ var app = {
         var elinterior;
         $(document).on("click", ".izquierdo .home_flecha_cont", function(){
             elinterior = $(this).data('seccion');
-            //console.log(position);
-            if($(this).hasClass('izquierda')){
-                position = (position == 0) ? 21 : position;
-                este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
-                position--;
-            }else{
-                position = (position == 20) ? -1 : position;
-                este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
-                position++;
-            }
+            //Se añaden clases que animan la plasta y el sobre
+            $(".plasta_circular").addClass('bounce-scale');
+            $(".izquierdo .sobre").addClass("rotate-scale");
+            //Se añaden clases que animan el texto para que tenga una transición parecida a la plasta
+            $(".sabor_interior_cont .sabor_interior_texto").addClass("rotate-scale");
+            setTimeout(function(){
+                //Se manda llamar la función que cambia los elementos con base en el JSON
+                if($(this).hasClass('izquierda')){
+                    position = (position == 0) ? 21 : position;
+                    este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
+                    position--;
+                }else{
+                    position = (position == 20) ? -1 : position;
+                    este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
+                    position++;
+                }
+            }, 250);
+            setTimeout(function(){
+                //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
+                $(".plasta_circular").addClass('bounce-scale2');
+                $(".izquierdo .sobre").removeClass("rotate-scale");
+                $(".sabor_interior_cont .sabor_interior_texto").addClass("rotate-scale2");
+                setTimeout(function(){
+                    // Se quitan todas las clases para reiniciar las animaciones
+                    $(".sabor_interior_cont .sabor_interior_texto").removeClass("rotate-scale");
+                    $(".sabor_interior_cont .sabor_interior_texto").removeClass("rotate-scale2");
+                    $(".plasta_circular").removeClass('bounce-scale');
+                    $(".plasta_circular").removeClass('bounce-scale2');
+                }, 510);
+            }, 800);
         });
     },
     getInterior: function(){
