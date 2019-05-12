@@ -17,6 +17,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=uva",
             "color": "#6b2078",
+            "texto_color": "#df85fc",
             "img_url": "img/sobres/uva.jpg",
             "tipo": "sabor"
         },
@@ -37,6 +38,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=melon",
             "color": "#fbaf71",
+            "texto_color": "#c56a20",
             "img_url": "img/sobres/melon.jpg",
             "tipo": "sabor"
         },
@@ -57,6 +59,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranja",
             "color": "#f1912a",
+            "texto_color": "#ad610f",
             "img_url": "img/sobres/naranja.jpg",
             "tipo": "sabor"
         },
@@ -77,6 +80,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mandarina",
             "color": "#f1912a",
+            "texto_color": "#9f5200",
             "img_url": "img/sobres/mandarina.jpg",
             "tipo": "sabor"
         },
@@ -97,6 +101,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=mango",
             "color": "#efc133",
+            "texto_color": "#d88c08",
             "img_url": "img/sobres/mango.jpg",
             "tipo": "sabor"
         },
@@ -117,6 +122,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=durazno",
             "color": "#fd9f85",
+            "texto_color": "#ba492a",
             "img_url": "img/sobres/durazno.jpg",
             "tipo": "sabor"
         },
@@ -137,6 +143,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limon",
             "color": "#9fca61",
+            "texto_color": "#44690e",
             "img_url": "img/sobres/limon.jpg",
             "tipo": "sabor"
         },
@@ -157,6 +164,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=guayaba",
             "color": "#e0c348",
+            "texto_color": "#b59301",
             "img_url": "img/sobres/guayaba.jpg",
             "tipo": "sabor"
         },
@@ -177,6 +185,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=tamarindo",
             "color": "#854d27",
+            "texto_color": "#b69458",
             "img_url": "img/sobres/tamarindo.jpg",
             "tipo": "sabor"
         },
@@ -197,6 +206,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=fresa",
             "color": "#ea505c",
+            "texto_color": "#a62630",
             "img_url": "img/sobres/fresa.jpg",
             "tipo": "sabor"
         },
@@ -217,6 +227,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina",
             "color": "#e9c500",
+            "texto_color": "#a38600",
             "img_url": "img/sobres/pina.jpg",
             "tipo": "sabor"
         },
@@ -237,6 +248,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=manzana",
             "color": "#c6212d",
+            "texto_color": "#740008",
             "img_url": "img/sobres/manzana.jpg",
             "tipo": "sabor"
         },
@@ -257,6 +269,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pina_colada",
             "color": "#e9da86",
+            "texto_color": "#754e28",
             "img_url": "img/sobres/pinacolada.jpg",
             "tipo": "sabor"
         },
@@ -277,6 +290,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=horchata",
             "color": "#e7d5a4",
+            "texto_color": "#87683d",
             "img_url": "img/sobres/horchata.jpg",
             "tipo": "sabor"
         },
@@ -297,6 +311,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=jamaica",
             "color": "#96080a",
+            "texto_color": "#530505",
             "img_url": "img/sobres/jamaica.jpg",
             "tipo": "sabor"
         },
@@ -317,6 +332,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_limon",
             "color": "#cee27b",
+            "texto_color": "#569015",
             "img_url": "img/sobres/telimon.jpg",
             "tipo": "te"
         },
@@ -337,6 +353,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=te_negro_frutos",
             "color": "#922617",
+            "texto_color": "#440c05",
             "img_url": "img/sobres/tefrutosrojos.jpg",
             "tipo": "te"
         },
@@ -357,6 +374,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=limonada",
             "color": "#e5d331",
+            "texto_color": "#9d8d00",
             "img_url": "img/sobres/limonadamix.jpg",
             "tipo": "mix"
         },
@@ -377,6 +395,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=fresadamix",
             "color": "#da9362",
+            "texto_color": "#c14d37",
             "img_url": "img/sobres/fresadamix.jpg",
             "tipo": "mix"
         },
@@ -397,6 +416,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=naranjada",
             "color": "#e7a531",
+            "texto_color": "#b86317",
             "img_url": "img/sobres/naranjadamix.jpg",
             "tipo": "mix"
         },
@@ -417,6 +437,7 @@
             },
             "link": "/tang-2019/sabores/sabor_int.php?sobres=pinada",
             "color": "#f47569",
+            "texto_color": "#c3493d",
             "img_url": "img/sobres/pinadamix.jpg",
             "tipo": "mix"
         }

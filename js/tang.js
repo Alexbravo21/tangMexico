@@ -125,6 +125,7 @@ var app = {
                             //Insertamos datos en los campos
                             $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
                             $(".receta_interior_titulo").html(elnombre);
+                            $(".receta_interior_titulo, .minutos_num, .porciones_num, .receta_interior_ingredientes").css('color', jsonItem.texto_color);
                             $(".minutos_num").html(jsonItem.minutos);
                             $(".porciones_num").html(jsonItem.porciones);
                             //Loopeamos en el objeto de ingredientes para determinar si tiene subtitulos como "otros" "base" "salsa"
@@ -151,16 +152,18 @@ var app = {
                         }
                         //Acomodo con las flechas de sobres
                         if(seccion == 'sobres'){
-                            $(".derecho .plasta_circular").css('background-color', json2[file2][first_sobres].color);
-                            $(".sobre").attr("src", laurl+json2[file2][first_sobres].img_url);
+                            var jsonItem2 = json2[file2][first_sobres];
+                            $(".derecho .plasta_circular").css('background-color', jsonItem2.color);
+                            $(".sobre").attr("src", laurl+jsonItem2.img_url);
                             $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+first_sobres+".png");
-                            $(".sabor_interior_titulo p span").html(json2[file2][first_sobres].nombre);
-                            $(".sabor_desc_titulo").html(json2[file2][first_sobres].titulo);
-                            $(".sabor_desc").html(json2[file2][first_sobres].descripcion);
+                            $(".sabor_interior_titulo p span").html(jsonItem2.nombre);
+                            $(".sabor_interior_titulo span, .sabor_desc_titulo, .info_nutri_titulo").css('color', jsonItem2.texto_color);
+                            $(".sabor_desc_titulo").html(jsonItem2.titulo);
+                            $(".sabor_desc").html(jsonItem2.descripcion);
                             var info_nutri = [];
                             //Se itera en el objeto de tabla nutrimental generando un array con sus keys para después ponerlo en su posición correcta con el $.each
-                            for (var key2 in json2[file2][first_sobres].info_nutri) {
-                                info_nutri.push(json2[file2][first_sobres].info_nutri[key2]);
+                            for (var key2 in jsonItem2.info_nutri) {
+                                info_nutri.push(jsonItem2.info_nutri[key2]);
                             }
                             $(".info_nutri_num").each(function (index, element) {
                                 var ele = $(this);
@@ -302,6 +305,7 @@ var app = {
                     //Insertamos datos en los campos
                     $(".receta_interior_cont").css("background-image", "url("+site_url+jsonItem.img_url+")");
                     $(".receta_interior_titulo").html(elnombre);
+                    $(".receta_interior_titulo, .minutos_num, .porciones_num, .receta_interior_ingredientes").css('color', jsonItem.texto_color);
                     $(".minutos_num").html(jsonItem.minutos);
                     $(".porciones_num").html(jsonItem.porciones);
                     //Loopeamos en el objeto de ingredientes para determinar si tiene subtitulos como "otros" "base" "salsa"
@@ -327,6 +331,7 @@ var app = {
                     //Si es interior de sobres se imprimen sus datos
                     $(".sobre_interior").attr("src", site_url+jsonItem.img_url);
                     $(".sabor_interior_titulo p span").html(jsonItem.nombre);
+                    $(".sabor_interior_titulo span, .sabor_desc_titulo, .info_nutri_titulo").css('color', jsonItem.texto_color);
                     $(".sabor_desc_titulo").html(jsonItem.titulo);
                     $(".sabor_desc").html(jsonItem.descripcion);
                     $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png");
