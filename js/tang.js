@@ -236,7 +236,12 @@ var app = {
             $(".plasta_circular").addClass('bounce-scale');
             $(".izquierdo .sobre").addClass("rotate-scale");
             //Se añaden clases que animan el texto para que tenga una transición parecida a la plasta
-            $(".sabor_interior_cont .sabor_interior_texto").addClass("rotate-scale");
+            $(".sabor_interior_cont, .receta_interior_contenedor").addClass("rotate-scale");
+            $(".receta_interior_cont").fadeOut(300, function(){
+                setTimeout(function() {
+                    $(".receta_interior_cont").fadeIn(400);
+                }, 400);
+            });
             setTimeout(function(){
                 //Se manda llamar la función que cambia los elementos con base en el JSON
                 if($(this).hasClass('izquierda')){
@@ -253,11 +258,11 @@ var app = {
                 //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
                 $(".plasta_circular").addClass('bounce-scale2');
                 $(".izquierdo .sobre").removeClass("rotate-scale");
-                $(".sabor_interior_cont .sabor_interior_texto").addClass("rotate-scale2");
+                $(".sabor_interior_cont, .receta_interior_contenedor").addClass("rotate-scale2");
                 setTimeout(function(){
                     // Se quitan todas las clases para reiniciar las animaciones
-                    $(".sabor_interior_cont .sabor_interior_texto").removeClass("rotate-scale");
-                    $(".sabor_interior_cont .sabor_interior_texto").removeClass("rotate-scale2");
+                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("rotate-scale");
+                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("rotate-scale2");
                     $(".plasta_circular").removeClass('bounce-scale');
                     $(".plasta_circular").removeClass('bounce-scale2');
                 }, 510);

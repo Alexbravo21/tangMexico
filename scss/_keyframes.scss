@@ -36,25 +36,25 @@
 
 //SOBRE INTERIOR
 
-.sabor_interior_cont .sabor_interior_texto.rotate-scale{
+.sabor_interior_cont.rotate-scale, .receta_interior_contenedor.rotate-scale{
     transform: translate(100%, 0) scale(0);
 }
-.sabor_interior_cont .sabor_interior_texto.rotate-scale2{
+.sabor_interior_cont.rotate-scale2, .receta_interior_contenedor.rotate-scale2{
     animation: scale-easeOutBounce-texto 500ms forwards;
 }
 
 @keyframes scale-easeOutBounce-texto {
     0% {
-        transform: translate(100%, 0) scale(0.3);
+        transform: translate(0%, 0) scale(0.3);
     }
     50% {
-        transform: translate(0, 0) scale(1.1);
+        transform: translate(-100%, 0) scale(1.1);
     }
     80% {
-        transform: translate(0, 0) scale(0.95);
+        transform: translate(-100%, 0) scale(0.95);
     }
     100% {
-        transform: translate(0, 0) scale(1);
+        transform: translate(-100%, 0) scale(1);
     }
 
 }
