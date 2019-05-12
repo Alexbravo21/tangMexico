@@ -1,7 +1,7 @@
 <?php include('header.php') ?>
 
 <div class="nav_home_cont d-none d-md-block">
-    <div class="mas_nav_cont">
+    <div class="mas_nav_cont mas_nav_home_button">
         <div class="mas_nav">
             <div class="mas_nav_item horizontal"></div>
             <div class="mas_nav_item vertical"></div>
@@ -23,10 +23,10 @@
                 </div>
             </div>
         </div>
-        <div class="home_flecha_cont izquierda">
+        <div class="home_flecha_cont izquierda flecha_del_home">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha">
+        <div class="home_flecha_cont derecha flecha_del_home">
             <div class="home_flecha"></div>
         </div>
     </div>

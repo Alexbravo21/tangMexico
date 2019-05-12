@@ -61,7 +61,7 @@ var app = {
         });
     },
     masboton: function(){
-        $(document).on("click", ".mas_nav_cont", function () {
+        $(document).on("click", ".mas_nav_cont.mas_nav_home_button", function () {
             $(".colores_cont").slideToggle(400);
             $(this).toggleClass("is-active");
         });
@@ -156,7 +156,7 @@ var app = {
                             history.replaceState("", "", "sabor_int.php?sobres="+first_sobres);
                             var jsonItem2 = json2[file2][first_sobres];
                             $(".derecho .plasta_circular").css('background-color', jsonItem2.color);
-                            $(".sobre").attr("src", laurl+jsonItem2.img_url);
+                            $(".sobre.sobre_interior").attr("src", laurl+jsonItem2.img_url);
                             $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+first_sobres+".png");
                             $(".sabor_interior_titulo p span").html(jsonItem2.nombre);
                             $(".sabor_interior_titulo span, .sabor_desc_titulo, .info_nutri_titulo").css('color', jsonItem2.texto_color);
@@ -235,13 +235,14 @@ var app = {
     flechas_interior: function(position){
         var este = this;
         var elinterior;
-        $(document).on("click", ".izquierdo .home_flecha_cont", function(){
-            elinterior = $(this).data('seccion');
+        $(document).on("click", ".home_flecha_cont.flecha_int", function(){
+            var este_boton = $(this);
+            elinterior = este_boton.data('seccion');
             //Se añaden clases que animan la plasta y el sobre
             $(".plasta_circular").addClass('bounce-scale');
             $(".izquierdo .sobre").addClass("rotate-scale");
             //Se añaden clases que animan el texto para que tenga una transición parecida a la plasta
-            $(".sabor_interior_cont, .receta_interior_contenedor").addClass("rotate-scale");
+            $(".sabor_interior_cont, .receta_interior_contenedor").addClass("bounce-scale");
             $(".receta_interior_cont").fadeOut(300, function(){
                 setTimeout(function() {
                     $(".receta_interior_cont").fadeIn(400);
@@ -249,7 +250,8 @@ var app = {
             });
             setTimeout(function(){
                 //Se manda llamar la función que cambia los elementos con base en el JSON
-                if($(this).hasClass('izquierda')){
+                console.log(este_boton.hasClass('izquierda'));
+                if(este_boton.hasClass('izquierda')){
                     position = (position == 0) ? 21 : position;
                     este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
                     position--;
@@ -263,11 +265,11 @@ var app = {
                 //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
                 $(".plasta_circular").addClass('bounce-scale2');
                 $(".izquierdo .sobre").removeClass("rotate-scale");
-                $(".sabor_interior_cont, .receta_interior_contenedor").addClass("rotate-scale2");
+                $(".sabor_interior_cont, .receta_interior_contenedor").addClass("bounce-scale2");
                 setTimeout(function(){
                     // Se quitan todas las clases para reiniciar las animaciones
-                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("rotate-scale");
-                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("rotate-scale2");
+                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("bounce-scale");
+                    $(".sabor_interior_cont, .receta_interior_contenedor").removeClass("bounce-scale2");
                     $(".plasta_circular").removeClass('bounce-scale');
                     $(".plasta_circular").removeClass('bounce-scale2');
                 }, 510);

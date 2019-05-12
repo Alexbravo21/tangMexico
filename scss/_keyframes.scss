@@ -2,26 +2,30 @@
 
 .derecho .bounce-scale{
     transition: all 300ms ease-in-out;
-    transform: translate(0, -50%) scale(0);
+    transform: translate(-50%, 50%) scale(0);
+    @include med-query($medium){
+        transform: translate(0, -50%) scale(0);
+    }
 }
 .derecho .bounce-scale2{
-    animation: scale-easeOutBounce 500ms forwards;
+    animation: scale-easeOutBounce-mobile 500ms forwards;
+    @include med-query($medium){
+        animation: scale-easeOutBounce 500ms forwards;
+    }
 }
 
 @keyframes scale-easeOutBounce {
-    0% {
-        transform: translate(0, -50%) scale(0.3);
-    }
-    50% {
-        transform: translate(0, -50%) scale(1.1);
-    }
-    80% {
-        transform: translate(0, -50%) scale(0.95);
-    }
-    100% {
-        transform: translate(0, -50%) scale(1);
-    }
+    0% { transform: translate(0, -50%) scale(0.3);}
+    50% {transform: translate(0, -50%) scale(1.1);}
+    80% { transform: translate(0, -50%) scale(0.95);}
+    100% { transform: translate(0, -50%) scale(1);}
+}
 
+@keyframes scale-easeOutBounce-mobile {
+    0% { transform: translate(-50%, 50%) scale(0.3);}
+    50% {transform: translate(-50%, 0%) scale(1.05);}
+    80% { transform: translate(-50%, 0%) scale(0.95);}
+    100% { transform: translate(-50%, 0%) scale(1);}
 }
 
 
@@ -36,25 +40,28 @@
 
 //SOBRE INTERIOR
 
-.sabor_interior_cont.rotate-scale, .receta_interior_contenedor.rotate-scale{
-    transform: translate(100%, 0) scale(0);
+.sabor_interior_cont.bounce-scale, .receta_interior_contenedor.bounce-scale{
+    transform: translate(-50%, 100%) scale(0);
+    @include med-query($medium){
+        transform: translate(100%, 0) scale(0);
+    }
 }
-.sabor_interior_cont.rotate-scale2, .receta_interior_contenedor.rotate-scale2{
-    animation: scale-easeOutBounce-texto 500ms forwards;
+.sabor_interior_cont.bounce-scale2, .receta_interior_contenedor.bounce-scale2{
+    animation: scale-easeOutBounce-texto-mobile 500ms forwards;
+    @include med-query($medium){
+        animation: scale-easeOutBounce-texto 500ms forwards;
+    }
 }
 
+@keyframes scale-easeOutBounce-texto-mobile {
+    0% {transform: translate(-50%, 100%) scale(0.3);}
+    50% {transform: translate(-50%, 0) scale(1.1);}
+    80% {transform: translate(-50%, 0) scale(0.95);}
+    100% {transform: translate(-50%, 0) scale(1);}
+}
 @keyframes scale-easeOutBounce-texto {
-    0% {
-        transform: translate(0%, 0) scale(0.3);
-    }
-    50% {
-        transform: translate(-100%, 0) scale(1.1);
-    }
-    80% {
-        transform: translate(-100%, 0) scale(0.95);
-    }
-    100% {
-        transform: translate(-100%, 0) scale(1);
-    }
-
+    0% {transform: translate(0%, 0) scale(0.3);}
+    50% {transform: translate(-100%, 0) scale(1.1);}
+    80% {transform: translate(-100%, 0) scale(0.95);}
+    100% {transform: translate(-100%, 0) scale(1);}
 }

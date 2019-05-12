@@ -259,3 +259,50 @@ html{
 .uppercase{
     text-transform: uppercase;
 }
+.derecho{
+    .nav_home_cont{
+        @include medio(absolute, 3%, 50%, -50%, 0);
+        z-index: 100000;
+        @include med-query($medium){
+            @include medio(absolute, 50%, 10%, -50%, -50%);
+        }
+        .mas_nav_cont{
+            transform: rotate(45deg);
+            cursor: pointer;
+            position: relative;
+            width: $width-buttons;
+            height: $height-buttons;
+            background-color: color(blanco);
+            border-radius: 100%;
+            margin-bottom: 7px;
+            transition: all 400ms ease-in-out;
+            @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
+            @include med-query($small){
+                width: $width-buttons*1.2;
+                height: $height-buttons*1.2;
+            }
+            &.is-active{
+                transform: rotate(225deg);
+            }
+            .mas_nav{
+                @include medio(absolute, 50%, 50%, -50%, -50%);
+                width: 60%;
+                height: 60%;
+                .mas_nav_item{
+                    background-color: color(gris-obscuro);
+                    &.horizontal{
+                        width: 100%;
+                        height: 3px;
+                        @include medio(absolute, 50%, 0, 0, -50%);
+                    }
+                    &.vertical{
+                        width: 3px;
+                        height: 100%;
+                        @include medio(absolute, 0, 50%, -50%, 0);
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+    }
+}

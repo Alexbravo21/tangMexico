@@ -3,20 +3,32 @@
 <div class="fondo_madera_2">
     <div class="izquierdo">
         <img src="" alt="" class="sobre sobre_interior">
-        <div class="home_flecha_cont izquierda d-none d-md-block" data-seccion="sobres">
+        <div class="home_flecha_cont flecha_int izquierda d-none d-md-block" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-none d-md-block" data-seccion="sobres">
+        <div class="home_flecha_cont flecha_int derecha d-none d-md-block" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
     </div><!--
     --><div class="derecho">
-        <div class="home_flecha_cont izquierda d-block d-md-none" data-seccion="sobres">
+        <div class="home_flecha_cont flecha_int izquierda d-block d-md-none" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
-        <div class="home_flecha_cont derecha d-block d-md-none" data-seccion="sobres">
+        <div class="home_flecha_cont flecha_int derecha d-block d-md-none" data-seccion="sobres">
             <div class="home_flecha"></div>
         </div>
+        <a href="index.php">
+            <div class="nav_home_cont">
+                <div class="mas_nav_cont">
+                    <div class="mas_nav">
+                        <div class="mas_nav_item horizontal"></div>
+                        <div class="mas_nav_item vertical"></div>
+                    </div>
+                </div>
+                <div class="colores_cont">
+                </div>
+            </div>
+        </a>
         <div class="sabor_interior_cont">
             <div class="sabor_interior_texto">
                 <div class="sabor_interior_titulo">
@@ -89,7 +101,8 @@
                 </div>
             </div>
         </div>
-        <div class="plasta_circular"></div>
+        <div class="plasta_circular">
+        </div>
     </div>
 </div>
 
