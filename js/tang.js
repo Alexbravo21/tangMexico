@@ -108,6 +108,7 @@ var app = {
 
                         //Acomodo con las flechas de recetas
                         if(seccion == 'recetas'){
+                            history.replaceState("", "", "receta_int.php?recetas="+first);
                             $(".ingredientes_lista, .preparacion_lista").html('');
                             var jsonItem = json[file][first];
                             $(".derecho .plasta_circular").css('background-color', jsonItem.color);
@@ -152,6 +153,7 @@ var app = {
                         }
                         //Acomodo con las flechas de sobres
                         if(seccion == 'sobres'){
+                            history.replaceState("", "", "sabor_int.php?sobres="+first_sobres);
                             var jsonItem2 = json2[file2][first_sobres];
                             $(".derecho .plasta_circular").css('background-color', jsonItem2.color);
                             $(".sobre").attr("src", laurl+jsonItem2.img_url);
