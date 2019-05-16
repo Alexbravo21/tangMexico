@@ -289,10 +289,12 @@ var app = {
         if(indicador > -1){
             //Checamos que tenga variable de "origen" para enviarlos de regreso a ello
             if(indicador3 > -1){
+                //No se necesita de momento pero aqui se obtiene la variable del origen
                 var viene = url.substring(indicador3 + 1);
                 var indicador4 = viene.indexOf('=');
                 var origen = viene.substring(indicador4 + 1);
                 url = url.replace('&'+viene, '');
+                //Se cambia url si el origen es el home (solo el enlace desde el home tiene variable "viene")
                 $(".cerrar_interior").attr('href', site_url);
             }
             //Se obtiene la variable de la URL
