@@ -16,7 +16,7 @@
         <div class="home_flecha_cont flecha_int derecha d-block d-md-none" data-seccion="recetas">
             <div class="home_flecha"></div>
         </div>
-        <a href="index.php">
+        <a href="index.php" class="cerrar_interior">
             <div class="nav_home_cont">
                 <div class="mas_nav_cont">
                     <div class="mas_nav">

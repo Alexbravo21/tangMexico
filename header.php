@@ -48,7 +48,6 @@
             <a href="<?=$site_url?>"><button class="menu_boton">INICIO</button></a>
             <a href="<?=$site_url?>sabores"><button class="menu_boton">SABORES</button></a>
             <a href="<?=$site_url?>recetas"><button class="menu_boton">RECETAS</button></a>
-            <a href="<?=$site_url?>"><button class="menu_boton">#CAMPAÑA</button></a>
             <a href="<?=$site_url?>"><button class="menu_boton">PROMO</button></a>
             <a href="<?=$site_url?>contacto.php"><button class="menu_boton">CONTACTO</button></a>
         </div>

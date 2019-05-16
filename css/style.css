@@ -86,6 +86,7 @@
   background-color: #000000;
   margin: 8px auto;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .home_flecha_cont {
@@ -319,26 +320,27 @@
 
 .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre {
   position: absolute;
-  top: 20px;
-  left: 0;
-  -webkit-transform: translate(-70%, 0%);
-          transform: translate(-70%, 0%);
+  top: 105%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
   color: #d87013;
   font-size: 1rem;
   font-weight: bold;
   font-style: italic;
   line-height: 1rem;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 @media (min-width: 770px) {
   .derecho .plasta_circular .receta_home_cont .receta_home .receta_home_nombre {
     position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
@@ -1086,8 +1088,8 @@
 }
 
 .hamburger--spin .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin .hamburger-inner::after {
@@ -1109,8 +1111,8 @@
 .hamburger--spin.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin.is-active .hamburger-inner::after {
@@ -1134,8 +1136,8 @@
 }
 
 .hamburger--spin-r .hamburger-inner::before {
-  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  -webkit-transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 
 .hamburger--spin-r .hamburger-inner::after {
@@ -1157,8 +1159,8 @@
 .hamburger--spin-r.is-active .hamburger-inner::before {
   top: 0;
   opacity: 0;
-  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  -webkit-transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 
 .hamburger--spin-r.is-active .hamburger-inner::after {
@@ -1828,13 +1830,12 @@ html body {
 
 .menu_cont .menu_botones {
   position: absolute;
-  top: 70px;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -100px);
-          transform: translate(-50%, -100px);
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
   z-index: 2;
   width: 100%;
-  height: calc(100% - 100px);
   opacity: 0;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
@@ -1843,16 +1844,16 @@ html body {
 @media (min-width: 770px) {
   .menu_cont .menu_botones {
     position: absolute;
-    top: 80px;
+    top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -100px);
-            transform: translate(-50%, -100px);
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
   }
 }
 
 .menu_cont .menu_botones.madera_move {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 1;
 }
 

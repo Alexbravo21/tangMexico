@@ -55,6 +55,7 @@ $tran: 80%;
         background-color: color(negro);
         margin: 8px auto;
         border-radius: 100%;
+        cursor: pointer;
     }
 }
 
@@ -174,16 +175,18 @@ $tran: 80%;
             .receta_home{
                 position: relative;
                 .receta_home_nombre{
-                    @include medio(absolute, 20px, 0, -70%, 0%);
+                    //@include medio(absolute, 20px, 0, -70%, 0%);
+                    @include medio(absolute, 105%, 50%, -50%, 0%);
                     color: color(naranjada-texto);
                     font-size: 1rem;
                     font-weight: bold;
                     font-style: italic;
                     line-height: 1rem;
-                    text-align: right;
+                    text-align: center;
                     text-transform: uppercase;
+                    width: 100%;
                     @include med-query($medium){
-                        @include medio(absolute, 0, 0, 0%, 0%);
+                        @include medio(absolute, 100%, 50%, -50%, 0%);
                         font-size: 1.8rem;
                         line-height: 1.8rem;
                     }

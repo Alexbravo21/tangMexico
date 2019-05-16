@@ -102,8 +102,9 @@ var app = {
                             $(".receta_home_nombre").html(elnombre);
                             $(".receta_home_img").attr("src", json[file][first].home_img_url);
                             $(".sobre").attr("src", laurl+json2[file2][laskeys2[i]].img_url);
-                            $(".receta_home_img_a").attr("href", json[file][first].link);
-                            $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link);
+                            $(".receta_home_img_a").attr("href", json[file][first].link + "&viene=home");
+                            $(".sobre_home_a").attr("href", json2[file2][laskeys2[i]].link + "&viene=home");
+                            $(".receta_home_nombre").css('color', json2[file2][laskeys2[i]].texto_color);
                         } 
 
                         //Acomodo con las flechas de recetas
@@ -281,13 +282,24 @@ var app = {
         var url = window.location.href;
         var indicador = url.indexOf('?');
         var indicador2 = url.indexOf('=');
+        var indicador3 = url.indexOf('&');
+        console.log(indicador, indicador2, indicador3);
         var este = this;
         //Si existe entramos
         if(indicador > -1){
+            //Checamos que tenga variable de "origen" para enviarlos de regreso a ello
+            if(indicador3 > -1){
+                var viene = url.substring(indicador3 + 1);
+                var indicador4 = viene.indexOf('=');
+                var origen = viene.substring(indicador4 + 1);
+                url = url.replace('&'+viene, '');
+                $(".cerrar_interior").attr('href', site_url);
+            }
             //Se obtiene la variable de la URL
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
+            console.log(key, origen);
             //Obtenemos el objeto con la key de la variable de URL
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
