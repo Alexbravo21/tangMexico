@@ -8,6 +8,7 @@
         <img src="<?=$site_url?>img/promo.png" alt="Con Tang quiero más" class="promo_img">
     </div>
 
+    <script src="https://unpkg.com/shufflejs@5"></script>
     <script src="<?=$site_url?>js/jquery-3.3.1.min.js"></script>
     <script src="<?=$site_url?>js/tang.js"></script>
     <script src="<?=$site_url?>js/bootstrap.min.js"></script>

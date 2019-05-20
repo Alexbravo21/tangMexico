@@ -374,6 +374,7 @@ var app = {
         }
     },
     getThumbs: function(file, eltipo){
+        var self = this;
         $.getJSON(site_url+file+".json", function(json) {
             var carpeta = (file == 'recetas') ? 'thumbs' : 'mini';
             var int = (file == 'recetas') ? 'receta_int' : 'sabor_int';
@@ -382,19 +383,22 @@ var app = {
             if(eltipo == 'todos'){
                 for (const key in json[file]) {
                     $("."+file+"_thumbs_cont .row").append(`
-                        <div class="col-6 col-md-3">
+                        <div class="col-6 col-md-3 receta_thumb_col">
                             <div class="receta_thumb_cont">
                                 <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
                             </div>
                         </div>
                     `);
                 }
+                $("."+file+"_thumbs_cont .row").append('<div class="col-1 my-sizer-element"></div>');
+                self.shuffleJS();
+                
             }else{
                 for (const key in json[file]) {
                     type = json[file][key].tipo;
                     if(eltipo == type){
                         $("."+file+"_thumbs_cont .row").append(`
-                            <div class="col-6 col-md-3">
+                            <div class="col-6 col-md-3 receta_thumb_col">
                                 <div class="receta_thumb_cont">
                                     <a href="${int}.php?${file}=${key}"><img src="${site_url}img/${file}/${carpeta}/${key}.png" alt="" class="receta_thumb"></a>
                                 </div>
@@ -402,6 +406,9 @@ var app = {
                         `);
                     }
                 }
+                $("."+file+"_thumbs_cont .row").append('<div class="col-1 my-sizer-element"></div>');
+                self.shuffleJS();
+                
             }
             
         });
@@ -421,6 +428,12 @@ var app = {
         $(document).on('click', '.cerrar_promo', function(){
             $(".promo").fadeOut(400);
         });
+    },
+    shuffleJS: function(){
+        window.shuffleInstance = new window.Shuffle(document.getElementById('grid'), {
+            itemSelector: '.receta_thumb_col',
+            sizer: '.my-sizer-element',
+          });
     },
     pruebas: function(){
         //alert("Width: "+$(window).width());

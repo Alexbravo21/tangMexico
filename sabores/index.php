@@ -16,7 +16,7 @@
                 </div>
                 <div class="sobres_thumbs_cont">
                     <div class="col-12">
-                        <div class="row"></div>
+                        <div class="row" id="grid"></div>
                     </div>
                 </div>
             </div>
