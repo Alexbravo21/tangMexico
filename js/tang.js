@@ -73,6 +73,7 @@ var app = {
             $(".colores_cont").html("");
             //Obtenemos un Array con los keys del objeto JSON y obtenemos los colores de cada botón
             var laskeys = Object.keys(json[file]);
+            //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
             laskeys.sort();
             console.log(pos, file, laskeys);
             var first = laskeys[pos];
@@ -83,6 +84,7 @@ var app = {
             $.getJSON(site_url+file2+".json", function(json2) {
                 //Obtenemos el array de este JSON
                 var laskeys2 = Object.keys(json2[file2]);
+                //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                 laskeys2.sort();
                 console.log(pos, file2, laskeys2);
                 var first_sobres = laskeys2[pos];
@@ -314,6 +316,7 @@ var app = {
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 //Se envía la posición de la key para indexar la navegación entre recetas y sobres
                 var laskeys = Object.keys(json[file]);
+                //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                 laskeys.sort();
                 var position = laskeys.indexOf(key);
                 este.flechas_interior(position);
