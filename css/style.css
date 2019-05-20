@@ -145,8 +145,8 @@
           transform: translate(-50%, 0);
   width: auto;
   max-height: 80%;
-  -webkit-transition: all 350ms ease-in-out;
-  transition: all 350ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   -webkit-transform: translate(-50%, 0%) rotate(-5deg);
   transform: translate(-50%, 0%) rotate(-5deg);
   -webkit-box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
@@ -262,6 +262,8 @@
 }
 
 .derecho .plasta_circular .receta_home_cont {
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   position: absolute;
   top: 10px;
   left: 50%;
@@ -1173,215 +1175,83 @@
   transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.derecho .bounce-scale {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-  -webkit-transform: translate(-50%, 50%) scale(0);
-          transform: translate(-50%, 50%) scale(0);
+.derecho .plasta_circular .receta_home_cont.subir_anim {
+  -webkit-transform: translate(-50%, -20%);
+          transform: translate(-50%, -20%);
+  opacity: 0;
+}
+
+@media (min-width: 365px) {
+  .derecho .plasta_circular .receta_home_cont.subir_anim {
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  }
+}
+
+@media (min-width: 576px) {
+  .derecho .plasta_circular .receta_home_cont.subir_anim {
+    -webkit-transform: translate(-50%, -20%);
+            transform: translate(-50%, -20%);
+  }
+}
+
+@media (min-width: 992px) {
+  .derecho .plasta_circular .receta_home_cont.subir_anim {
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+}
+
+.derecho .plasta_circular .receta_home_cont.bajar_anim {
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
+  opacity: 0;
+}
+
+@media (min-width: 365px) {
+  .derecho .plasta_circular .receta_home_cont.bajar_anim {
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+}
+
+@media (min-width: 576px) {
+  .derecho .plasta_circular .receta_home_cont.bajar_anim {
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
+  }
+}
+
+@media (min-width: 992px) {
+  .derecho .plasta_circular .receta_home_cont.bajar_anim {
+    -webkit-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+  }
+}
+
+.izquierdo .sobre.subir_anim {
+  -webkit-transform: translate(-50%, -20%) rotate(-5deg);
+          transform: translate(-50%, -20%) rotate(-5deg);
+  opacity: 0;
 }
 
 @media (min-width: 770px) {
-  .derecho .bounce-scale {
-    -webkit-transform: translate(0, -50%) scale(0);
-            transform: translate(0, -50%) scale(0);
+  .izquierdo .sobre.subir_anim {
+    -webkit-transform: translate(-50%, -100%) rotate(-5deg);
+            transform: translate(-50%, -100%) rotate(-5deg);
   }
 }
 
-.derecho .bounce-scale2 {
-  -webkit-animation: scale-easeOutBounce-mobile 500ms forwards;
-          animation: scale-easeOutBounce-mobile 500ms forwards;
-}
-
-@media (min-width: 770px) {
-  .derecho .bounce-scale2 {
-    -webkit-animation: scale-easeOutBounce 500ms forwards;
-            animation: scale-easeOutBounce 500ms forwards;
-  }
-}
-
-@-webkit-keyframes scale-easeOutBounce {
-  0% {
-    -webkit-transform: translate(0, -50%) scale(0.3);
-            transform: translate(0, -50%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(0, -50%) scale(1.1);
-            transform: translate(0, -50%) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(0, -50%) scale(0.95);
-            transform: translate(0, -50%) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(0, -50%) scale(1);
-            transform: translate(0, -50%) scale(1);
-  }
-}
-
-@keyframes scale-easeOutBounce {
-  0% {
-    -webkit-transform: translate(0, -50%) scale(0.3);
-            transform: translate(0, -50%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(0, -50%) scale(1.1);
-            transform: translate(0, -50%) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(0, -50%) scale(0.95);
-            transform: translate(0, -50%) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(0, -50%) scale(1);
-            transform: translate(0, -50%) scale(1);
-  }
-}
-
-@-webkit-keyframes scale-easeOutBounce-mobile {
-  0% {
-    -webkit-transform: translate(-50%, 50%) scale(0.3);
-            transform: translate(-50%, 50%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-50%, 0%) scale(1.05);
-            transform: translate(-50%, 0%) scale(1.05);
-  }
-  80% {
-    -webkit-transform: translate(-50%, 0%) scale(0.95);
-            transform: translate(-50%, 0%) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 0%) scale(1);
-            transform: translate(-50%, 0%) scale(1);
-  }
-}
-
-@keyframes scale-easeOutBounce-mobile {
-  0% {
-    -webkit-transform: translate(-50%, 50%) scale(0.3);
-            transform: translate(-50%, 50%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-50%, 0%) scale(1.05);
-            transform: translate(-50%, 0%) scale(1.05);
-  }
-  80% {
-    -webkit-transform: translate(-50%, 0%) scale(0.95);
-            transform: translate(-50%, 0%) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 0%) scale(1);
-            transform: translate(-50%, 0%) scale(1);
-  }
-}
-
-.izquierdo .sobre.rotate-scale {
-  -webkit-transform: translate(-50%, -50%) rotate(-345deg) scale(0);
-          transform: translate(-50%, -50%) rotate(-345deg) scale(0);
-}
-
-.izquierdo .sobre.rotate-scale2 {
-  -webkit-transform: translate(-50%, -50%) rotate(-345deg) scale(0);
-          transform: translate(-50%, -50%) rotate(-345deg) scale(0);
-}
-
-.sabor_interior_cont.bounce-scale, .receta_interior_contenedor.bounce-scale {
-  -webkit-transform: translate(-50%, 100%) scale(0);
-          transform: translate(-50%, 100%) scale(0);
+.izquierdo .sobre.bajar_anim {
+  -webkit-transform: translate(-50%, 20%) rotate(-5deg);
+          transform: translate(-50%, 20%) rotate(-5deg);
+  opacity: 0;
 }
 
 @media (min-width: 770px) {
-  .sabor_interior_cont.bounce-scale, .receta_interior_contenedor.bounce-scale {
-    -webkit-transform: translate(100%, 0) scale(0);
-            transform: translate(100%, 0) scale(0);
-  }
-}
-
-.sabor_interior_cont.bounce-scale2, .receta_interior_contenedor.bounce-scale2 {
-  -webkit-animation: scale-easeOutBounce-texto-mobile 500ms forwards;
-          animation: scale-easeOutBounce-texto-mobile 500ms forwards;
-}
-
-@media (min-width: 770px) {
-  .sabor_interior_cont.bounce-scale2, .receta_interior_contenedor.bounce-scale2 {
-    -webkit-animation: scale-easeOutBounce-texto 500ms forwards;
-            animation: scale-easeOutBounce-texto 500ms forwards;
-  }
-}
-
-@-webkit-keyframes scale-easeOutBounce-texto-mobile {
-  0% {
-    -webkit-transform: translate(-50%, 100%) scale(0.3);
-            transform: translate(-50%, 100%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-50%, 0) scale(1.1);
-            transform: translate(-50%, 0) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(-50%, 0) scale(0.95);
-            transform: translate(-50%, 0) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 0) scale(1);
-            transform: translate(-50%, 0) scale(1);
-  }
-}
-
-@keyframes scale-easeOutBounce-texto-mobile {
-  0% {
-    -webkit-transform: translate(-50%, 100%) scale(0.3);
-            transform: translate(-50%, 100%) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-50%, 0) scale(1.1);
-            transform: translate(-50%, 0) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(-50%, 0) scale(0.95);
-            transform: translate(-50%, 0) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 0) scale(1);
-            transform: translate(-50%, 0) scale(1);
-  }
-}
-
-@-webkit-keyframes scale-easeOutBounce-texto {
-  0% {
-    -webkit-transform: translate(0%, 0) scale(0.3);
-            transform: translate(0%, 0) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-100%, 0) scale(1.1);
-            transform: translate(-100%, 0) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(-100%, 0) scale(0.95);
-            transform: translate(-100%, 0) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0) scale(1);
-            transform: translate(-100%, 0) scale(1);
-  }
-}
-
-@keyframes scale-easeOutBounce-texto {
-  0% {
-    -webkit-transform: translate(0%, 0) scale(0.3);
-            transform: translate(0%, 0) scale(0.3);
-  }
-  50% {
-    -webkit-transform: translate(-100%, 0) scale(1.1);
-            transform: translate(-100%, 0) scale(1.1);
-  }
-  80% {
-    -webkit-transform: translate(-100%, 0) scale(0.95);
-            transform: translate(-100%, 0) scale(0.95);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0) scale(1);
-            transform: translate(-100%, 0) scale(1);
+  .izquierdo .sobre.bajar_anim {
+    -webkit-transform: translate(-50%, 50%) rotate(-5deg);
+            transform: translate(-50%, 50%) rotate(-5deg);
   }
 }
 

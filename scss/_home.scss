@@ -100,7 +100,7 @@ $tran: 80%;
         @include medio(absolute, 0, 50%, -50%, 0);
         width: auto;
         max-height: 80%;
-        transition: all 350ms ease-in-out;
+        transition: all 400ms ease-in-out;
         @include multi-transforms(translate(-50%, 0%) rotate(-5deg));
         @include prefix(box-shadow, 6px 8px 13px 2px rgba(0,0,0,0.75), webkit moz);
         @include med-query($medium){
@@ -154,6 +154,7 @@ $tran: 80%;
             transform: translate(0, -50%) scale(1);
         }
         .receta_home_cont{
+            transition: all 400ms ease-in-out;
             @include medio(absolute, 10px, 50%, -50%, 0);
             width: 150px;
             @include med-query-height(){
