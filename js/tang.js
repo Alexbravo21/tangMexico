@@ -73,6 +73,8 @@ var app = {
             $(".colores_cont").html("");
             //Obtenemos un Array con los keys del objeto JSON y obtenemos los colores de cada botón
             var laskeys = Object.keys(json[file]);
+            laskeys.sort();
+            console.log(pos, file, laskeys);
             var first = laskeys[pos];
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
@@ -81,6 +83,8 @@ var app = {
             $.getJSON(site_url+file2+".json", function(json2) {
                 //Obtenemos el array de este JSON
                 var laskeys2 = Object.keys(json2[file2]);
+                laskeys2.sort();
+                console.log(pos, file2, laskeys2);
                 var first_sobres = laskeys2[pos];
                 //console.log(first_sobres);
                 for (var i=0; i < laskeys2.length; i++){
@@ -205,19 +209,22 @@ var app = {
     flechas_home: function(){
         var este = this;
         $(document).on("click", ".derecho .home_flecha_cont", function(){
+            var este_boton = $(this);
             //Se añaden clases que animan la plasta y el sobre
             $(".plasta_circular").addClass('bounce-scale');
             $(".izquierdo .sobre").addClass("rotate-scale");
             setTimeout(function(){
                 //Se manda llamar la función que cambia los elementos con base en el JSON
-                if($(this).hasClass('izquierda')){
+                if(este_boton.hasClass('izquierda')){
                     pos = (pos == 0) ? 21 : pos;
                     este.getTheJSON("recetas", "sobres", (pos-1), '', 'home');
                     pos--;
+                    console.log("La izquierda", pos);
                 }else{
                     pos = (pos == 20) ? -1 : pos;
                     este.getTheJSON("recetas", "sobres", (pos+1), '', 'home');
                     pos++;
+                    console.log("La derecha", pos);
                 }
             }, 250);
             setTimeout(function(){
@@ -251,15 +258,16 @@ var app = {
             });
             setTimeout(function(){
                 //Se manda llamar la función que cambia los elementos con base en el JSON
-                console.log(este_boton.hasClass('izquierda'));
                 if(este_boton.hasClass('izquierda')){
                     position = (position == 0) ? 21 : position;
                     este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
                     position--;
+                    console.log("La izquierda", pos);
                 }else{
                     position = (position == 20) ? -1 : position;
                     este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
                     position++;
+                    console.log("La derecha", pos);
                 }
             }, 250);
             setTimeout(function(){
@@ -283,7 +291,6 @@ var app = {
         var indicador = url.indexOf('?');
         var indicador2 = url.indexOf('=');
         var indicador3 = url.indexOf('&');
-        console.log(indicador, indicador2, indicador3);
         var este = this;
         //Si existe entramos
         if(indicador > -1){
@@ -301,13 +308,14 @@ var app = {
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
-            console.log(key, origen);
             //Obtenemos el objeto con la key de la variable de URL
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
                 $(".derecho .plasta_circular").css("background-color", jsonItem.color);
                 //Se envía la posición de la key para indexar la navegación entre recetas y sobres
-                var position = Object.keys(json[file]).indexOf(key);
+                var laskeys = Object.keys(json[file]);
+                laskeys.sort();
+                var position = laskeys.indexOf(key);
                 este.flechas_interior(position);
                 //console.log(position, json[file], json[file].melon);
                 if(file == 'recetas'){
