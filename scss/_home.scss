@@ -108,6 +108,9 @@ $tran: 80%;
             @include multi-transforms(translate(-50%, -50%) rotate(-5deg));
             width: 250px;
         }
+        &.sobre_interior{
+            transition: none;
+        }
     }
     .home_flecha_cont{
         &.izquierda{

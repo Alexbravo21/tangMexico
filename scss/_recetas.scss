@@ -29,7 +29,6 @@
     height: 70%;
     overflow: hidden;
     margin-top: 50px;
-    transition: all 300ms ease-in-out;
     @include med-query($petit){
         height: 80%;
     }

@@ -270,16 +270,25 @@ var app = {
         $(document).on("click", ".home_flecha_cont.flecha_int", function(){
             var este_boton = $(this);
             elinterior = este_boton.data('seccion');
-            //Se manda llamar la función que cambia los elementos con base en el JSON
-            if(este_boton.hasClass('izquierda')){
-                position = (position == 0) ? 21 : position;
-                este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
-                position--;
-            }else{
-                position = (position == 20) ? -1 : position;
-                este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
-                position++;
-            }
+            var elemento = ($(".sobre.sobre_interior").length > 0) ? ".sobre.sobre_interior" : ".receta_interior_contenedor";
+            $(".plasta_circular").css("transition", "background-color 400ms ease-in-out");
+            $(".receta_interior_cont").css("transition", "background-image 400ms ease-in-out");
+            $(elemento).fadeOut(400, function(){
+                //Se manda llamar la función que cambia los elementos con base en el JSON
+                if(este_boton.hasClass('izquierda')){
+                    position = (position == 0) ? 21 : position;
+                    este.getTheJSON("recetas", "sobres", (position-1), site_url, elinterior);
+                    position--;
+                }else{
+                    position = (position == 20) ? -1 : position;
+                    este.getTheJSON("recetas", "sobres", (position+1), site_url, elinterior);
+                    position++;
+                }
+                setTimeout(function(){
+                    $(elemento).fadeIn(400);
+                }, 200);
+            });
+            
         });
     },
     getInterior: function(){
