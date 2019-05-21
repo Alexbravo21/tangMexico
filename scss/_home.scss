@@ -88,6 +88,7 @@ $tran: 80%;
 
 .izquierdo{
     display: inline-block;
+    z-index: 1;
     width: 100%;
     vertical-align: top;
     height: 40%;
@@ -130,9 +131,17 @@ $tran: 80%;
             }
         }
     }
+    .frutas_home{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 100;
+        transition: all 400ms ease-in-out;
+    }
 }
 .derecho{
     position: relative;
+    z-index: 2;
     display: inline-block;    
     vertical-align: top;
     width: 100%;

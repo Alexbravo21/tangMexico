@@ -75,7 +75,6 @@ var app = {
             var laskeys = Object.keys(json[file]);
             //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
             laskeys.sort();
-            console.log(pos, file, laskeys);
             var first = laskeys[pos];
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
@@ -86,7 +85,6 @@ var app = {
                 var laskeys2 = Object.keys(json2[file2]);
                 //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                 laskeys2.sort();
-                console.log(pos, file2, laskeys2);
                 var first_sobres = laskeys2[pos];
                 //console.log(first_sobres);
                 for (var i=0; i < laskeys2.length; i++){
@@ -184,6 +182,27 @@ var app = {
                 }
             });
         });
+
+        //Obtenemos el JSON de las frutas individuales
+        $.getJSON(site_url+"frutas.json", function(json_frutas) {
+            $(".frutas_home").remove();
+            var cont = 0;
+            var frutas_keys = Object.keys(json_frutas.sobres);
+            //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
+            frutas_keys.sort();
+            var fruta_actual = frutas_keys[pos];
+            var car_fruta_actual = json_frutas.sobres[fruta_actual];
+            car_fruta_actual.frutas.forEach(function(item, index){
+                $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
+                    +car_fruta_actual.frutas_pos[cont][1]+'%; left:'+car_fruta_actual.frutas_pos[cont][0]+
+                    '%; transform: translate('+car_fruta_actual.frutas_transform[cont][0]+'%, '+car_fruta_actual.frutas_transform[cont][1]+'%)">');
+                cont++;
+            });
+            // $(".frutas_home").each(function(index){
+            //     $(this).css("top", 20*index+"%");
+            // });
+        });
+
     },
     colores_home: function(){
         var este = this;
