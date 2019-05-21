@@ -33,8 +33,7 @@
             "frutas_transform":[[-50,-65],[-60,-50],[-50,-50]],
             "receta_home":[
                 "/img/recetas_home/melon2.png",
-                "/img/recetas_home/melon3.png",
-                "/img/recetas_home/melon4.png"
+                "/img/recetas_home/melon3.png"
             ],
             "receta_home_pos":[[80,10],[20,50],[10,95]],
             "receta_home_transform":[[-50,-50],[-50,-50],[-100,100]],
@@ -194,8 +193,7 @@
             "frutas_transform":[[-50,-65],[-60,-50],[-50,-50]],
             "receta_home":[
                 "/img/recetas_home/tamarindo2.png",
-                "/img/recetas_home/tamarindo3.png",
-                "/img/recetas_home/tamarindo4.png"
+                "/img/recetas_home/tamarindo3.png"
             ],
             "receta_home_pos":[[80,10],[20,50],[10,95]],
             "receta_home_transform":[[-50,-50],[-50,-50],[-100,100]],
@@ -278,23 +276,23 @@
         },
         "pina_colada":{
             "frutas":[
-                "/img/frutas/pina_colada1.png",
-                "/img/frutas/pina_colada2.png",
-                "/img/frutas/pina_colada3.png"
+                "/img/frutas/pinacolada1.png",
+                "/img/frutas/pinacolada2.png",
+                "/img/frutas/pinacolada3.png"
             ],
             "frutas_pos":[[90,0],[0,90],[130,85]],
             "frutas_transform":[[-50,-65],[-60,-50],[-50,-50]],
             "receta_home":[
-                "/img/recetas_home/pina_colada2.png",
-                "/img/recetas_home/pina_colada3.png",
-                "/img/recetas_home/pina_colada4.png"
+                "/img/recetas_home/pinacolada2.png",
+                "/img/recetas_home/pinacolada3.png",
+                "/img/recetas_home/pinacolada4.png"
             ],
             "receta_home_pos":[[80,10],[20,50],[10,95]],
             "receta_home_transform":[[-50,-50],[-50,-50],[-100,100]],
             "frutas_receta":[
-                "/img/frutas_receta/pina_colada1.png",
-                "/img/frutas_receta/pina_colada2.png",
-                "/img/frutas_receta/pina_colada3.png"
+                "/img/frutas_receta/pinacolada1.png",
+                "/img/frutas_receta/pinacolada2.png",
+                "/img/frutas_receta/pinacolada3.png"
             ],
             "frutas_receta_pos":[[10,10],[10,10],[10,10]],
             "frutas_receta_transform":[[0,0],[0,0],[0,0]]
@@ -461,7 +459,27 @@
             "frutas_receta_transform":[[0,0],[0,0],[0,0]]
         },
         "pinada":{
-            
+            "frutas":[
+                "/img/frutas/pinada1.png",
+                "/img/frutas/pinada2.png",
+                "/img/frutas/pinada3.png"
+            ],
+            "frutas_pos":[[90,0],[0,90],[130,85]],
+            "frutas_transform":[[-50,-65],[-60,-50],[-50,-50]],
+            "receta_home":[
+                "/img/recetas_home/pinada2.png",
+                "/img/recetas_home/pinada3.png",
+                "/img/recetas_home/pinada4.png"
+            ],
+            "receta_home_pos":[[80,10],[20,50],[10,95]],
+            "receta_home_transform":[[-50,-50],[-50,-50],[-100,100]],
+            "frutas_receta":[
+                "/img/frutas_receta/pinada1.png",
+                "/img/frutas_receta/pinada2.png",
+                "/img/frutas_receta/pinada3.png"
+            ],
+            "frutas_receta_pos":[[10,10],[10,10],[10,10]],
+            "frutas_receta_transform":[[0,0],[0,0],[0,0]]
         }
     }
 }
