@@ -186,21 +186,18 @@ var app = {
         //Obtenemos el JSON de las frutas individuales
         $.getJSON(site_url+"frutas.json", function(json_frutas) {
             $(".frutas_home").remove();
-            var cont = 0;
             var frutas_keys = Object.keys(json_frutas.sobres);
             //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
             frutas_keys.sort();
             var fruta_actual = frutas_keys[pos];
             var car_fruta_actual = json_frutas.sobres[fruta_actual];
             car_fruta_actual.frutas.forEach(function(item, index){
-                $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
-                    +car_fruta_actual.frutas_pos[cont][1]+'%; left:'+car_fruta_actual.frutas_pos[cont][0]+
-                    '%; transform: translate('+car_fruta_actual.frutas_transform[cont][0]+'%, '+car_fruta_actual.frutas_transform[cont][1]+'%)">');
-                cont++;
+                $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
             });
-            // $(".frutas_home").each(function(index){
-            //     $(this).css("top", 20*index+"%");
-            // });
+            car_fruta_actual.receta_home.forEach(function(item, index){
+                $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
+                +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+            });
         });
 
     },
@@ -253,7 +250,7 @@ var app = {
                         $(".receta_home_cont").removeClass("subir_anim");
                         $(".sobre").removeClass("bajar_anim");
                         setTimeout ( function () {
-                            $("body, html").css("overflow", "auto");
+                            //$("body, html").css("overflow", "auto");
                         },200 );
                     },500 );
                 }else{
@@ -277,7 +274,7 @@ var app = {
                         $(".receta_home_cont").removeClass("bajar_anim");
                         $(".sobre").removeClass("subir_anim");
                         setTimeout ( function () {
-                            $("body, html").css("overflow", "auto");
+                            //$("body, html").css("overflow", "auto");
                         },50 );
                     },500 );
                 }

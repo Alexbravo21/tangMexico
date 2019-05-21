@@ -15,6 +15,12 @@
 @include fontface("muliBlackItalic", '/css/fonts/Muli-BlackItalic.ttf', bolder, italic);
 
 
+.over_hidden{
+    @include med-query($medium){
+        overflow: hidden;
+    }
+}
+
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
     color: inherit;

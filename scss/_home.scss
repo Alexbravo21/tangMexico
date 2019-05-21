@@ -222,6 +222,13 @@ $tran: 80%;
                         max-height: 400px;
                     }
                 }
+                .frutas_home{
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    z-index: 100;
+                    transition: all 400ms ease-in-out;
+                }
             }
         }
     }

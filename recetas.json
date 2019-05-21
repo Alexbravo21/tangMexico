@@ -24,7 +24,7 @@
             "color": "#fd9f85",
             "texto_color": "#ba492a",
             "img_url" : "img/recetas/big/durazno.jpg",
-            "home_img_url": "img/recetas/home/durazno.png",
+            "home_img_url": "img/recetas_home/durazno1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=durazno",
             "tipo": "platillo"
         },
@@ -48,7 +48,7 @@
             "color": "#ea505c",
             "texto_color": "#a62630",
             "img_url" : "img/recetas/big/fresa.jpg",
-            "home_img_url": "img/recetas/home/fresa.png",
+            "home_img_url": "img/recetas_home/fresa1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=fresa",
             "tipo": "platillo"
         },
@@ -73,7 +73,7 @@
             "color": "#da9362",
             "texto_color": "#c14d37",
             "img_url" : "img/recetas/big/fresadamix.jpg",
-            "home_img_url": "img/recetas/home/fresadamix.png",
+            "home_img_url": "img/recetas_home/fresadamix1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=fresadamix",
             "tipo": "bebida"
         },
@@ -110,7 +110,7 @@
             "color": "#e0c348",
             "texto_color": "#b59301",
             "img_url" : "img/recetas/big/guayaba.jpg",
-            "home_img_url": "img/recetas/home/guayaba.png",
+            "home_img_url": "img/recetas_home/guayaba1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=guayaba",
             "tipo": "platillo"
         },
@@ -142,7 +142,7 @@
             "color": "#e7d5a4",
             "texto_color": "#87683d",
             "img_url" : "img/recetas/big/horchata.jpg",
-            "home_img_url": "img/recetas/home/horchata.png",
+            "home_img_url": "img/recetas_home/horchata1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=horchata",
             "tipo": "platillo"
         },
@@ -174,7 +174,7 @@
             "color": "#96080a",
             "texto_color": "#530505",
             "img_url" : "img/recetas/big/jamaica.jpg",
-            "home_img_url": "img/recetas/home/jamaica.png",
+            "home_img_url": "img/recetas_home/jamaica1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=jamaica",
             "tipo": "platillo"
         },
@@ -199,7 +199,7 @@
             "color": "#9fca61",
             "texto_color": "#44690e",
             "img_url" : "img/recetas/big/limon.jpg",
-            "home_img_url": "img/recetas/home/limon.png",
+            "home_img_url": "img/recetas_home/limon1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=limon",
             "tipo": "bebida"
         },
@@ -234,7 +234,7 @@
             "color": "#f1912a",
             "texto_color": "#9f5200",
             "img_url" : "img/recetas/big/mandarina.jpg",
-            "home_img_url": "img/recetas/home/mandarina.png",
+            "home_img_url": "img/recetas_home/mandarina1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=mandarina",
             "tipo": "platillo"
         },
@@ -262,7 +262,7 @@
             "color": "#efc133",
             "texto_color": "#d88c08",
             "img_url" : "img/recetas/big/mango.jpg",
-            "home_img_url": "img/recetas/home/mango.png",
+            "home_img_url": "img/recetas_home/mango1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=mango",
             "tipo": "bebida"
         },
@@ -291,7 +291,7 @@
             "color": "#c6212d",
             "texto_color": "#740008",
             "img_url" : "img/recetas/big/manzana.jpg",
-            "home_img_url": "img/recetas/home/manzana.png",
+            "home_img_url": "img/recetas_home/manzana1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=manzana",
             "tipo": "platillo"
         },
@@ -316,7 +316,7 @@
             "color": "#fbaf71",
             "texto_color": "#c56a20",
             "img_url" : "img/recetas/big/melon.jpg",
-            "home_img_url": "img/recetas/home/melon.png",
+            "home_img_url": "img/recetas_home/melon1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=melon",
             "tipo": "bebida"
         },
@@ -342,7 +342,7 @@
             "color": "#f1912a",
             "texto_color": "#ad610f",
             "img_url" : "img/recetas/big/naranja.jpg",
-            "home_img_url": "img/recetas/home/naranja.png",
+            "home_img_url": "img/recetas_home/naranja1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=naranja",
             "tipo": "platillo"
         },
@@ -366,7 +366,7 @@
             "color": "#e5d331",
             "texto_color": "#9d8d00",
             "img_url" : "img/recetas/big/limonada.jpg",
-            "home_img_url": "img/recetas/home/limonada.png",
+            "home_img_url": "img/recetas_home/limonada1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=limonada",
             "tipo": "bebida"
         },
@@ -394,7 +394,7 @@
             "color": "#e7a531",
             "texto_color": "#b86317",
             "img_url" : "img/recetas/big/naranjada.jpg",
-            "home_img_url": "img/recetas/home/naranjada.png",
+            "home_img_url": "img/recetas_home/naranjada1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=naranjada",
             "tipo": "bebida"
         },
@@ -433,7 +433,7 @@
             "color": "#e9c500",
             "texto_color": "#a38600",
             "img_url" : "img/recetas/big/pina.jpg",
-            "home_img_url": "img/recetas/home/pina.png",
+            "home_img_url": "img/recetas_home/pina1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pina",
             "tipo": "platillo"
         },
@@ -459,7 +459,7 @@
             "color": "#f47569",
             "texto_color": "#c3493d",
             "img_url" : "img/recetas/big/pinada.jpg",
-            "home_img_url": "img/recetas/home/pinada.png",
+            "home_img_url": "img/recetas_home/pinada1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pinada",
             "tipo": "bebida"
         },
@@ -483,7 +483,7 @@
             "color": "#e9da86",
             "texto_color": "#754e28",
             "img_url" : "img/recetas/big/pina_colada.jpg",
-            "home_img_url": "img/recetas/home/pina_colada.png",
+            "home_img_url": "img/recetas_home/pina_colada1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=pina_colada",
             "tipo": "bebida"
         },
@@ -512,7 +512,7 @@
             "color": "#854d27",
             "texto_color": "#b69458",
             "img_url" : "img/recetas/big/tamarindo.jpg",
-            "home_img_url": "img/recetas/home/tamarindo.png",
+            "home_img_url": "img/recetas_home/tamarindo1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=tamarindo",
             "tipo": "bebida"
         },
@@ -535,7 +535,7 @@
             "color": "#922617",
             "texto_color": "#440c05",
             "img_url" : "img/recetas/big/te_negro_frutos.jpg",
-            "home_img_url": "img/recetas/home/te_negro_frutos.png",
+            "home_img_url": "img/recetas_home/te_negro_frutos1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_frutos",
             "tipo": "bebida"
         },
@@ -560,7 +560,7 @@
             "color": "#cee27b",
             "texto_color": "#569015",
             "img_url" : "img/recetas/big/te_negro_limon.jpg",
-            "home_img_url": "img/recetas/home/te_negro_limon.png",
+            "home_img_url": "img/recetas_home/te_negro_limon1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=te_negro_limon",
             "tipo": "bebida"
         },
@@ -584,7 +584,7 @@
             "color": "#6b2078",
             "texto_color": "#df85fc",
             "img_url" : "img/recetas/big/uva.jpg",
-            "home_img_url": "img/recetas/home/uva.png",
+            "home_img_url": "img/recetas_home/uva1.png",
             "link": "/tang-2019/recetas/receta_int.php?recetas=uva",
             "tipo": "bebida"
         }
