@@ -67,6 +67,7 @@ var app = {
         });
     },
     getTheJSON: function(file, file2, pos, laurl, seccion){
+        
         //Obtenemos el primer Json
         $.getJSON(site_url+file+".json", function(json) {
             //Reseteamos el menu de colores
@@ -100,8 +101,26 @@ var app = {
                              nomb2 = nomb2 + nombres[j] + " ";
                         //Se genera la palabra de nuevo con las etiquetas necesarias
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
-                        //Se insertan todos
                         if(seccion == 'home'){
+                            //Checamos si es primera vez que entra o viene de algún sabor
+                            if(pos == 0){
+                                var url = window.location.href;
+                                var indicador = url.indexOf('?');
+                                var indicador2 = url.indexOf('=');
+                                var getvar = url.substring(indicador + 1);
+                                var saborhome = getvar.split("=")[0];
+                                var key = url.substring(indicador2 + 1);
+                                if(indicador == -1){
+                                    history.replaceState("", "", "?saborhome="+first);
+                                }else{
+                                    first = key;
+                                    pos = $.inArray(first, laskeys2);
+                                }
+                            }
+                            console.log(pos);
+                            //Se cambia la url para empatar con el sabor
+                            history.replaceState("", "", "?saborhome="+first);
+                            //Pone imagenes y textos en el home
                             $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                             $(".receta_home_nombre").html(elnombre);
                             $(".receta_home_img").attr("src", json[file][first].home_img_url);
@@ -229,7 +248,8 @@ var app = {
         $(document).on("click", ".derecho .home_flecha_cont", function(){
             //Se manda llamar la función que cambia los elementos con base en el JSON
             var este_boton = $(this);
-            if(este_boton.hasClass('izquierda')){
+            console.log(pos);
+                if(este_boton.hasClass('izquierda')){
                     $(".receta_home_cont").addClass("bajar_anim");
                     $(".sobre").addClass("subir_anim");
                     $("body, html").css("overflow", "hidden");
@@ -330,6 +350,8 @@ var app = {
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
+            //Evita error en caso de que la variable sea del sabor del home
+            if(file == 'saborhome'){ return;}
             //Obtenemos el objeto con la key de la variable de URL
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
