@@ -10,7 +10,7 @@
             <div class="back_color"></div>
             <div class="sobres_cont">
                 <div class="botones_sobres">
-                    <button type="button" class="enviar_contacto" data-boton="todos">VER TODO</button>
+                    <button type="button" class="enviar_contacto filtrado" data-boton="todos">VER TODO</button>
                     <button type="button" class="enviar_contacto" data-boton="mix">MIX</button>
                     <button type="button" class="enviar_contacto" data-boton="te">TÉS</button>
                     <button type="button" class="enviar_contacto" data-boton="sabor">SABORES</button>

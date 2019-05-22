@@ -634,6 +634,13 @@
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
+.recetas_cont .botones_recetas .enviar_contacto.filtrado {
+  background-image: url("/tang-2019/img/boton_textura_2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .recetas_cont .recetas_thumbs_cont .receta_thumb_cont {
   margin: 15px 0;
   -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
@@ -832,6 +839,13 @@
   border: none;
   border-radius: 100px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.sobres_cont .botones_sobres .enviar_contacto.filtrado {
+  background-image: url("/tang-2019/img/boton_textura_2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sobres_cont .sobres_thumbs_cont .receta_thumb_cont {

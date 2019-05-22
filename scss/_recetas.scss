@@ -10,6 +10,9 @@
         .enviar_contacto{
             @include bg-image('img/boton_textura.png', cover);
             @include boton-madera(180px, 40px, 1.2rem, 1rem 10px 0);
+            &.filtrado{
+                @include bg-image('img/boton_textura_2.png', cover);
+            }
         }
     }
     .recetas_thumbs_cont{

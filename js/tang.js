@@ -442,10 +442,18 @@ var app = {
         var este = this;
         $(document).on('click', '.botones_sobres .enviar_contacto', function(){
             var boton = $(this).data('boton');
+            $(".enviar_contacto").each(function (index, element) {
+                $(this).removeClass("filtrado");
+            });
+            $(this).addClass("filtrado");
             este.getThumbs('sobres', boton);
         });
         $(document).on('click', '.botones_recetas .enviar_contacto', function(){
             var boton = $(this).data('boton');
+            $(".enviar_contacto").each(function (index, element) {
+                $(this).removeClass("filtrado");
+            });
+            $(this).addClass("filtrado");
             este.getThumbs('recetas', boton);
         });
     },
