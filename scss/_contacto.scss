@@ -2,11 +2,16 @@
     color: color(verde-tang);
     font-size: 1rem;
     text-align: center;
-    width: 600px;
+    width: 800px;
     max-width: 90%;
     margin: 0 auto 15px;
     @include med-query($small){
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    span{
+        font-weight: bold;
+        display: block;
+        margin: 20px 0;
     }
 }
 #form_contacto{

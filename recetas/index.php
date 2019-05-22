@@ -3,7 +3,8 @@
 <div class="fondo_claro recetas_seccion">
     <div class="secion_logo_medio">
         <p class="contacto_texto">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit nascetur aliquet aenean, nisi interdum placerat eget sociosqu ornare mollis mauris.
+            Con Tang® puedes preparar bebidas refrescantes y platillos deliciosos,  sabores tan versátiles que querrás compartir con las personas que más quieres.<br>
+            <span>¡Conoce y prepara todas sus posibilidades!</span>
         </p>
         <div class="fondo_claro_int">
             <div class="back_color"></div>

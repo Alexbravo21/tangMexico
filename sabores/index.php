@@ -3,7 +3,8 @@
 <div class="fondo_claro sabores_seccion">
     <div class="secion_logo_medio">
         <p class="contacto_texto">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit nascetur aliquet aenean, nisi interdum placerat eget sociosqu ornare mollis mauris.
+            Conoce nuestros 21 sabores creados con su nueva imagen, para que los disfrutes en familia a la hora de la comida, en las reuniones con tus amigos o simplemente cuando tienes mucho calor.<br>
+            <span>¡Porque cualquier momento es perfecto para disfrutar con Tang®!</span>
         </p>
         <div class="fondo_claro_int">
             <div class="back_color"></div>
