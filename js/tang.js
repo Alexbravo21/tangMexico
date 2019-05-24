@@ -1,8 +1,9 @@
 $(document).ready(function () {
     app.init();
 });
-var pos = 0;
+var position = 0;
 var site_url = '/tang-2019/';
+var primeraVes = true;
 
 var app = {
     init: function(){
@@ -75,7 +76,28 @@ var app = {
             var laskeys = Object.keys(json[file]);
             //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
             laskeys.sort();
-            var first = laskeys[pos];
+            //Checamos si es primera vez que entra o viene de algún sabor
+            
+            if(primeraVes && seccion == 'home'){
+                
+                primeraVes = false;
+                var url = window.location.href;
+                var indicador = url.indexOf('?');
+                var indicador2 = url.indexOf('=');
+                var getvar = url.substring(indicador + 1);
+                var saborhome = getvar.split("=")[0];
+                var key = url.substring(indicador2 + 1);
+                if(indicador == -1){
+                    var first = 'durazno';
+                    history.replaceState("", "", "?saborhome="+first);
+                }else{
+                    first = key;
+                }
+            }else{
+                first = laskeys[pos];
+                
+                //history.replaceState("", "", "?saborhome="+first);
+            }
             for (var h=0; h < laskeys.length; h++){
                 $(".colores_cont").append('<div class="colores_item" data-pos="'+h+'" style="background-color:'+json[file][laskeys[h]].color+'"></div>');
             }
@@ -85,11 +107,11 @@ var app = {
                 var laskeys2 = Object.keys(json2[file2]);
                 //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                 laskeys2.sort();
-                var first_sobres = laskeys2[pos];
-                //console.log(first_sobres);
+                //
                 for (var i=0; i < laskeys2.length; i++){
                     //Se loopea en el segundo JSON y se compara que sea el mismo del primero
                     if(first == laskeys2[i]){
+                        
                         //Separamos el titulo para que sea igual al diseño (No. palabras/2 redondeado hacia arriba)
                         var nombres = json[file][first].nombre.split(" ");
                         var media = Math.floor(nombres.length/2);
@@ -100,8 +122,13 @@ var app = {
                              nomb2 = nomb2 + nombres[j] + " ";
                         //Se genera la palabra de nuevo con las etiquetas necesarias
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
-                        //Se insertan todos
                         if(seccion == 'home'){
+                            
+                            position = $.inArray(first, laskeys2);
+                            
+                            //Se cambia la url para empatar con el sabor
+                            history.replaceState("", "", "?saborhome="+first);
+                            //Pone imagenes y textos en el home
                             $(".derecho .plasta_circular").css('background-color', json[file][first].color);
                             $(".receta_home_nombre").html(elnombre);
                             $(".receta_home_img").attr("src", json[file][first].home_img_url);
@@ -180,23 +207,23 @@ var app = {
                        
                     }
                 }
-            });
-        });
 
-        //Obtenemos el JSON de las frutas individuales
-        $.getJSON(site_url+"frutas.json", function(json_frutas) {
-            $(".frutas_home").remove();
-            var frutas_keys = Object.keys(json_frutas.sobres);
-            //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
-            frutas_keys.sort();
-            var fruta_actual = frutas_keys[pos];
-            var car_fruta_actual = json_frutas.sobres[fruta_actual];
-            car_fruta_actual.frutas.forEach(function(item, index){
-                $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
-            });
-            car_fruta_actual.receta_home.forEach(function(item, index){
-                $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
-                +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+                //Obtenemos el JSON de las frutas individuales
+                $.getJSON(site_url+"frutas.json", function(json_frutas) {
+                    $(".frutas_home").remove();
+                    var frutas_keys = Object.keys(json_frutas.sobres);
+                    //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
+                    frutas_keys.sort();
+                    var fruta_actual = frutas_keys[position];
+                    var car_fruta_actual = json_frutas.sobres[fruta_actual];
+                    car_fruta_actual.frutas.forEach(function(item, index){
+                        $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+                    });
+                    car_fruta_actual.receta_home.forEach(function(item, index){
+                        $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
+                        +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+                    });
+                });
             });
         });
 
@@ -229,14 +256,15 @@ var app = {
         $(document).on("click", ".derecho .home_flecha_cont", function(){
             //Se manda llamar la función que cambia los elementos con base en el JSON
             var este_boton = $(this);
-            if(este_boton.hasClass('izquierda')){
+            
+                if(este_boton.hasClass('izquierda')){
                     $(".receta_home_cont").addClass("bajar_anim");
                     $(".sobre").addClass("subir_anim");
                     $("body, html").css("overflow", "hidden");
                     setTimeout( function () {
-                        pos = (pos == 0) ? 21 : pos;
-                        este.getTheJSON("recetas", "sobres", (pos-1), '', 'home');
-                        pos--;
+                        position = (position == 0) ? 21 : position;
+                        este.getTheJSON("recetas", "sobres", (position-1), '', 'home');
+                        position--;
                         $(".receta_home_cont, .sobre").css("transition", "all 0ms ease-in-out");
                         $(".receta_home_cont").addClass("subir_anim");
                         $(".sobre").addClass("bajar_anim");
@@ -258,9 +286,9 @@ var app = {
                     $(".sobre").addClass("bajar_anim");
                     $("body, html").css("overflow", "hidden");
                     setTimeout( function () {
-                        pos = (pos == 20) ? -1 : pos;
-                        este.getTheJSON("recetas", "sobres", (pos+1), '', 'home');
-                        pos++;
+                        position = (position == 20) ? -1 : position;
+                        este.getTheJSON("recetas", "sobres", (position+1), '', 'home');
+                        position++;
                         $(".receta_home_cont, .sobre").css("transition", "all 0ms ease-in-out");
                         $(".receta_home_cont").addClass("bajar_anim");
                         $(".sobre").addClass("subir_anim");
@@ -319,17 +347,21 @@ var app = {
             //Checamos que tenga variable de "origen" para enviarlos de regreso a ello
             if(indicador3 > -1){
                 //No se necesita de momento pero aqui se obtiene la variable del origen
+                var sabor = url.substring(indicador2 + 1, indicador3);
+                console.log(sabor);
                 var viene = url.substring(indicador3 + 1);
                 var indicador4 = viene.indexOf('=');
                 var origen = viene.substring(indicador4 + 1);
                 url = url.replace('&'+viene, '');
                 //Se cambia url si el origen es el home (solo el enlace desde el home tiene variable "viene")
-                $(".cerrar_interior").attr('href', site_url);
+                $(".cerrar_interior").attr('href', site_url+'?saborhome='+sabor);
             }
             //Se obtiene la variable de la URL
             var getvar = url.substring(indicador + 1);
             var file = getvar.split("=")[0];
             var key = url.substring(indicador2 + 1);
+            //Evita error en caso de que la variable sea del sabor del home
+            if(file == 'saborhome'){ return;}
             //Obtenemos el objeto con la key de la variable de URL
             $.getJSON(site_url+file+".json", function(json) {
                 var jsonItem = json[file][key];
@@ -338,9 +370,9 @@ var app = {
                 var laskeys = Object.keys(json[file]);
                 //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                 laskeys.sort();
-                var position = laskeys.indexOf(key);
-                este.flechas_interior(position);
-                //console.log(position, json[file], json[file].melon);
+                var position_interior = laskeys.indexOf(key);
+                este.flechas_interior(position_interior);
+                //
                 if(file == 'recetas'){
                     //Separamos el titulo para que sea igual al diseño
                     var nombres = json[file][key].nombre.split(" ");
@@ -384,7 +416,7 @@ var app = {
                     $(".sabor_desc_titulo").html(jsonItem.titulo);
                     $(".sabor_desc").html(jsonItem.descripcion);
                     $(".porciones_envase .porciones_img_item").attr("src", site_url+"img/sobres/mini/"+key+".png");
-                    //console.log(key);
+                    //
                     var info_nutri = [];
                     //Se itera en el objeto de tabla nutrimental generando un array con sus keys para después ponerlo en su posición correcta con el $.each
                     for (var key2 in jsonItem.info_nutri) {
