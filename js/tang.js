@@ -123,9 +123,8 @@ var app = {
                         //Se genera la palabra de nuevo con las etiquetas necesarias
                         var elnombre = nomb+"<br><span>"+nomb2+"</span>";
                         if(seccion == 'home'){
-                            
+                            $("html, body").css("overflow", "hidden");
                             position = $.inArray(first, laskeys2);
-                            
                             //Se cambia la url para empatar con el sabor
                             history.replaceState("", "", "?saborhome="+first);
                             //Pone imagenes y textos en el home
@@ -220,8 +219,12 @@ var app = {
                         $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
                     });
                     car_fruta_actual.receta_home.forEach(function(item, index){
+                        var zindex = 1;
+                        if(item == '/img/recetas_home/pina2.png'){zindex = -1;}
+                        if(item == '/img/recetas_home/pinacolada2.png'){zindex = -1;}
+                        console.log(item);
                         $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
-                        +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+                        +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.receta_home_transform[index][0]+'%, '+car_fruta_actual.receta_home_transform[index][1]+'%); z-index:'+zindex+'">');
                     });
                 });
             });
