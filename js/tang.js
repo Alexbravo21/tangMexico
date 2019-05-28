@@ -211,7 +211,7 @@ var app = {
                 $.getJSON(site_url+"frutas.json", function(json_frutas) {
                     $(".frutas_home").remove();
                     console.log(pos, primerCarga);
-                    var opacidad = (pos === 0 && primerCarga == true) ? 1 : 0;
+                    var opacidad = (primerCarga == true) ? 1 : 0;
                     primerCarga = false;
                     var frutas_keys = Object.keys(json_frutas.sobres);
                     //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
