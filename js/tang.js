@@ -226,7 +226,7 @@ var app = {
                         if(item == '/img/recetas_home/pina2.png'){zindex = -1;}
                         if(item == '/img/recetas_home/pinacolada2.png'){zindex = -1;}
                         $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home frutas_der" style="top:'
-                        +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.receta_home_transform[index][0]+'%, '+car_fruta_actual.receta_home_transform[index][1]+'%); z-index:'+zindex+'">');
+                        +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.receta_home_transform[index][0]+'%, '+car_fruta_actual.receta_home_transform[index][1]+'%); z-index:'+zindex+'; opacity:'+opacidad+'">');
                     });
                 });
             });
@@ -278,6 +278,17 @@ var app = {
                             }, estevelocidad*index);
                         })(esteTransform);
                     });
+                    $(".frutas_home.frutas_der").each(function (index, element) {
+                        var este = $(this);
+                        esteTransform = parseInt(este.css('top'));
+                        esteHeight = este.outerHeight();
+                        (function(esteTransform){
+                            setTimeout(function(){
+                                este.css('top',(esteTransform+(esteHeight*topAnimation))+'px');
+                                este.css('opacity', 0);
+                            }, estevelocidad*index);
+                        })(esteTransform);
+                    });
                     $(".receta_home_cont").addClass("bajar_anim");
                     $(".sobre").addClass("subir_anim");
                     $("body, html").css("overflow", "hidden");
@@ -311,6 +322,20 @@ var app = {
                                 }, estevelocidad*index);
                             })(esteTransform);
                         });
+                        $(".frutas_home.frutas_der").each(function (index, element) {
+                            var este = $(this);
+                            esteTransform = parseInt(este.css('top'));
+                            esteHeight = este.outerHeight();
+                            $(".frutas_home").css("transition", "all 0ms ease-in-out");
+                            este.css('top',(esteTransform-(esteHeight*topAnimation))+'px');
+                            (function(esteTransform){
+                                setTimeout(function(){
+                                    este.css("transition", "all 400ms ease-in-out");
+                                    este.css('top',esteTransform+'px');
+                                    este.css('opacity', 1);
+                                }, estevelocidad*index);
+                            })(esteTransform);
+                        });
                     },500 );
                 }else{
                     $(".frutas_home.frutas_izq").each(function (index, element) {
@@ -320,6 +345,17 @@ var app = {
                         (function(esteTransform){
                             setTimeout(function(){
                                 este.css('top',(esteTransform+(esteHeight*topAnimation))+'px');
+                                este.css('opacity', 0);
+                            }, estevelocidad*index);
+                        })(esteTransform);
+                    });
+                    $(".frutas_home.frutas_der").each(function (index, element) {
+                        var este = $(this);
+                        esteTransform = parseInt(este.css('top'));
+                        esteHeight = este.outerHeight();
+                        (function(esteTransform){
+                            setTimeout(function(){
+                                este.css('top',(esteTransform-(esteHeight*topAnimation))+'px');
                                 este.css('opacity', 0);
                             }, estevelocidad*index);
                         })(esteTransform);
@@ -349,6 +385,20 @@ var app = {
                             esteHeight = este.outerHeight();
                             $(".frutas_home").css("transition", "all 0ms ease-in-out");
                             este.css('top',(esteTransform-(esteHeight*topAnimation))+'px');
+                            (function(esteTransform){
+                                setTimeout(function(){
+                                    este.css("transition", "all 400ms ease-in-out");
+                                    este.css('top',esteTransform+'px');
+                                    este.css('opacity', 1);
+                                }, estevelocidad*index);
+                            })(esteTransform);
+                        });
+                        $(".frutas_home.frutas_der").each(function (index, element) {
+                            var este = $(this);
+                            esteTransform = parseInt(este.css('top'));
+                            esteHeight = este.outerHeight();
+                            $(".frutas_home").css("transition", "all 0ms ease-in-out");
+                            este.css('top',(esteTransform+(esteHeight*topAnimation))+'px');
                             (function(esteTransform){
                                 setTimeout(function(){
                                     este.css("transition", "all 400ms ease-in-out");
