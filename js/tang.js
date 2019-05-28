@@ -4,6 +4,7 @@ $(document).ready(function () {
 var position = 0;
 var site_url = '/tang-2019/';
 var primeraVes = true;
+var primerCarga = true;
 
 var app = {
     init: function(){
@@ -95,7 +96,6 @@ var app = {
                 }
             }else{
                 first = laskeys[pos];
-                
                 //history.replaceState("", "", "?saborhome="+first);
             }
             for (var h=0; h < laskeys.length; h++){
@@ -210,20 +210,22 @@ var app = {
                 //Obtenemos el JSON de las frutas individuales
                 $.getJSON(site_url+"frutas.json", function(json_frutas) {
                     $(".frutas_home").remove();
+                    console.log(pos, primerCarga);
+                    var opacidad = (pos === 0 && primerCarga == true) ? 1 : 0;
+                    primerCarga = false;
                     var frutas_keys = Object.keys(json_frutas.sobres);
                     //Se acomodan las keys en orden alfabético para que se mantenga el orden del diseño
                     frutas_keys.sort();
                     var fruta_actual = frutas_keys[position];
                     var car_fruta_actual = json_frutas.sobres[fruta_actual];
                     car_fruta_actual.frutas.forEach(function(item, index){
-                        $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%)">');
+                        $(".fondo_madera .izquierdo").append('<img src="'+site_url+item+'" class="frutas_home frutas_izq" style="top:'+car_fruta_actual.frutas_pos[index][1]+'%; left:'+car_fruta_actual.frutas_pos[index][0]+'%; transform: translate('+car_fruta_actual.frutas_transform[index][0]+'%, '+car_fruta_actual.frutas_transform[index][1]+'%); opacity:'+opacidad+'">');
                     });
                     car_fruta_actual.receta_home.forEach(function(item, index){
                         var zindex = 1;
                         if(item == '/img/recetas_home/pina2.png'){zindex = -1;}
                         if(item == '/img/recetas_home/pinacolada2.png'){zindex = -1;}
-                        console.log(item);
-                        $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home" style="top:'
+                        $(".receta_home").append('<img src="'+site_url+item+'" class="frutas_home frutas_der" style="top:'
                         +car_fruta_actual.receta_home_pos[index][1]+'%; left:'+car_fruta_actual.receta_home_pos[index][0]+'%; transform: translate('+car_fruta_actual.receta_home_transform[index][0]+'%, '+car_fruta_actual.receta_home_transform[index][1]+'%); z-index:'+zindex+'">');
                     });
                 });
@@ -259,8 +261,23 @@ var app = {
         $(document).on("click", ".derecho .home_flecha_cont", function(){
             //Se manda llamar la función que cambia los elementos con base en el JSON
             var este_boton = $(this);
+            var esteTransform;
+            var esteHeight;
+            var topAnimation = .8;
+            var estevelocidad = 50;
             
                 if(este_boton.hasClass('izquierda')){
+                    $(".frutas_home.frutas_izq").each(function (index, element) {
+                        var este = $(this);
+                        esteTransform = parseInt(este.css('top'));
+                        esteHeight = este.outerHeight();
+                        (function(esteTransform){
+                            setTimeout(function(){
+                                este.css('top',(esteTransform-(esteHeight*topAnimation))+'px');
+                                este.css('opacity', 0);
+                            }, estevelocidad*index);
+                        })(esteTransform);
+                    });
                     $(".receta_home_cont").addClass("bajar_anim");
                     $(".sobre").addClass("subir_anim");
                     $("body, html").css("overflow", "hidden");
@@ -280,11 +297,33 @@ var app = {
                         $(".receta_home_cont, .sobre").css("transition", "all 400ms ease-in-out");
                         $(".receta_home_cont").removeClass("subir_anim");
                         $(".sobre").removeClass("bajar_anim");
-                        setTimeout ( function () {
-                            //$("body, html").css("overflow", "auto");
-                        },200 );
+                        $(".frutas_home.frutas_izq").each(function (index, element) {
+                            var este = $(this);
+                            esteTransform = parseInt(este.css('top'));
+                            esteHeight = este.outerHeight();
+                            $(".frutas_home").css("transition", "all 0ms ease-in-out");
+                            este.css('top',(esteTransform+(esteHeight*topAnimation))+'px');
+                            (function(esteTransform){
+                                setTimeout(function(){
+                                    este.css("transition", "all 400ms ease-in-out");
+                                    este.css('top',esteTransform+'px');
+                                    este.css('opacity', 1);
+                                }, estevelocidad*index);
+                            })(esteTransform);
+                        });
                     },500 );
                 }else{
+                    $(".frutas_home.frutas_izq").each(function (index, element) {
+                        var este = $(this);
+                        esteTransform = parseInt(este.css('top'));
+                        esteHeight = este.outerHeight();
+                        (function(esteTransform){
+                            setTimeout(function(){
+                                este.css('top',(esteTransform+(esteHeight*topAnimation))+'px');
+                                este.css('opacity', 0);
+                            }, estevelocidad*index);
+                        })(esteTransform);
+                    });
                     $(".receta_home_cont").addClass("subir_anim");
                     $(".sobre").addClass("bajar_anim");
                     $("body, html").css("overflow", "hidden");
@@ -304,9 +343,20 @@ var app = {
                         $(".receta_home_cont, .sobre").css("transition", "all 400ms ease-in-out");
                         $(".receta_home_cont").removeClass("bajar_anim");
                         $(".sobre").removeClass("subir_anim");
-                        setTimeout ( function () {
-                            //$("body, html").css("overflow", "auto");
-                        },50 );
+                        $(".frutas_home.frutas_izq").each(function (index, element) {
+                            var este = $(this);
+                            esteTransform = parseInt(este.css('top'));
+                            esteHeight = este.outerHeight();
+                            $(".frutas_home").css("transition", "all 0ms ease-in-out");
+                            este.css('top',(esteTransform-(esteHeight*topAnimation))+'px');
+                            (function(esteTransform){
+                                setTimeout(function(){
+                                    este.css("transition", "all 400ms ease-in-out");
+                                    este.css('top',esteTransform+'px');
+                                    este.css('opacity', 1);
+                                }, estevelocidad*index);
+                            })(esteTransform);
+                        });
                     },500 );
                 }
         });
@@ -351,7 +401,6 @@ var app = {
             if(indicador3 > -1){
                 //No se necesita de momento pero aqui se obtiene la variable del origen
                 var sabor = url.substring(indicador2 + 1, indicador3);
-                console.log(sabor);
                 var viene = url.substring(indicador3 + 1);
                 var indicador4 = viene.indexOf('=');
                 var origen = viene.substring(indicador4 + 1);
