@@ -10,13 +10,13 @@
             <div class="back_color"></div>
             <form action="" id="form_contacto">
                 <div class="form-group">
-                    <input type="text" placeholder="NOMBRE" class="form-control">
+                    <input type="text" placeholder="NOMBRE" class="form-control" id="nombre">
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="CORREO" class="form-control">
+                    <input type="text" placeholder="CORREO" class="form-control" id="mail">
                 </div>
                 <div class="form-group">
-                    <textarea name="comentario" id="comentario" class="form-control">DUDA O SUGERENCIA</textarea>
+                    <textarea name="duda" id="duda" class="form-control" placeholder="DUDA O SUGERENCIA"></textarea>
                 </div>
                 <button type="button" class="enviar_contacto">ENVIAR</button>
             </form>

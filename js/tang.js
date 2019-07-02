@@ -2,7 +2,7 @@ $(document).ready(function () {
     app.init();
 });
 var position = 0;
-var site_url = '/tang-2019/';
+var site_url = '/';
 var primeraVes = true;
 var primerCarga = true;
 
@@ -25,6 +25,7 @@ var app = {
         this.getInterior();
         this.filtros();
         this.cerrarPromo();
+        this.contacto();
     },
     menu: function(){
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -601,6 +602,25 @@ var app = {
             itemSelector: '.receta_thumb_col',
             sizer: '.my-sizer-element',
           });
+    },
+    contacto: function(){
+        $(document).on("click", ".enviar_contacto", function(){
+            var nombre = $("#nombre").val();
+            var mail = $("#mail").val();
+            var duda = $("#duda").val();
+            if(nombre != '' && mail != '' && duda != ''){
+                $.post(site_url+"send.php", {nombre:nombre, mail:mail, duda:duda},
+                    function (data) {
+                        alert("Tu mensaje ha sido enviado");
+                        $("#nombre").val('');
+                        $("#mail").val('');
+                        $("#duda").val('');
+                    }
+                );
+            }else{
+                alert('Completa todos los campos, por favor.');
+            }
+        });
     },
     pruebas: function(){
         //alert("Width: "+$(window).width());
