@@ -592,7 +592,7 @@
 }
 
 #form_contacto .enviar_contacto {
-  background-image: url("/tang-2019/img/boton_textura.png");
+  background-image: url("/tangMexico/img/boton_textura.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,7 +620,7 @@
 }
 
 .recetas_cont .botones_recetas .enviar_contacto {
-  background-image: url("/tang-2019/img/boton_textura.png");
+  background-image: url("/tangMexico/img/boton_textura.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -635,7 +635,7 @@
 }
 
 .recetas_cont .botones_recetas .enviar_contacto.filtrado {
-  background-image: url("/tang-2019/img/boton_textura_2.png");
+  background-image: url("/tangMexico/img/boton_textura_2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -827,7 +827,7 @@
 }
 
 .sobres_cont .botones_sobres .enviar_contacto {
-  background-image: url("/tang-2019/img/boton_textura.png");
+  background-image: url("/tangMexico/img/boton_textura.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -842,7 +842,7 @@
 }
 
 .sobres_cont .botones_sobres .enviar_contacto.filtrado {
-  background-image: url("/tang-2019/img/boton_textura_2.png");
+  background-image: url("/tangMexico/img/boton_textura_2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1300,35 +1300,35 @@
 
 @font-face {
   font-family: "muli";
-  src: url("/tang-2019//css/fonts/Muli-Regular.ttf");
+  src: url("/tangMexico//css/fonts/Muli-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tang-2019//css/fonts/Muli-Bold.ttf");
+  src: url("/tangMexico//css/fonts/Muli-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tang-2019//css/fonts/Muli-Italic.ttf");
+  src: url("/tangMexico//css/fonts/Muli-Italic.ttf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tang-2019//css/fonts/Muli-BoldItalic.ttf");
+  src: url("/tangMexico//css/fonts/Muli-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "muliBlackItalic";
-  src: url("/tang-2019//css/fonts/Muli-BlackItalic.ttf");
+  src: url("/tangMexico//css/fonts/Muli-BlackItalic.ttf");
   font-weight: bolder;
   font-style: italic;
 }
@@ -1367,7 +1367,7 @@ html body {
 }
 
 .fondo_madera {
-  background-image: url("/tang-2019/img/back_madera.jpg");
+  background-image: url("/tangMexico/img/back_madera.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1390,7 +1390,7 @@ html body {
 }
 
 .fondo_madera_2 {
-  background-image: url("/tang-2019/img/back_madera_2.jpg");
+  background-image: url("/tangMexico/img/back_madera_2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1429,7 +1429,7 @@ html body {
 
 .fondo_claro_int {
   position: relative;
-  background-image: url("/tang-2019/img/back_claro.png");
+  background-image: url("/tangMexico/img/back_claro.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 150% auto;
@@ -1450,7 +1450,7 @@ html body {
 @media (min-width: 770px) {
   .fondo_claro_int {
     padding-top: 0;
-    background-image: url("/tang-2019/img/back_claro.png");
+    background-image: url("/tangMexico/img/back_claro.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 130% auto;
@@ -1700,7 +1700,7 @@ html body {
 }
 
 .menu_cont .madera.madera1 {
-  background-image: url("/tang-2019/img/menu/madera1.jpg");
+  background-image: url("/tangMexico/img/menu/madera1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1712,7 +1712,7 @@ html body {
 }
 
 .menu_cont .madera.madera2 {
-  background-image: url("/tang-2019/img/menu/madera2.jpg");
+  background-image: url("/tangMexico/img/menu/madera2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1724,7 +1724,7 @@ html body {
 }
 
 .menu_cont .madera.madera3 {
-  background-image: url("/tang-2019/img/menu/madera3.jpg");
+  background-image: url("/tangMexico/img/menu/madera3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1736,7 +1736,7 @@ html body {
 }
 
 .menu_cont .madera.madera4 {
-  background-image: url("/tang-2019/img/menu/madera4.jpg");
+  background-image: url("/tangMexico/img/menu/madera4.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;

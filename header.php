@@ -1,5 +1,5 @@
 <?php 
-    $site_url = '/tang-2019/';
+    $site_url = '/tangMexico/';
     $uri = $_SERVER['REQUEST_URI'];
     //Este pequeño script detecta la url para saber si estás en una sección en la que el logo va al centro.
     $logo = strrpos($uri, 'contacto') !== false ? 'logo_2' : 'logo' ;
@@ -46,9 +46,6 @@
         <div class="madera madera4"></div>
         <div class="menu_botones">
             <a href="<?=$site_url?>"><button class="menu_boton">INICIO</button></a>
-            <a href="<?=$site_url?>sabores"><button class="menu_boton">SABORES</button></a>
-            <a href="<?=$site_url?>recetas"><button class="menu_boton">RECETAS</button></a>
-            <a href="<?=$site_url?>"><button class="menu_boton">PROMO</button></a>
             <a href="<?=$site_url?>contacto.php"><button class="menu_boton">CONTACTO</button></a>
         </div>
     </div>
