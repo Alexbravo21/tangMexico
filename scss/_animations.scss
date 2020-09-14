@@ -24,14 +24,14 @@
         transform: translate(0, 0%);
     }
 }
-.izquierdo .sobre.subir_anim{
+.izquierdo .sobre_cont.subir_anim{
     transform: translate(-50%, -20%) rotate(-5deg);
     opacity: 0;
     @include med-query($medium){
         transform: translate(-50%, -100%) rotate(-5deg);
     }
 }
-.izquierdo .sobre.bajar_anim{
+.izquierdo .sobre_cont.bajar_anim{
     transform: translate(-50%, 20%) rotate(-5deg);
     opacity: 0;
     @include med-query($medium){
