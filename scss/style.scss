@@ -41,7 +41,7 @@ html{
     }
 }
 .fondo_madera{
-    @include fondos('img/back_madera.jpg', cover); 
+    @include fondos('img/fondos/durazno-izq.jpg', cover); 
     height: 100%;
     @include med-query($medium){
         height: 100vh;

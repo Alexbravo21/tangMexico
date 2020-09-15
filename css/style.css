@@ -138,6 +138,17 @@
   }
 }
 
+.izquierdo svg#tang_trazo {
+  width: 95%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 4;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
 .izquierdo .sobre_cont {
   position: absolute;
   top: 0;
@@ -146,6 +157,7 @@
           transform: translate(-50%, 0);
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+  z-index: 5;
 }
 
 @media (min-width: 770px) {
@@ -250,6 +262,9 @@
 }
 
 .derecho .plasta_circular {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center left;
   width: 250%;
   position: relative;
   top: 8%;
@@ -288,13 +303,6 @@
 .derecho .plasta_circular .receta_home_cont {
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
-  color: #d87013;
-  font-size: 1rem;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 1rem;
-  text-align: center;
-  text-transform: uppercase;
   width: 100%;
   position: absolute;
   top: 10px;
@@ -357,19 +365,6 @@
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
     width: 40%;
-  }
-}
-
-.derecho .plasta_circular .receta_home_cont span {
-  font-family: 'muliBlackItalic';
-  color: #fff;
-  font-size: 1.2rem;
-  padding-right: 5px;
-}
-
-@media (min-width: 770px) {
-  .derecho .plasta_circular .receta_home_cont span {
-    font-size: 2rem;
   }
 }
 
@@ -1341,7 +1336,7 @@ html body {
 }
 
 .fondo_madera {
-  background-image: url("/tangMexico/img/back_madera.jpg");
+  background-image: url("/tangMexico/img/fondos/durazno-izq.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -58,11 +58,14 @@ const app = {
             randomKeys = app.randomizeArray(laskeys);
             let sobresKeys = sobres[randomKeys[0]];
             $(".colores_cont").append('<div class="colores_item" style="background-color:'+sobresKeys.color+'"></div>');
+            $(".fondo_madera").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[0]+"-izq.jpg)");
+            $(".plasta_circular").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[0]+"-der.png)");
             $("html, body").css("overflow", "hidden");
             //Pone imagenes y textos en el home
-            $(".derecho .plasta_circular").css('background-color', sobresKeys.color);
+            //$(".derecho .plasta_circular").css('background-image', 'url('+site_url+'/img/fondos/'+randomKeys[0]+'-der.jpg)');
             $(".sobre_sabor_nombre").html("TANG "+sobresKeys.nombre);
             $(".sobre_home").attr("src", site_url+"/img/sobres/"+randomKeys[0]+".jpg");
+            $(".frase_img").attr("src", site_url+"/img/frases/"+randomKeys[0]+".png");
             $.getJSON(site_url+"frutas.json", function(json_frutas){
                 frutas = json_frutas;
                 let frutasKeys = frutas[randomKeys[0]];
@@ -81,15 +84,15 @@ const app = {
             //Se añaden clases que animan la plasta y el sobre
             $(".plasta_circular").addClass('bounce-scale');
             $(".izquierdo .sobre_cont").addClass("rotate-scale");
-            setTimeout(function(){
+            setTimeout( () => {
                 //Se manda llamar la función que cambia los elementos con base en el JSON
                 este.getTheJSON("recetas", "sobres", pos);
             }, 250);
-            setTimeout(function(){
+            setTimeout( () => {
                 //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
                 $(".plasta_circular").addClass('bounce-scale2');
                 $(".izquierdo .sobre_cont").removeClass("rotate-scale");
-                setTimeout(function(){
+                setTimeout( () => {
                     // Se quitan todas las clases para reiniciar las animaciones
                     $(".plasta_circular").removeClass('bounce-scale');
                     $(".plasta_circular").removeClass('bounce-scale2');
@@ -135,23 +138,22 @@ const app = {
         return array;
     },
     flechaClick: (flecha) => {
-        console.log(flecha);
         let esteTransform, esteHeight, topAnimation = .8, estevelocidad = 50;
+        let masmenos = flecha == 'izq' ? 1 : -1;
         let menosmas = flecha == 'izq' ? -1 : 1;
-        let masmenos = flecha == 'izq' ? -1 : 1;
         let bajasube = flecha == 'izq' ? 'bajar_anim' : 'subir_anim';
         let subebaja = flecha == 'izq' ? 'subir_anim' : 'bajar_anim';
-        let tamano = flecha == 'izq' ? 0 : 20;
-        let tamano2 = flecha == 'izq' ? 21 : -1;
-
+        let keySize = Object.keys(sobres).length;
+        let tamano = flecha == 'izq' ? 0 : keySize;
+        let tamano2 = flecha == 'izq' ? (keySize+1) : -1;
 
         $(".frutas_home").each(function (index, element) {
             var este = $(this);
             esteTransform = parseInt(este.css('top'));
             esteHeight = este.outerHeight();
             (function(esteTransform){
-                setTimeout(function(){
-                    este.css('top',((esteTransform*menosmas)+(esteHeight*topAnimation))+'px');
+                setTimeout( () => {
+                    este.css('top',(esteTransform+((esteHeight*topAnimation)*masmenos))+'px');
                     este.css('opacity', 0);
                 }, estevelocidad*index);
             })(esteTransform);
@@ -159,18 +161,18 @@ const app = {
         $(".receta_home_cont").addClass(bajasube);
         $(".sobre_cont").addClass(subebaja);
         $("body, html").css("overflow", "hidden");
-        setTimeout( function () {
+        setTimeout( () => {
             position = (position == tamano) ? tamano2 : position;
             if(flecha == 'izq'){position--;}else{position++;}
             $(".receta_home_cont, .sobre_cont").css("transition", "all 0ms ease-in-out");
             $(".receta_home_cont").addClass(subebaja);
             $(".sobre_cont").addClass(bajasube);
-            setTimeout( function () {
+            setTimeout( () => {
                 $(".receta_home_cont").removeClass(bajasube);
                 $(".sobre_cont").removeClass(subebaja);
             },30 );
         },410 );
-        setTimeout( function () {
+        setTimeout( () => {
             $(".receta_home_cont, .sobre_cont").css("transition", "all 400ms ease-in-out");
             $(".receta_home_cont").removeClass(subebaja);
             $(".sobre_cont").removeClass(bajasube);
@@ -179,11 +181,11 @@ const app = {
                 esteTransform = parseInt(este.css('top'));
                 esteHeight = este.outerHeight();
                 $(".frutas_home").css("transition", "all 0ms ease-in-out");
-                este.css('top',((esteTransform*masmenos)+(esteHeight*topAnimation))+'px');
+                este.css('top',(esteTransform+(((esteHeight*topAnimation)*menosmas)+(esteHeight*menosmas)))+'px');
                 (function(esteTransform){
-                    setTimeout(function(){
+                    setTimeout( () => {
                         este.css("transition", "all 400ms ease-in-out");
-                        este.css('top',esteTransform+'px');
+                        este.css('top',(esteTransform+(esteHeight*topAnimation*menosmas))+'px');
                         este.css('opacity', 1);
                     }, estevelocidad*index);
                 })(esteTransform);
