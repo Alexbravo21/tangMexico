@@ -67,6 +67,7 @@ $height-buttons: 35px;
 
 $padding: 15px;
 
+$xxl: 1600px;
 $xl: 1200px;
 $large: 992px;
 $medium: 770px;
@@ -81,6 +82,11 @@ $petit: 365px;
 }
 @mixin med-query-height(){
     @media (min-width: '360px') and (max-width: $small) and (min-height: '530px'){
+        @content;
+    }
+}
+@mixin med-query-width-or-height($width, $height){
+    @media (min-width: $width), (min-width: $height){
         @content;
     }
 }

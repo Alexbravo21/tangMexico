@@ -71,6 +71,12 @@
         "color": "#e9c500",
         "texto_color": "#a38600"
     },
+    "pina_colada":{
+        "nombre": "PIÑA COLADA",
+        "titulo": "LA COMBINACIÓN PERFECTA DE SABORES",
+        "color": "#e9c500",
+        "texto_color": "#a38600"
+    },
     "tamarindo":{
         "nombre": "TAMARINDO",
         "titulo": "¡Mézclalo y crea bebidas diferentes!",

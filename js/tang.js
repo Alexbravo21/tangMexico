@@ -5,7 +5,7 @@ let position = 0;
 const site_url = '/tangMexico/';
 let primeraVes = true;
 let primerCarga = true;
-let sobres, frutas;
+let sobres, frutas, laskeys, randomKeys;
 const app = {
     init: () => {
         app.menu();
@@ -14,6 +14,8 @@ const app = {
         app.colores_home();
         app.flechas_home();
         $(".frutas_home").remove();
+        document.getElementById('video-tang').addEventListener('ended',app.videoEnds,false);
+        document.getElementById('video-tang-mobile').addEventListener('ended',app.videoEnds,false);
     },
     menu: () => {
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -47,7 +49,6 @@ const app = {
         });
     },
     getTheJSON: function(pos){
-        var laskeys, randomKeys;
         //Obtenemos el primer Json
         $.getJSON(site_url+"sobres.json", function(json) {
             sobres = json;
@@ -57,13 +58,14 @@ const app = {
             laskeys = Object.keys(sobres);
             randomKeys = app.randomizeArray(laskeys);
             let sobresKeys = sobres[randomKeys[0]];
-            $(".colores_cont").append('<div class="colores_item" style="background-color:'+sobresKeys.color+'"></div>');
+            laskeys.forEach(function (it, i){
+                $(".colores_cont").append('<div class="colores_item" data-sabor="'+i+'" style="background-color:'+sobres[randomKeys[i]].color+'"></div>');
+            });
             $(".fondo_madera").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[0]+"-izq.jpg)");
             $(".plasta_circular").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[0]+"-der.png)");
             $("html, body").css("overflow", "hidden");
-            //Pone imagenes y textos en el home
-            //$(".derecho .plasta_circular").css('background-image', 'url('+site_url+'/img/fondos/'+randomKeys[0]+'-der.jpg)');
             $(".sobre_sabor_nombre").html("TANG "+sobresKeys.nombre);
+            app.textoCurveado();
             $(".sobre_home").attr("src", site_url+"/img/sobres/"+randomKeys[0]+".jpg");
             $(".frase_img").attr("src", site_url+"/img/frases/"+randomKeys[0]+".png");
             $.getJSON(site_url+"frutas.json", function(json_frutas){
@@ -78,26 +80,11 @@ const app = {
 
     },
     colores_home: () => {
-        var este = this;
         $(document).on("click", ".colores_item", function(){
-            pos = $(this).data('pos');
-            //Se añaden clases que animan la plasta y el sobre
-            $(".plasta_circular").addClass('bounce-scale');
-            $(".izquierdo .sobre_cont").addClass("rotate-scale");
-            setTimeout( () => {
-                //Se manda llamar la función que cambia los elementos con base en el JSON
-                este.getTheJSON("recetas", "sobres", pos);
-            }, 250);
-            setTimeout( () => {
-                //Se regresan a su estado original los elementos quitando las clases o añadiendo nuevas para mejorar la animación
-                $(".plasta_circular").addClass('bounce-scale2');
-                $(".izquierdo .sobre_cont").removeClass("rotate-scale");
-                setTimeout( () => {
-                    // Se quitan todas las clases para reiniciar las animaciones
-                    $(".plasta_circular").removeClass('bounce-scale');
-                    $(".plasta_circular").removeClass('bounce-scale2');
-                }, 510);
-            }, 800);
+            $(".colores_cont").slideToggle(400);
+            $(".mas_nav_cont.mas_nav_home_button").toggleClass("is-active");
+            let sabor = parseInt($(this).data('sabor'));
+            app.flechaClick('der', (sabor-1));
         });
     },
     flechas_home: () => {
@@ -137,15 +124,16 @@ const app = {
         }
         return array;
     },
-    flechaClick: (flecha) => {
+    flechaClick: (flecha, sabor = 0) => {
         let esteTransform, esteHeight, topAnimation = .8, estevelocidad = 50;
         let masmenos = flecha == 'izq' ? 1 : -1;
         let menosmas = flecha == 'izq' ? -1 : 1;
         let bajasube = flecha == 'izq' ? 'bajar_anim' : 'subir_anim';
         let subebaja = flecha == 'izq' ? 'subir_anim' : 'bajar_anim';
         let keySize = Object.keys(sobres).length;
-        let tamano = flecha == 'izq' ? 0 : keySize;
-        let tamano2 = flecha == 'izq' ? (keySize+1) : -1;
+        let tamano = flecha == 'izq' ? 1 : keySize;
+        let tamano2 = flecha == 'izq' ? (keySize) : -1;
+        position = sabor === 0 ? position : sabor;
 
         $(".frutas_home").each(function (index, element) {
             var este = $(this);
@@ -162,8 +150,20 @@ const app = {
         $(".sobre_cont").addClass(subebaja);
         $("body, html").css("overflow", "hidden");
         setTimeout( () => {
-            position = (position == tamano) ? tamano2 : position;
+            position = (position == (tamano-1)) ? tamano2 : position;
             if(flecha == 'izq'){position--;}else{position++;}
+            let sobresKeys = sobres[randomKeys[position]];
+            $(".fondo_madera").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[position]+"-izq.jpg)");
+            $(".plasta_circular").css("background-image", "url("+site_url+"/img/fondos/"+randomKeys[position]+"-der.png)");
+            $("html, body").css("overflow", "hidden");
+            $(".sobre_sabor_nombre").html("TANG "+sobresKeys.nombre);
+            $(".sobre_home").attr("src", site_url+"/img/sobres/"+randomKeys[position]+".jpg");
+            $(".frase_img").attr("src", site_url+"/img/frases/"+randomKeys[position]+".png");
+            $(".frutas_home").remove();
+            let frutasKeys = frutas[randomKeys[position]];
+            frutasKeys.frutas_pos.forEach(function(item, index){
+                $(".fondo_madera .derecho").append('<img src="'+site_url+"/img/frutas/"+randomKeys[position]+'-'+(index+1)+'.png" class="frutas_home" style="top:'+item[1]+'%; left:'+item[0]+'%; transform: translate('+frutasKeys.frutas_transform[index][0]+'%, '+frutasKeys.frutas_transform[index][1]+'%);opacity: 0">');
+            });
             $(".receta_home_cont, .sobre_cont").css("transition", "all 0ms ease-in-out");
             $(".receta_home_cont").addClass(subebaja);
             $(".sobre_cont").addClass(bajasube);
@@ -181,15 +181,24 @@ const app = {
                 esteTransform = parseInt(este.css('top'));
                 esteHeight = este.outerHeight();
                 $(".frutas_home").css("transition", "all 0ms ease-in-out");
-                este.css('top',(esteTransform+(((esteHeight*topAnimation)*menosmas)+(esteHeight*menosmas)))+'px');
+                este.css('top',esteTransform+(esteHeight*topAnimation)*menosmas+'px');
                 (function(esteTransform){
                     setTimeout( () => {
                         este.css("transition", "all 400ms ease-in-out");
-                        este.css('top',(esteTransform+(esteHeight*topAnimation*menosmas))+'px');
+                        este.css('top', esteTransform+'px');
                         este.css('opacity', 1);
                     }, estevelocidad*index);
                 })(esteTransform);
             });
         },500 );
+    },
+    textoCurveado: () => {
+        const circleType = new CircleType(document.getElementById('nombre'));
+        circleType.dir(-1).radius(384);
+    },
+    videoEnds: (e) => {
+        setTimeout(() => {
+            $(".video_cont").fadeOut(600);
+        }, 500);
     }
 }

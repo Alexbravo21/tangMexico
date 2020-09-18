@@ -21,7 +21,7 @@
         </svg>
         <div class="sobre_cont">
             <img src="" alt="Naranjada Mix" class="sobre sobre_home">
-            <p class="sobre_sabor_nombre"></p>
+            <h2 class="sobre_sabor_nombre" id="nombre"></h2>
         </div>
     </div><!--
     --><div class="derecho">

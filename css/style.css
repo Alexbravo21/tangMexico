@@ -127,7 +127,7 @@
   z-index: 1;
   width: 100%;
   vertical-align: top;
-  height: 40%;
+  height: 50%;
   position: relative;
 }
 
@@ -172,15 +172,22 @@
 }
 
 .izquierdo .sobre_cont .sobre {
-  width: 100%;
+  width: 75%;
   max-height: 80%;
   position: relative;
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px;
   -webkit-transform: translate(0%, 0%) rotate(-5deg);
   transform: translate(0%, 0%) rotate(-5deg);
   -webkit-box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
   box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 770px) {
+  .izquierdo .sobre_cont .sobre {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
 }
 
 .izquierdo .sobre_cont .sobre_sabor_nombre {
@@ -188,7 +195,13 @@
   font-family: 'muli';
   font-weight: bold;
   color: #fff;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 770px) {
+  .izquierdo .sobre_cont .sobre_sabor_nombre {
+    font-size: 1.7rem;
+  }
 }
 
 .izquierdo .home_flecha_cont.izquierda {
@@ -241,7 +254,7 @@
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  height: 60%;
+  height: 50%;
   overflow: hidden;
 }
 
@@ -259,12 +272,19 @@
   z-index: 100;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .derecho .frutas_home {
+    display: block;
+  }
 }
 
 .derecho .plasta_circular {
-  background-size: auto;
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: top center;
   width: 250%;
   position: relative;
   top: 8%;
@@ -277,6 +297,20 @@
   box-shadow: 0px 0px 24px -9px rgba(0, 0, 0, 0.75);
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
+}
+
+@media (min-width: 770px) {
+  .derecho .plasta_circular {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
+@media (min-width: 1600px), (min-width: 800px) {
+  .derecho .plasta_circular {
+    background-size: 60%;
+  }
 }
 
 .derecho .plasta_circular:before {
@@ -305,43 +339,21 @@
   transition: all 400ms ease-in-out;
   width: 100%;
   position: absolute;
-  top: 10px;
+  top: 7%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  width: 150px;
-}
-
-@media (min-width: 360px) and (max-width: 576px) and (min-height: 530px) {
-  .derecho .plasta_circular .receta_home_cont {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    width: 180px;
-  }
-}
-
-@media (min-width: 365px) {
-  .derecho .plasta_circular .receta_home_cont {
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    width: 250px;
-  }
+  width: 75vw;
 }
 
 @media (min-width: 576px) {
   .derecho .plasta_circular .receta_home_cont {
     position: absolute;
-    top: 30px;
+    top: 5%;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    width: 380px;
+    width: 60vw;
   }
 }
 
@@ -352,8 +364,6 @@
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
-    font-size: 1.8rem;
-    line-height: 1.8rem;
   }
 }
 
@@ -361,11 +371,15 @@
   .derecho .plasta_circular .receta_home_cont {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
-    width: 40%;
+    width: 35%;
   }
+}
+
+.derecho .plasta_circular .receta_home_cont .frase_img {
+  width: 100%;
 }
 
 .derecho .home_flecha_cont.izquierda {
@@ -1088,6 +1102,47 @@
 @media (min-width: 770px) {
   .hamburger-inner::after {
     bottom: -9px;
+  }
+}
+
+.video_cont {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+  z-index: 100000000;
+}
+
+.video_cont #video-tang, .video_cont #video-tang-mobile {
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.video_cont #video-tang {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .video_cont #video-tang {
+    display: block;
+  }
+}
+
+@media (min-width: 770px) {
+  .video_cont #video-tang-mobile {
+    display: none;
   }
 }
 

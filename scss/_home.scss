@@ -91,7 +91,7 @@ $tran: 80%;
     z-index: 1;
     width: 100%;
     vertical-align: top;
-    height: 40%;
+    height: 50%;
     position: relative;
     @include med-query($medium){
         width: 40%;
@@ -117,20 +117,27 @@ $tran: 80%;
             width: 250px;
         }
         .sobre{
-            width: 100%;
+            width: 75%;
             max-height: 80%;
             position: relative;
             display: block;
-            margin: 0 auto 30px;
+            margin: 0 auto 10px;
             @include multi-transforms(translate(0%, 0%) rotate(-5deg));
             @include prefix(box-shadow, 6px 8px 13px 2px rgba(0,0,0,0.75), webkit moz);
+            @include med-query($medium){
+                width: 100%;
+                margin: 0 auto 30px;
+            }
         }
         .sobre_sabor_nombre{
             text-align: center;
             font-family: 'muli';
             font-weight: bold;
             color: color(blanco);
-            font-size: 1.7rem;
+            font-size: 1.3rem;
+            @include med-query($medium){
+                font-size: 1.7rem;
+            }
         }
     }
     .home_flecha_cont{
@@ -158,7 +165,7 @@ $tran: 80%;
     display: inline-block;    
     vertical-align: top;
     width: 100%;
-    height: 60%;
+    height: 50%;
     overflow: hidden;
     @include med-query($medium){
         width: 60%;
@@ -170,11 +177,23 @@ $tran: 80%;
         left: 100%;
         z-index: 100;
         transition: all 400ms ease-in-out;
+        display: none;
+        @include med-query($medium){
+            display: block;
+        }
     }
     .plasta_circular{
-        background-size: auto;
+        background-size: 50%;
         background-repeat: no-repeat;
-        background-position: center left;
+        background-position: top center;
+        @include med-query($medium){
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+        @include med-query-width-or-height($xxl, 800px){
+            background-size: 60%;
+        }
 
         width: 250%;
         @include medio(relative, 8%, 50%, -50%, 0);
@@ -192,28 +211,21 @@ $tran: 80%;
         .receta_home_cont{
             transition: all 400ms ease-in-out;
             width: 100%;
-            @include medio(absolute, 10px, 50%, -50%, 0);
-            width: 150px;
-            @include med-query-height(){
-                @include medio(absolute, 20px, 50%, -50%, 0);
-                width: 180px;
-            }
-            @include med-query($petit){
-                @include medio(absolute, 30px, 50%, -50%, 0);
-                width: 250px;
-            }
+            @include medio(absolute, 7%, 50%, -50%, 0);
+            width: 75vw;
             @include med-query($small){
-                @include medio(absolute, 30px, 50%, -50%, 0);
-                width: 380px;
+                @include medio(absolute, 5%, 50%, -50%, 0);
+                width: 60vw;
             }
             @include med-query($medium){
                 @include medio(absolute, 100%, 50%, -50%, 0%);
-                font-size: 1.8rem;
-                line-height: 1.8rem;
             }
             @include med-query($large){
-                @include medio(absolute, 50%, 5%, 0, -50%);
-                width: 40%;
+                @include medio(absolute, 50%, 10%, 0, -50%);
+                width: 35%;
+            }
+            .frase_img{
+                width: 100%;
             }
         }
     }
