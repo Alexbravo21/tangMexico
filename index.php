@@ -1,5 +1,15 @@
 <?php include('header.php') ?>
 
+<div class="video_cont">
+    <video autoplay muted id="video-tang">
+        <source src="video/web.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video autoplay muted id="video-tang-mobile">
+        <source src="video/mobile.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
 <div class="nav_home_cont d-none d-md-block">
     <div class="mas_nav_cont mas_nav_home_button">
         <div class="mas_nav">
@@ -37,6 +47,17 @@
             <div class="home_flecha"></div>
         </div>
     </div>
+</div>
+<div class="loader" style="display:none">
+    <?php 
+        $directories = ["img/fondos/", "img/frases/", "img/frutas/", "img/sobres/"];
+        foreach($directories as $directory){
+            $images = glob($directory."*.{jpg,gif,png}",GLOB_BRACE);
+            foreach($images as $image){
+                echo '<img src="'.$image.'" />';
+            }
+        }
+    ?>
 </div>
 
 <?php include('footer.php') ?>
