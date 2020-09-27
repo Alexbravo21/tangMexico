@@ -172,30 +172,36 @@
 }
 
 .izquierdo .sobre_cont .sobre {
-  width: 90%;
+  width: 100%;
   max-height: 80%;
   position: relative;
   display: block;
   margin: 0 auto 10px;
   -webkit-transform: translate(0%, 0%) rotate(-5deg);
   transform: translate(0%, 0%) rotate(-5deg);
-  -webkit-box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
-  box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 6px 8px 13px 2px rgba(0, 0, 0, 0.45);
 }
 
 @media (min-width: 770px) {
   .izquierdo .sobre_cont .sobre {
-    width: 100%;
     margin: 0 auto 30px;
   }
 }
 
 .izquierdo .sobre_cont .sobre_sabor_nombre {
   text-align: center;
-  font-family: 'muli';
+  font-family: 'fatFrank';
   font-weight: bold;
   color: #fff;
   font-size: 1.3rem;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .izquierdo .sobre_cont .sobre_sabor_nombre {
+    display: block;
+  }
 }
 
 @media (min-width: 770px) {
@@ -476,13 +482,15 @@
   text-align: center;
   width: 800px;
   max-width: 90%;
+  width: 600px;
   margin: 0 auto 15px;
+  text-transform: uppercase;
+  font-family: 'fatFrank';
 }
 
-@media (min-width: 576px) {
-  .contacto_texto {
-    font-size: 1.1rem;
-  }
+.contacto_texto strong {
+  color: #e57400;
+  font-size: 3rem;
 }
 
 .contacto_texto span {
@@ -556,6 +564,7 @@
   text-align: center;
   border: none;
   border-radius: 0;
+  background-color: #fadcc6;
 }
 
 #form_contacto .form-control#comentario {
@@ -574,422 +583,59 @@
   }
 }
 
+#form_contacto .form-control::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #de8c4f;
+  opacity: 1;
+  /* Firefox */
+}
+
+#form_contacto .form-control:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #de8c4f;
+  opacity: 1;
+  /* Firefox */
+}
+
+#form_contacto .form-control::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #de8c4f;
+  opacity: 1;
+  /* Firefox */
+}
+
+#form_contacto .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #de8c4f;
+  opacity: 1;
+  /* Firefox */
+}
+
+#form_contacto .form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #de8c4f;
+}
+
+#form_contacto .form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #de8c4f;
+}
+
 #form_contacto .enviar_contacto {
-  background-image: url("/tangMexico/img/boton_textura.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 220px;
-  height: 50px;
-  font-size: 1.5rem;
-  margin: 1rem 0 0;
-  color: #fff;
-  border: none;
-  border-radius: 100px;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.recetas_cont {
-  width: 700px;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 30px;
-  position: relative;
-}
-
-.recetas_cont .botones_recetas {
-  margin-bottom: 20px;
-}
-
-.recetas_cont .botones_recetas .enviar_contacto {
-  background-image: url("/tangMexico/img/boton_textura.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 180px;
   height: 40px;
-  font-size: 1.2rem;
-  margin: 1rem 10px 0;
-  color: #fff;
-  border: none;
-  border-radius: 100px;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
-}
-
-.recetas_cont .botones_recetas .enviar_contacto.filtrado {
-  background-image: url("/tangMexico/img/boton_textura_2.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.recetas_cont .recetas_thumbs_cont .receta_thumb_cont {
-  margin: 15px 0;
-  -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
-}
-
-.recetas_cont .recetas_thumbs_cont .receta_thumb_cont .receta_thumb {
-  width: 100%;
-}
-
-.receta_interior_contenedor {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  z-index: 10;
-  width: 90%;
-  height: 70%;
-  overflow: hidden;
-  margin-top: 50px;
-}
-
-@media (min-width: 365px) {
-  .receta_interior_contenedor {
-    height: 80%;
-  }
-}
-
-@media (min-width: 770px) {
-  .receta_interior_contenedor {
-    width: 350px;
-    margin-top: 20px;
-    position: absolute;
-    top: 30px;
-    left: 80%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-}
-
-.receta_interior_contenedor .receta_interior_texto {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding-right: 20px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo {
-  color: #d87013;
-  font-family: 'muli';
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.8rem;
-  line-height: 1.5rem;
-  width: 100%;
-  text-align: center;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo p {
-  text-align: center;
-}
-
-@media (min-width: 770px) {
-  .receta_interior_contenedor .receta_interior_texto .receta_interior_titulo p {
-    width: 70%;
-  }
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_titulo span {
-  color: #fff;
-  font-weight: normal;
   font-size: 1.5rem;
-  display: block;
-}
-
-.receta_interior_contenedor .receta_interior_texto .tiemporciones {
-  color: #fff;
-  font-size: .7rem;
-  line-height: .7rem;
-  margin: 20px auto 0;
-  width: 80%;
-  text-align: center;
-}
-
-@media (min-width: 770px) {
-  .receta_interior_contenedor .receta_interior_texto .tiemporciones {
-    width: 80%;
-    margin: 20px 0 0;
-    text-align: left;
-  }
-}
-
-.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones {
-  display: inline-block;
-  width: 50%;
-}
-
-.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos .textbox, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones .textbox {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 3px;
-  text-align: left;
-}
-
-.receta_interior_contenedor .receta_interior_texto .tiemporciones .minutos_num, .receta_interior_contenedor .receta_interior_texto .tiemporciones .porciones_num {
-  color: #d87013;
-  font-size: 1.1rem;
-  line-height: 1.1rem;
-  font-weight: bold;
-  display: block;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes {
-  color: #d87013;
-  font-weight: bold;
-  font-size: .9rem;
-  width: 70%;
-  margin: 0 auto;
-}
-
-@media (min-width: 770px) {
-  .receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes {
-    width: 100%;
-  }
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes .ingredientes_titulo {
-  font-size: 1.3rem;
-  margin: 10px 0 15px;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_ingredientes .ingredientes_lista {
-  list-style-type: none;
-  padding-left: 0;
-  width: 80%;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion {
-  color: #fff;
-  width: 70%;
-  margin: 0 auto;
-}
-
-@media (min-width: 770px) {
-  .receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion {
-    width: 100%;
-  }
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_titulo {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista {
-  list-style-type: none;
-  padding-left: 0;
-  font-size: .9rem;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista .preparacion_item {
-  margin-bottom: 10px;
-}
-
-.receta_interior_contenedor .receta_interior_texto .receta_interior_preparacion .preparacion_lista .preparacion_item span {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.sobres_cont {
-  width: 900px;
-  max-width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 30px;
-  position: relative;
-}
-
-.sobres_cont .botones_sobres {
-  margin-bottom: 20px;
-}
-
-.sobres_cont .botones_sobres .enviar_contacto {
-  background-image: url("/tangMexico/img/boton_textura.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 180px;
-  height: 40px;
-  font-size: 1.2rem;
-  margin: 1rem 10px 0;
-  color: #fff;
+  font-family: 'fatFrank';
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e57400;
   border: none;
-  border-radius: 100px;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-.sobres_cont .botones_sobres .enviar_contacto.filtrado {
-  background-image: url("/tangMexico/img/boton_textura_2.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.sobres_cont .sobres_thumbs_cont .receta_thumb_cont {
-  margin: 15px 0;
-  -webkit-box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
-  box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.65);
-}
-
-.sobres_cont .sobres_thumbs_cont .receta_thumb_cont .receta_thumb {
-  width: 100%;
-}
-
-.sabor_interior_cont {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  overflow: hidden;
-  width: 90%;
-  height: 65%;
-  z-index: 10;
-  padding-top: 20px;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-@media (min-width: 365px) {
-  .sabor_interior_cont {
-    height: 80%;
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: 770px) {
-  .sabor_interior_cont {
-    width: 70%;
-    position: absolute;
-    top: 30px;
-    left: 90%;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-    padding-top: 0;
-  }
-}
-
-.sabor_interior_cont .sabor_interior_texto {
-  overflow: auto;
-  padding-right: 20px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  color: #fff;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.sabor_interior_cont .sabor_interior_texto .sabor_interior_titulo {
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  width: 100%;
-}
-
-.sabor_interior_cont .sabor_interior_texto .sabor_interior_titulo span {
-  color: #d87013;
-  font-family: 'muliBlackItalic';
-  font-size: 1.8rem;
-  display: block;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos, .sabor_interior_cont .porciones_cont .porciones_envase {
-  display: inline-block;
-  vertical-align: middle;
-  width: 50%;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_titulo, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_titulo {
-  font-size: .9rem;
-  margin: 5px 0;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img {
-  width: 90%;
-  margin-left: 10%;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .porciones_img_item, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .porciones_img_item {
-  width: 30px;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  width: 80%;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p {
-  margin: 2px 0;
-  font-size: .7rem;
-  line-height: .7rem;
-  display: block;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p.porciones_envase_minitext, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p.porciones_envase_minitext {
-  display: inline-block;
-  vertical-align: middle;
-  width: 35%;
-}
-
-.sabor_interior_cont .porciones_cont .porciones_tamanos .porciones_img .textbox p.porciones_envase_minitext:first-child, .sabor_interior_cont .porciones_cont .porciones_envase .porciones_img .textbox p.porciones_envase_minitext:first-child {
-  width: 5%;
-}
-
-.sabor_interior_cont .sabor_desc_titulo {
-  font-family: 'muliBlackItalic';
-  width: 65%;
-  margin: 20px auto;
-  font-size: 1.1em;
-  color: #d87013;
-}
-
-.sabor_interior_cont .sabor_desc {
-  font-size: .9rem;
-}
-
-.sabor_interior_cont .info_nutri_cont .info_nutri_titulo {
-  font-weight: bold;
-  color: #d87013;
-  font-size: .8rem;
-}
-
-.sabor_interior_cont .info_nutri_cont .info_nutri_tabla {
-  width: 95%;
-  font-size: .8rem;
-  text-align: left;
-  margin: 0 auto;
-}
-
-@media (min-width: 576px) {
-  .sabor_interior_cont .info_nutri_cont .info_nutri_tabla {
-    width: 60%;
-  }
-}
-
-.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p {
-  margin-bottom: 0;
-}
-
-.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p .info_nutri_texto {
-  display: inline-block;
-  width: 70%;
-}
-
-.sabor_interior_cont .info_nutri_cont .info_nutri_tabla p .info_nutri_num {
-  text-align: right;
-  border-left: 2px solid #fff;
-  display: inline-block;
-  width: 30%;
+#form_contacto .enviar_contacto:hover {
+  background-color: #fabe6b;
 }
 
 /*!
@@ -1357,6 +1003,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "fatFrank";
+  src: url("/tangMexico//css/fonts/FatFrank-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (min-width: 770px) {
   .over_hidden {
     overflow: hidden;
@@ -1451,6 +1104,15 @@ html body {
   background-color: #dddcdc;
 }
 
+.fondo_contacto {
+  background-image: url("/tangMexico/img/fondos/contacto.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 .fondo_claro_int {
   position: relative;
   background-image: url("/tangMexico/img/back_claro.png");
@@ -1508,26 +1170,6 @@ html body {
   }
 }
 
-.receta_interior_cont {
-  background-size: auto 55%;
-  background-position: top left;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
-
-@media (min-width: 576px) {
-  .receta_interior_cont {
-    background-size: auto auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .receta_interior_cont {
-    background-size: cover;
-  }
-}
-
 .hamburger_cont {
   position: absolute;
   top: 20px;
@@ -1568,126 +1210,12 @@ html body {
 }
 
 .logo.madera_move {
+  -webkit-transition: 800ms all ease-in-out;
+  transition: 800ms all ease-in-out;
   left: 50%;
+  top: 120px;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-}
-
-.logo_2 {
-  width: 70px;
-  max-width: 40%;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  z-index: 10000000;
-  -webkit-transition: 400ms all ease-in-out;
-  transition: 400ms all ease-in-out;
-}
-
-@media (min-width: 770px) {
-  .logo_2 {
-    width: 100px;
-  }
-}
-
-.logo_2.madera_move {
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.promo {
-  position: fixed;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -100%);
-          transform: translate(-50%, -100%);
-  width: 400px;
-  max-width: 80%;
-  z-index: 100;
-}
-
-@media (min-width: 770px) {
-  .promo {
-    position: fixed;
-    top: 100%;
-    left: 100%;
-    -webkit-transform: translate(-100%, -100%);
-            transform: translate(-100%, -100%);
-  }
-}
-
-.promo .promo_img {
-  width: 100%;
-}
-
-.promo .cerrar_promo {
-  cursor: pointer;
-  position: absolute;
-  top: 5px;
-  left: 100%;
-  -webkit-transform: translate(-100%, -50%);
-          transform: translate(-100%, -50%);
-  width: 24.5px;
-  height: 24.5px;
-  background-color: #fff;
-  border-radius: 100%;
-  margin-bottom: 7px;
-  -webkit-transform: translate(-100%, -50%) rotate(45deg);
-          transform: translate(-100%, -50%) rotate(45deg);
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
-}
-
-@media (min-width: 576px) {
-  .promo .cerrar_promo {
-    position: absolute;
-    top: 10px;
-    left: 95%;
-    -webkit-transform: translate(-100%, -50%);
-            transform: translate(-100%, -50%);
-    width: 24.5px;
-    height: 24.5px;
-    -webkit-transform: translate(-100%, -50%) rotate(45deg);
-            transform: translate(-100%, -50%) rotate(45deg);
-  }
-}
-
-.promo .cerrar_promo .mas_nav {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 60%;
-  height: 60%;
-}
-
-.promo .cerrar_promo .mas_nav .mas_nav_item {
-  background-color: #342f2f;
-}
-
-.promo .cerrar_promo .mas_nav .mas_nav_item.horizontal {
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
-
-.promo .cerrar_promo .mas_nav .mas_nav_item.vertical {
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  z-index: 3;
 }
 
 .secion_logo_medio {
@@ -1696,7 +1224,7 @@ html body {
 
 @media (min-width: 770px) {
   .secion_logo_medio {
-    padding-top: 120px;
+    padding-top: 150px;
   }
 }
 
@@ -1705,70 +1233,11 @@ html body {
   width: 100%;
   height: 100%;
   z-index: 1000000;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-}
-
-.menu_cont.madera_move {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.menu_cont .madera {
-  width: 100%;
-  height: 25%;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
-}
-
-.menu_cont .madera.madera1 {
-  background-image: url("/tangMexico/img/menu/madera1.jpg");
+  display: none;
+  background-image: url("/tangMexico/img/menu/menu.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.menu_cont .madera.madera1.madera_move {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.menu_cont .madera.madera2 {
-  background-image: url("/tangMexico/img/menu/madera2.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.menu_cont .madera.madera2.madera_move {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.menu_cont .madera.madera3 {
-  background-image: url("/tangMexico/img/menu/madera3.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.menu_cont .madera.madera3.madera_move {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-.menu_cont .madera.madera4 {
-  background-image: url("/tangMexico/img/menu/madera4.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.menu_cont .madera.madera4.madera_move {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  background-size: cover;
 }
 
 .menu_cont .menu_botones {

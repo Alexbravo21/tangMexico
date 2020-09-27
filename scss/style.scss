@@ -1,8 +1,6 @@
 @import '_functions';
 @import '_home';
 @import '_contacto';
-@import '_recetas';
-@import '_sobres';
 @import '_hamburgers';
 @import '_animations';
 //@import 'keyframes';
@@ -13,6 +11,7 @@
 @include fontface("muli", '/css/fonts/Muli-Italic.ttf', normal, italic);
 @include fontface("muli", '/css/fonts/Muli-BoldItalic.ttf', bold, italic);
 @include fontface("muliBlackItalic", '/css/fonts/Muli-BlackItalic.ttf', bolder, italic);
+@include fontface("fatFrank", '/css/fonts/FatFrank-Regular.otf', normal, normal);
 
 
 .over_hidden{
@@ -64,6 +63,11 @@ html{
 .fondo_claro{
     background-color: #dddcdc;
 }
+.fondo_contacto{
+    @include bg-image('img/fondos/contacto.jpg', cover);
+    width: 100vw;
+    height: 100vh;
+}
 .fondo_claro_int{
     position: relative;
     @include fondos('img/back_claro.png', 150% auto); 
@@ -87,19 +91,6 @@ html{
             top: 30%;
             height: 70%;
         }
-    }
-}
-.receta_interior_cont{
-    background-size: auto 55%;
-    background-position: top left;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    @include med-query($small){
-        background-size: auto auto;
-    }
-    @include med-query($xl){
-        background-size: cover;
     }
 }
 .hamburger_cont{
@@ -127,76 +118,16 @@ html{
         width: 100px;
     }
     &.madera_move{
+        transition: 800ms all ease-in-out;
         left: 50%;
+        top: 120px;
         transform: translate(-50%, 0);
-    }
-}
-.logo_2{
-    width: 70px;
-    max-width: 40%;
-    @include medio(absolute, 20px, 50%, -50%, 0);
-    z-index: 10000000;
-    transition: 400ms all ease-in-out;
-    @include med-query($medium){
-        width: 100px;
-    }
-    &.madera_move{
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-}
-.promo{
-    @include medio(fixed, 100%, 50%, -50%, -100%);
-    width: 400px;
-    max-width: 80%;
-    z-index: 100;
-    @include med-query($medium){
-        @include medio(fixed, 100%, 100%, -100%, -100%);
-    }
-    .promo_img{
-        width: 100%;
-    }
-    .cerrar_promo{
-        cursor: pointer;
-        @include medio(absolute, 5px, 100%, -100%, -50%);
-        width: $width-buttons*.7;
-        height: $height-buttons*.7;
-        background-color: color(blanco);
-        border-radius: 100%;
-        margin-bottom: 7px;
-        transform: translate(-100%, -50%) rotate(45deg);
-        @include prefix(box-shadow, 0px 0px 12px 0px rgba(0,0,0,0.75), webkit moz);
-        @include med-query($small){
-            @include medio(absolute, 10px, 95%, -100%, -50%);
-            width: $width-buttons*.7;
-            height: $height-buttons*.7;
-            transform: translate(-100%, -50%) rotate(45deg);
-        }
-        .mas_nav{
-            @include medio(absolute, 50%, 50%, -50%, -50%);
-            width: 60%;
-            height: 60%;
-            .mas_nav_item{
-                background-color: color(gris-obscuro);
-                &.horizontal{
-                    width: 100%;
-                    height: 3px;
-                    @include medio(absolute, 50%, 0, 0, -50%);
-                }
-                &.vertical{
-                    width: 3px;
-                    height: 100%;
-                    @include medio(absolute, 0, 50%, -50%, 0);
-                    z-index: 3;
-                }
-            }
-        }
     }
 }
 .secion_logo_medio{
     padding-top: 90px;
     @include med-query($medium){
-        padding-top: 120px;
+        padding-top: 150px;
     }
 }
 .menu_cont{
@@ -204,25 +135,8 @@ html{
     width: 100%;
     height: 100%;
     z-index: 1000000;
-    transform: translate(0, -100%);
-    &.madera_move{
-        transform: translate(0, 0);
-    }
-    .madera{
-        width: 100%;
-        height: 25%;
-        transition: all 500ms ease-in-out;
-        transform: translate(-100%, 0);
-        @for $i from 1 through 4{
-            &.madera#{$i}{
-                @include bg-image('img/menu/madera'+$i+'.jpg', 100% 100%);
-                &.madera_move{
-                    transform: translate(0, 0);
-                }
-            }
-
-        }
-    }
+    display: none;
+    @include bg-image('img/menu/menu.jpg', cover);
     .menu_botones{
         @include medio(absolute, 50%, 50%, -50%, -70%);
         z-index: 2;

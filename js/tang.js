@@ -13,31 +13,21 @@ const app = {
         app.getTheJSON(0);
         app.colores_home();
         app.flechas_home();
+        app.endVideo();
         $(".frutas_home").remove();
-        document.getElementById('video-tang').addEventListener('ended',app.videoEnds,false);
-        document.getElementById('video-tang-mobile').addEventListener('ended',app.videoEnds,false);
     },
     menu: () => {
         $(document).on('click', ".hamburger_cont", function (e) {
             var este = $(this);
             var hamburger = este.find(".hamburger");
             if(!hamburger.hasClass('is-active')){
-                $(".menu_cont, .logo, .logo_2").addClass("madera_move");
-                setTimeout( () => {
-                    $(".madera").each(function (i) {
-                        var maderaSelec = $(this);
-                        setTimeout( () => {maderaSelec.addClass("madera_move");}, i*120);
-                    });
-                    setTimeout( () => {$(".menu_botones").addClass("madera_move");}, 500);
-                }, 20);
+                $(".menu_cont").fadeIn(300);
+                $(".logo").addClass("madera_move");
+                setTimeout( () => {setTimeout( () => {$(".menu_botones").addClass("madera_move");}, 500);}, 20);
             }else{
                 $(".menu_botones").removeClass("madera_move");
-                $(".madera").each(function (i) {
-                    var maderaSelec = $(this);
-                    setTimeout( () => {maderaSelec.removeClass("madera_move");}, i*120);
-                });
-                setTimeout( () => {$(".menu_cont").removeClass("madera_move");}, 700);
-                setTimeout( () => {$(".logo, .logo_2").removeClass("madera_move");}, 200);
+                setTimeout( () => {$(".menu_cont").fadeOut(300);}, 700);
+                setTimeout( () => {$(".logo").removeClass("madera_move");}, 200);
             }
             $(hamburger).toggleClass("is-active");
         });
@@ -170,6 +160,7 @@ const app = {
             setTimeout( () => {
                 $(".receta_home_cont").removeClass(bajasube);
                 $(".sobre_cont").removeClass(subebaja);
+                app.textoCurveado();
             },30 );
         },410 );
         setTimeout( () => {
@@ -196,9 +187,11 @@ const app = {
         const circleType = new CircleType(document.getElementById('nombre'));
         circleType.dir(-1).radius(384);
     },
-    videoEnds: (e) => {
+    endVideo: () => {
+        let tiempo =  parseInt(Math.random() * (8500 - 6000) + 6000);
         setTimeout(() => {
+            $("#video-tang, #video-tang-mobile").get(0).pause();
             $(".video_cont").fadeOut(600);
-        }, 500);
+        }, tiempo);
     }
 }

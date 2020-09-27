@@ -117,24 +117,27 @@ $tran: 80%;
             width: 250px;
         }
         .sobre{
-            width: 90%;
+            width: 100%;
             max-height: 80%;
             position: relative;
             display: block;
             margin: 0 auto 10px;
             @include multi-transforms(translate(0%, 0%) rotate(-5deg));
-            @include prefix(box-shadow, 6px 8px 13px 2px rgba(0,0,0,0.75), webkit moz);
+            @include prefix(box-shadow, 6px 8px 13px 2px rgba(0,0,0,0.45), webkit moz);
             @include med-query($medium){
-                width: 100%;
                 margin: 0 auto 30px;
             }
         }
         .sobre_sabor_nombre{
             text-align: center;
-            font-family: 'muli';
+            font-family: 'fatFrank';
             font-weight: bold;
             color: color(blanco);
             font-size: 1.3rem;
+            display: none;
+            @include med-query($small){
+                display: block;
+            }
             @include med-query($medium){
                 font-size: 1.7rem;
             }

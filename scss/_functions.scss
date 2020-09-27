@@ -6,6 +6,7 @@ $colors: (
     blanco: #fff,
     negro: #000000,
     verde-tang: #008445,
+    naranja-tang: #e57400,
     fondo-gris: #dddcdc,
     form-input: #969696,
     gris-obscuro: #342f2f
@@ -115,16 +116,6 @@ $petit: 365px;
         color: $color;
         font-family: $font;
     }
-}
-@mixin boton-madera($width, $height, $fsize, $margin){
-    width: $width;
-    height: $height;
-    font-size: $fsize;
-    margin: $margin;
-    color: color(blanco);
-    border: none;
-    border-radius: 100px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 @mixin fondo-claro-gradient(){
