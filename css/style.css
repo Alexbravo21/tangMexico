@@ -792,6 +792,31 @@
   }
 }
 
+.video_cont .boton_video {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 5;
+  width: 200px;
+  max-width: 80%;
+  height: 50px;
+  background-color: #055f24;
+  color: white;
+  font-family: 'fatFrank';
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.video_cont .boton_video:hover {
+  background-color: #ff7401;
+}
+
 /*
    * Spin
    */

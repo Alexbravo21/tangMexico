@@ -1,12 +1,13 @@
 <?php include('header.php') ?>
 
 <div class="video_cont">
+    <button class="boton_video">DESCÚBRELO</button>
     <video autoplay muted id="video-tang">
-        <source src="video/web.mp4" type="video/mp4">
+        <source src="video/video1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <video autoplay muted id="video-tang-mobile">
-        <source src="video/mobile.mp4" type="video/mp4">
+        <source src="video/video1_mobile.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>

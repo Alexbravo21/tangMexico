@@ -6,6 +6,7 @@ const site_url = '/tangMexico/';
 let primeraVes = true;
 let primerCarga = true;
 let sobres, frutas, laskeys, randomKeys;
+let videoFlag = true;
 const app = {
     init: () => {
         app.menu();
@@ -13,8 +14,11 @@ const app = {
         app.getTheJSON(0);
         app.colores_home();
         app.flechas_home();
-        app.endVideo();
         $(".frutas_home").remove();
+        if(videoFlag){
+            document.getElementById('video-tang').addEventListener('canplay',app.videoEnds,false);
+            document.getElementById('video-tang-mobile').addEventListener('canplay',app.videoEnds,false);
+        }
     },
     menu: () => {
         $(document).on('click', ".hamburger_cont", function (e) {
@@ -187,11 +191,24 @@ const app = {
         const circleType = new CircleType(document.getElementById('nombre'));
         circleType.dir(-1).radius(384);
     },
-    endVideo: () => {
-        let tiempo =  parseInt(Math.random() * (8500 - 6000) + 6000);
+    videoEnds: () => {
+        let duracionVideo1 = 2000;
+        videoFlag = false;
         setTimeout(() => {
-            $("#video-tang, #video-tang-mobile").get(0).pause();
-            $(".video_cont").fadeOut(600);
-        }, tiempo);
+            $(".boton_video").fadeIn( 500, function () {
+                $(this).click(function () {
+                    $(".boton_video").fadeOut(300, function() {$(".boton_video").remove()});
+                    $("#video-tang").attr('src', 'video/video2.mp4');
+                    $("#video-tang-mobile").attr('src', 'video/video2_mobile.mp4');
+                    $("#video-tang, #video-tang-mobile").get(0).play();
+                    let min_tiempo = 1500, max_tiempo = 3800;
+                    let tiempo =  parseInt(Math.random() * (max_tiempo - min_tiempo) + min_tiempo);
+                    setTimeout(() => {
+                        $("#video-tang, #video-tang-mobile").get(0).pause();
+                        $(".video_cont").fadeOut(600);
+                    }, tiempo);
+                });
+            });
+        }, duracionVideo1);
     }
 }
