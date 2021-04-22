@@ -995,42 +995,42 @@
 
 @font-face {
   font-family: "muli";
-  src: url("/tangMexico//css/fonts/Muli-Regular.ttf");
+  src: url("/developer/tangMexico//css/fonts/Muli-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tangMexico//css/fonts/Muli-Bold.ttf");
+  src: url("/developer/tangMexico//css/fonts/Muli-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tangMexico//css/fonts/Muli-Italic.ttf");
+  src: url("/developer/tangMexico//css/fonts/Muli-Italic.ttf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "muli";
-  src: url("/tangMexico//css/fonts/Muli-BoldItalic.ttf");
+  src: url("/developer/tangMexico//css/fonts/Muli-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "muliBlackItalic";
-  src: url("/tangMexico//css/fonts/Muli-BlackItalic.ttf");
+  src: url("/developer/tangMexico//css/fonts/Muli-BlackItalic.ttf");
   font-weight: bolder;
   font-style: italic;
 }
 
 @font-face {
   font-family: "fatFrank";
-  src: url("/tangMexico//css/fonts/FatFrank-Regular.otf");
+  src: url("/developer/tangMexico//css/fonts/FatFrank-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -1069,7 +1069,7 @@ html body {
 }
 
 .fondo_madera {
-  background-image: url("/tangMexico/img/fondos/durazno-izq.jpg");
+  background-image: url("/developer/tangMexico/img/fondos/durazno-izq.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1092,7 +1092,7 @@ html body {
 }
 
 .fondo_madera_2 {
-  background-image: url("/tangMexico/img/back_madera_2.jpg");
+  background-image: url("/developer/tangMexico/img/back_madera_2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1130,7 +1130,7 @@ html body {
 }
 
 .fondo_contacto {
-  background-image: url("/tangMexico/img/fondos/contacto.jpg");
+  background-image: url("/developer/tangMexico/img/fondos/contacto.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1140,7 +1140,7 @@ html body {
 
 .fondo_claro_int {
   position: relative;
-  background-image: url("/tangMexico/img/back_claro.png");
+  background-image: url("/developer/tangMexico/img/back_claro.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 150% auto;
@@ -1161,7 +1161,7 @@ html body {
 @media (min-width: 770px) {
   .fondo_claro_int {
     padding-top: 0;
-    background-image: url("/tangMexico/img/back_claro.png");
+    background-image: url("/developer/tangMexico/img/back_claro.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 130% auto;
@@ -1259,7 +1259,7 @@ html body {
   height: 100%;
   z-index: 1000000;
   display: none;
-  background-image: url("/tangMexico/img/menu/menu.jpg");
+  background-image: url("/developer/tangMexico/img/menu/menu.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,5 +1,5 @@
 <?php 
-    $site_url = '/tangMexico/';
+    $site_url = '/developer/tangMexico/';
 ?>
 
 <!DOCTYPE html>

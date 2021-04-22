@@ -50,6 +50,10 @@
     </div>
 </div>
 <div class="loader" style="display:none">
+    <video autoplay muted  style="display:none"><source src="video/video1.mp4" type="video/mp4"></video>
+    <video autoplay muted  style="display:none"><source src="video/video1_mobile.mp4" type="video/mp4"></video>
+    <video autoplay muted  style="display:none"><source src="video/video2.mp4" type="video/mp4"></video>
+    <video autoplay muted  style="display:none"><source src="video/video2_mobile.mp4" type="video/mp4"></video>
     <?php 
         $directories = ["img/fondos/", "img/frases/", "img/frutas/", "img/sobres/"];
         foreach($directories as $directory){

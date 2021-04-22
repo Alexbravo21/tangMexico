@@ -2,7 +2,7 @@ $(document).ready(function () {
     app.init();
 });
 let position = 0;
-const site_url = '/tangMexico/';
+const site_url = '/developer/tangMexico/';
 let primeraVes = true;
 let primerCarga = true;
 let sobres, frutas, laskeys, randomKeys;
